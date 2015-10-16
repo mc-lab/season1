@@ -1,0 +1,141 @@
+.article-summary .article-summary-content-wrapper {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.article-meta {
+    min-height: 56px;
+    height: auto!important;
+    height: 56px;
+}
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+
+.article-summary {
+    position: relative;
+    margin-bottom: 16px;
+    height: 270px;
+}
+
+li {
+    list-style: none;
+}
+a:link {
+    color: #000;
+    text-decoration: none;
+}
+
+.article-summary .content-border-left, .article-header:hover .article-summary .content-border-left, .news-header:hover .article-summary .content-border-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(http://www.kayac.com/assets/images/svg/news_border/left2.png);
+    width: 200px;
+    height: 266px;
+    -moz-transition: background-image 300ms;
+    -o-transition: background-image 300ms;
+    -webkit-transition: background-image 300ms;
+    transition: background-image 300ms;
+}
+.article-summary.one-column .content-border-center {
+    right: 200px;
+}
+
+
+.article-summary.one-column .content-border-right, .article-header:hover .article-summary.one-column .content-border-right, .news-header:hover .article-summary.one-column .content-border-right {
+    background-image: url(http://www.kayac.com/assets/images/svg/news_border/1col_right2.png);
+}
+.article-summary.one-column .content-border-right {
+    right: 0;
+}
+
+
+.article-summary .article-summary-content {
+    position: relative;
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.article-summary .article-summary-content-body {
+    position: relative;
+    padding-left: 36px;
+}
+
+.article-meta {
+    min-height: 56px;
+    height: auto!important;
+    height: 56px;
+}
+
+.article-date {
+    display: inline-block;
+    height: 32px;
+    margin-right: 20px;
+    line-height: 32px;
+    font-size: 184.61538%;
+    font-weight: 700;
+    color: #fff;
+    vertical-align: middle;
+    text-shadow: 1px 2px 0 #000,1px -2px 0 #000,-1px 2px 0 #000,-1px -2px 0 #000,2px 1px 0 #000,2px -1px 0 #000,-2px 1px 0 #000,-2px -1px 0 #000,1px 1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,-1px -1px 0 #000;
+    zoom: 1;
+    filter: progid:DXImageTransform.Microsoft.Glow(Color=#000, Strength=1);
+    -ms-filter: "progid:DXImageTransform.Microsoft.dropshadow(OffX=1, OffY=-1, Color=#000)progid:DXImageTransform.Microsoft.dropshadow(OffX=-1, OffY=-1, Color=#000)progid:DXImageTransform.Microsoft.dropshadow(OffX=1, OffY=0, Color=#000)progid:DXImageTransform.Microsoft.dropshadow(OffX=-1, OffY=0, Color=#000)progid:DXImageTransform.Microsoft.dropshadow(OffX=0, OffY=1, Color=#000)progid:DXImageTransform.Microsoft.dropshadow(OffX=1, OffY=1, Color=#000)progid:DXImageTransform.Microsoft.dropshadow(OffX=-1, OffY=1, Color=#000)";
+}
+
+.article-category.category-service {
+    background: #df9c50;
+}
+.article-category.article-category-label {
+    padding: 0 10px;
+}
+.article-category {
+    color: #fff;
+    display: inline-block;
+    height: 32px;
+    line-height: 32px;
+    font-size: 107.69231%;
+}
+
+.article-tag {
+    display: block;
+    width: 100%;
+    color: #999;
+}
+
+.article-tag-item {
+    display: inline-block;
+    font-size: 92.30769%;
+    line-height: 2;
+    font-weight: 700;
+}
+
+.article-tag-item:after {
+    content: "、";
+}
+
+
+.breadcrumb-nav:after, .article-summary:after, .article-summary .service-info:after, .article-meta:after, .article-tag:after, .site-header-inner .site-header-content:after, .site-nav .nav-list:after, .site-nav .nav-child:after, .site-language:after, .site-footer-nav:after, .site-related-links:after, #HorizontalToolbar:after, #HorizontalToolbar .layout-tool:after, #HorizontalToolbar .other-tool:after, #HorizontalToolbar .sort-tool:after, ul.share-button:after {
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+}
+
+.article-summary .article-title, .article-summary .title {
+    font-size: 276.92308%;
+    line-height: 1.3;
+    margin-bottom: 12px;
+}
+
+
+
+
