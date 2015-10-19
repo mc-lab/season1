@@ -1,13 +1,433 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
-<link rel="stylesheet" type="text/css" href="../css/common.css"  />
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<script src="../js/common.js"></script>
-<meta charset="UTF-8">
-<title>サイトのタイトル</title>
+  <link rel="stylesheet" href="../css/common.css" />
+  <link rel="stylesheet" href="../css/sanitize.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="../js/common.js"></script>
+  <meta charset="UTF-8">
+  <title>[メディクリラボ No.1]カヤックのサイトを模倣_東野</title>
 </head>
+
 <body>
-	<p>ここにコンテンツを追加します。</p>
+	<header id="SiteHeader" class="effect">
+		<div class="SiteHeader__inner">
+			<div class="SiteHeader__conent">
+				<h1>面白法人カヤック（模）</h1>
+			</div>
+			<nav class="SiteHeader__nav">
+				<ul>
+					<li class="nav-item">
+						<a href="#">お知らせ</a>
+						<div class="nav-child">
+							<ul class="nav-child-list">
+								<li class="nav-child-item"><a href="#">MENU01</a></li>
+								<li class="nav-child-item"><a href="#">MENU02</a></li>
+								<li class="nav-child-item"><a href="#">MENU03</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a href="#">作者より</a>
+						<div class="nav-child">
+							<ul class="nav-child-list">
+								<li class="nav-child-item"><a href="#">MENU01</a></li>
+								<li class="nav-child-item"><a href="#">MENU02</a></li>
+								<li class="nav-child-item"><a href="#">MENU03</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a href="#">あらすじ</a>
+						<div class="nav-child">
+							<ul class="nav-child-list">
+								<li class="nav-child-item"><a href="#">MENU01</a></li>
+								<li class="nav-child-item"><a href="#">MENU02</a></li>
+								<li class="nav-child-item"><a href="#">MENU03</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a href="#">必殺技</a>
+						<div class="nav-child">
+							<ul class="nav-child-list">
+								<li class="nav-child-item"><a href="#">MENU01</a></li>
+								<li class="nav-child-item"><a href="#">MENU02</a></li>
+								<li class="nav-child-item"><a href="#">MENU03</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a href="#">登場人物</a>
+						<div class="nav-child">
+							<ul class="nav-child-list">
+								<li class="nav-child-item"><a href="#">MENU01</a></li>
+								<li class="nav-child-item"><a href="#">MENU02</a></li>
+								<li class="nav-child-item"><a href="#">MENU03</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a href="#">仲間募集！</a>
+						<div class="nav-child">
+							<ul class="nav-child-list">
+								<li class="nav-child-item"><a href="#">MENU01</a></li>
+								<li class="nav-child-item"><a href="#">MENU02</a></li>
+								<li class="nav-child-item"><a href="#">MENU03</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a href="#">面白株主</a>
+						<div class="nav-child">
+							<ul class="nav-child-list">
+								<li class="nav-child-item"><a href="#">MENU01</a></li>
+								<li class="nav-child-item"><a href="#">MENU02</a></li>
+								<li class="nav-child-item"><a href="#">MENU03</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<div id="MainVisual" class="main-visual">
+		<span>メインビジュアルが入るエリア</span>
+	</div>
+
+	<main id="MainContents">
+
+		<div id="HorizontalToolbar">
+			<div class="toolbar-item">
+				<ul>
+					<li class="pickup"><a href="#">大事</a></li>
+					<li class="hot"><a href="#">話題</a></li>
+				</ul>
+			</div>
+			<div class="block-recommend-interview">
+				<h4>おすすめインタビュー</h4>
+				<ul>
+					<li><a href="#">制作秘話</a></li>
+					<li><a href="#">面白社員特集</a></li>
+					<li><a href="#">退職者の話</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<ul class="news-list dynamic-list">
+			<li class="news-item article-summary scroll-item-inited">
+			  <a href="#">
+			    <div class="article-summary-content-wrapper">
+
+			      <div class="content-border-left"></div>
+			      <div class="content-border-center"></div>
+			      <div class="content-border-right"></div>
+
+			      <div class="article-summary-content">
+			        <div class="article-summary-content-body">
+
+			          <div class="article-meta">
+			            <time class="article-date">2015.10.13</time>
+			            <p class="article-category article-category-label category-service">自社サービス</p>
+			            <ul class="article-tag">
+			              <li class="article-tag-item">プレスリリース</li>
+			              <li class="article-tag-item">ぼくらのシリーズ</li>
+			              <li class="article-tag-item">ぼくらの甲子園！ポケット</li>
+			            </ul>
+			          </div><!-- //article-meta -->
+
+			          <h1 class="title">『ぼくらの甲子園！ポケット』が、大人気の釣りゲーム『釣り★スタ』とコラボ！</h1>
+			        </div>
+			      </div><!-- //article-summary-content -->
+
+			    </div><!-- //article-summary-content-wrapper -->
+			  </a>
+			</li>
+
+			<li class="news-item article-summary scroll-item-inited">
+			  <a href="#">
+			    <div class="article-summary-content-wrapper">
+
+			      <div class="content-border-left"></div>
+			      <div class="content-border-center"></div>
+			      <div class="content-border-right"></div>
+
+			      <div class="article-summary-content">
+			        <div class="article-summary-content-body">
+
+			          <div class="article-meta">
+			            <time class="article-date">2015.10.13</time>
+			            <p class="article-category article-category-label category-service">自社サービス</p>
+			            <ul class="article-tag">
+			              <li class="article-tag-item">プレスリリース</li>
+			              <li class="article-tag-item">ぼくらのシリーズ</li>
+			              <li class="article-tag-item">ぼくらの甲子園！ポケット</li>
+			            </ul>
+			          </div><!-- //article-meta -->
+
+			          <h1 class="title">『ぼくらの甲子園！ポケット』が、大人気の釣りゲーム『釣り★スタ』とコラボ！</h1>
+			        </div>
+			      </div><!-- //article-summary-content -->
+
+			    </div><!-- //article-summary-content-wrapper -->
+			  </a>
+			</li>
+
+			<li class="news-item article-summary scroll-item-inited">
+			  <a href="#">
+			    <div class="article-summary-content-wrapper">
+
+			      <div class="content-border-left"></div>
+			      <div class="content-border-center"></div>
+			      <div class="content-border-right"></div>
+
+			      <div class="article-summary-content">
+			        <div class="article-summary-content-body">
+
+			          <div class="article-meta">
+			            <time class="article-date">2015.10.13</time>
+			            <p class="article-category article-category-label category-service">自社サービス</p>
+			            <ul class="article-tag">
+			              <li class="article-tag-item">プレスリリース</li>
+			              <li class="article-tag-item">ぼくらのシリーズ</li>
+			              <li class="article-tag-item">ぼくらの甲子園！ポケット</li>
+			            </ul>
+			          </div><!-- //article-meta -->
+
+			          <h1 class="title">『ぼくらの甲子園！ポケット』が、大人気の釣りゲーム『釣り★スタ』とコラボ！</h1>
+			        </div>
+			      </div><!-- //article-summary-content -->
+
+			    </div><!-- //article-summary-content-wrapper -->
+			  </a>
+			</li>
+
+			<li class="news-item article-summary scroll-item-inited">
+			  <a href="#">
+			    <div class="article-summary-content-wrapper">
+
+			      <div class="content-border-left"></div>
+			      <div class="content-border-center"></div>
+			      <div class="content-border-right"></div>
+
+			      <div class="article-summary-content">
+			        <div class="article-summary-content-body">
+
+			          <div class="article-meta">
+			            <time class="article-date">2015.10.13</time>
+			            <p class="article-category article-category-label category-service">自社サービス</p>
+			            <ul class="article-tag">
+			              <li class="article-tag-item">プレスリリース</li>
+			              <li class="article-tag-item">ぼくらのシリーズ</li>
+			              <li class="article-tag-item">ぼくらの甲子園！ポケット</li>
+			            </ul>
+			          </div><!-- //article-meta -->
+
+			          <h1 class="title">『ぼくらの甲子園！ポケット』が、大人気の釣りゲーム『釣り★スタ』とコラボ！</h1>
+			        </div>
+			      </div><!-- //article-summary-content -->
+
+			    </div><!-- //article-summary-content-wrapper -->
+			  </a>
+			</li>
+
+			<li class="news-item article-summary scroll-item-inited">
+			  <a href="#">
+			    <div class="article-summary-content-wrapper">
+
+			      <div class="content-border-left"></div>
+			      <div class="content-border-center"></div>
+			      <div class="content-border-right"></div>
+
+			      <div class="article-summary-content">
+			        <div class="article-summary-content-body">
+
+			          <div class="article-meta">
+			            <time class="article-date">2015.10.13</time>
+			            <p class="article-category article-category-label category-service">自社サービス</p>
+			            <ul class="article-tag">
+			              <li class="article-tag-item">プレスリリース</li>
+			              <li class="article-tag-item">ぼくらのシリーズ</li>
+			              <li class="article-tag-item">ぼくらの甲子園！ポケット</li>
+			            </ul>
+			          </div><!-- //article-meta -->
+
+			          <h1 class="title">『ぼくらの甲子園！ポケット』が、大人気の釣りゲーム『釣り★スタ』とコラボ！</h1>
+			        </div>
+			      </div><!-- //article-summary-content -->
+
+			    </div><!-- //article-summary-content-wrapper -->
+			  </a>
+			</li>
+
+			<li class="news-item article-summary scroll-item-inited">
+			  <a href="#">
+			    <div class="article-summary-content-wrapper">
+
+			      <div class="content-border-left"></div>
+			      <div class="content-border-center"></div>
+			      <div class="content-border-right"></div>
+
+			      <div class="article-summary-content">
+			        <div class="article-summary-content-body">
+
+			          <div class="article-meta">
+			            <time class="article-date">2015.10.13</time>
+			            <p class="article-category article-category-label category-service">自社サービス</p>
+			            <ul class="article-tag">
+			              <li class="article-tag-item">プレスリリース</li>
+			              <li class="article-tag-item">ぼくらのシリーズ</li>
+			              <li class="article-tag-item">ぼくらの甲子園！ポケット</li>
+			            </ul>
+			          </div><!-- //article-meta -->
+
+			          <h1 class="title">『ぼくらの甲子園！ポケット』が、大人気の釣りゲーム『釣り★スタ』とコラボ！</h1>
+			        </div>
+			      </div><!-- //article-summary-content -->
+
+			    </div><!-- //article-summary-content-wrapper -->
+			  </a>
+			</li>
+
+			<li class="news-item article-summary scroll-item-inited">
+			  <a href="#">
+			    <div class="article-summary-content-wrapper">
+
+			      <div class="content-border-left"></div>
+			      <div class="content-border-center"></div>
+			      <div class="content-border-right"></div>
+
+			      <div class="article-summary-content">
+			        <div class="article-summary-content-body">
+
+			          <div class="article-meta">
+			            <time class="article-date">2015.10.13</time>
+			            <p class="article-category article-category-label category-service">自社サービス</p>
+			            <ul class="article-tag">
+			              <li class="article-tag-item">プレスリリース</li>
+			              <li class="article-tag-item">ぼくらのシリーズ</li>
+			              <li class="article-tag-item">ぼくらの甲子園！ポケット</li>
+			            </ul>
+			          </div><!-- //article-meta -->
+
+			          <h1 class="title">『ぼくらの甲子園！ポケット』が、大人気の釣りゲーム『釣り★スタ』とコラボ！</h1>
+			        </div>
+			      </div><!-- //article-summary-content -->
+
+			    </div><!-- //article-summary-content-wrapper -->
+			  </a>
+			</li>
+
+		</ul>
+	</main>
+
+<footer id="SiteFooter" class="effect">
+  <div class="site-footer-content">
+    <div class="site-footer-content-view">
+      <ul class="site-related-links first">
+        <li class="blog link-item">
+          <a href="#" target="_blank">
+            <img src="../img/create_blog.png" width="42" height="42" alt="つくってみたラボ">
+            <span class="title">つくってみたラボ</span>
+            <span class="description">面白法人カヤックのゆかいな実験作品集</span>
+          </a>
+        </li>
+        <li class="ceo link-item">
+          <a href="#" target="_blank">
+            <img src="../img/ceo_blog.png" alt="面白法人社長ブログ">
+            <span class="title">面白法人社長ブログ</span>
+            <span class="description">ビジネスという“奇妙な冒険”</span>
+          </a>
+        </li>
+        <li class="other link-item">
+          <a href="#" target="_blank">
+            <img src="../img/facebook_page.png" alt="面白法人カヤックの「ここだけの話」">
+            <span class="title">面白法人カヤックの「ここだけの話」</span>
+            <span class="description">カヤックの制作の裏側を公開しているFacebookページです。</span>
+          </a>
+        </li>
+        <!-- /.site-related-links -->
+      </ul>
+      <ul class="site-related-links second">
+        <li class="blog link-item">
+          <a href="#" target="_blank">
+            <img src="../img/designers_blog.png" width="42" height="42" alt="面白法人デザイナーブログ">
+            <span class="title">面白法人デザイナーブログ</span>
+            <span class="description">カヤックの意匠部によるWebデザインやマークアップの話</span>
+          </a>
+        </li>
+        <li class="ceo link-item">
+          <a href="#" target="_blank">
+            <img src="../img/ceo_twitter.png" width="42" height="42" alt="@yanasawa">
+            <span class="title">@yanasawa</span>
+            <span class="description">面白法人カヤック社長のTwitter</span>
+          </a>
+        </li>
+        <li class="offical link-item">
+          <a href="#" target="_blank">
+            <img src="../img/offical_twitter.png" width="42" height="42" alt="@kayac_inc">
+            <span class="title">@kayac_inc</span>
+            <span class="description">面白法人カヤックの公式Twitter</span>
+          </a>
+        </li>
+        <!-- /.site-related-links -->
+      </ul>
+      <ul class="site-related-links third">
+        <li class="other link-item">
+          <a href="#" target="_blank">
+            <img src="../img/programmers_blog.png" alt="面白法人プログラマーブログ">
+            <span class="title">面白法人プログラマーブログ</span>
+            <span class="description">エンジニア陣が日々の開発記録をお届け</span>
+          </a>
+        </li>
+        <!-- /.site-related-links -->
+      </ul>
+      <nav class="site-footer-nav">
+        <ul>
+          <li class="nav-item"><a href="/guide">ご利用にあたって</a></li>
+          <li class="nav-item"><a href="/privacy">プライバシーポリシー</a></li>
+          <li class="nav-item"><a href="/policy">各種基本方針</a></li>
+          <li class="nav-item"><a href="/contact">お問い合わせ</a></li>
+          <li class="nav-item"><a href="/sitemap">サイトマップ</a></li>
+        </ul>
+        <!-- /.site-footer-nav -->
+      </nav>
+      <div class="button-kayac-projects"><a href="#ProjectList">カヤックのプロジェクト一覧</a></div>
+      <!-- /.site-footer-content-view -->
+    </div>
+    <div class="footer-kayac-projects" id="ProjectList">
+      <div class="kayac-projects-content">
+        <ul class="projects-list">
+          <li class="projects-list-item"><a href="#" title="チャット&amp;ゲームコミュニティ" target="_blank">チャット&amp;ゲームコミュニティ Lobi</a></li>
+          <li class="projects-list-item"><a href="#" title="ゲーム 実況 録画" target="_blank">ゲーム 実況 録画 Lobi REC SDK</a></li>
+          <li class="projects-list-item"><a href="#" title="野球 ゲーム" target="_blank">野球 ゲーム ぼくらの甲子園！ポケット</a></li>
+          <li class="projects-list-item"><a href="#" title="クイズ RPG" target="_blank">クイズ RPG 冒険クイズキングダム</a></li>
+          <li class="projects-list-item"><a href="#" title="クラウドファンディング" target="_blank">クラウドファンディング iikuni</a></li>
+          <li class="projects-list-item"><a href="#" title="鎌倉 体験店" target="_blank">鎌倉 体験店 かまぷら</a></li>
+          <li class="projects-list-item"><a href="#" title="ネーミングアイデア" target="_blank">ネーミングアイデア KOTODAMA</a></li>
+          <li class="projects-list-item"><a href="#" title="HTML5 共有コミュニティ" target="_blank">HTML5 共有コミュニティ jsdoit</a></li>
+          <li class="projects-list-item"><a href="#" title="世界のありがとう" target="_blank">世界のありがとう THANKS</a></li>
+          <li class="projects-list-item"><a href="#" title="建築家" target="_blank">建築家 SuMiKa</a></li>
+          <li class="projects-list-item"><a href="#" title="どんぶり カフェ" target="_blank">どんぶり カフェ bowls</a></li>
+          <li class="projects-list-item"><a href="#" title="ハンドメイド" target="_blank">ハンドメイド iichi</a></li>
+          <li class="projects-list-item"><a href="#" title="漫画 アニメ ゲーム" target="_blank">漫画 アニメ ゲーム キャンペーン</a></li>
+          <li class="projects-list-item"><a href="#" title="コーポレートサイト イベント" target="_blank">コーポレートサイト イベント 受託</a></li>
+        </ul>
+        <!-- /.kayac-projects-content -->
+      </div>
+      <!-- /.footer-kayac-projects-->
+    </div>
+    <!-- /.site-footer-content -->
+  </div>
+  <div class="site-footer-view">
+    <small class="copyright">Copyright © 面白法人カヤック All Rights Reserved.</small>
+    <!-- /.site-footer-view -->
+  </div>
+  <!-- /#SiteFooter -->
+</footer>
+
 </body>
+
 </html>
