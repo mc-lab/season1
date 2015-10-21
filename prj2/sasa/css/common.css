@@ -1,0 +1,4257 @@
+@charset "UTF-8";
+@font-face {
+    font-family: icokayac;
+    src: url(http://www.kayac.com/assets/fonts/icokayac.eot?1432536537);
+    src: url(http://www.kayac.com/assets/fonts/icokayac.eot?&1432536537#iefix) format("embedded-opentype"), url(http://www.kayac.com/assets/fonts/icokayac.woff?1432536537) format("woff"), url(http://www.kayac.com/assets/fonts/icokayac.ttf?1432536537) format("truetype"), url(http://www.kayac.com/assets/fonts/icokayac.svg?1432536537#icokayac) format("svg");
+    font-weight: 400;
+    font-style: normal
+}
+[data-icon]:before {
+    font-family: icokayac;
+    content: attr(data-icon);
+    speak: none;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased
+}
+.icon-font, .site-search-button {
+    font-family: icokayac;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased
+}
+.icon-search, .site-search-button, .icon-share, .icon-tag, .list-category-link .item-category-link a:before, .icon-down, .icon-up, .icon-gt, .icon-list, .icon-pulldown, .icon-sound, .icon-gps, .icon-iphone, .icon-back, .icon-grid-view, .icon-list-view, .icon-manga-view, .icon-jins, .icon-game, .icon-ex, .icon-tri_prev, .icon-tri_next, .icon-close {
+    font-family: icokayac;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased
+}
+.icon-search:before, .site-search-button:before {
+    content: "\26b2"
+}
+.icon-share:before {
+    content: "\293c"
+}
+.icon-tag:before, .list-category-link .item-category-link a:before {
+    content: "\2617"
+}
+.icon-down:before {
+    content: "\2b07"
+}
+.icon-up:before {
+    content: "\2b06"
+}
+.icon-gt:before {
+    content: "\3e"
+}
+.icon-list:before {
+    content: "\e001"
+}
+.icon-pulldown:before {
+    content: "\25be"
+}
+.icon-sound:before {
+    content: "\266e"
+}
+.icon-gps:before {
+    content: "\e003"
+}
+.icon-iphone:before {
+    content: "\e004"
+}
+.icon-back:before {
+    content: "\e000"
+}
+.icon-grid-view:before {
+    content: "\e002"
+}
+.icon-list-view:before {
+    content: "\e005"
+}
+.icon-manga-view:before {
+    content: "\e006"
+}
+.icon-jins:before {
+    content: "\e007"
+}
+.icon-game:before {
+    content: "\e008"
+}
+.icon-ex:before {
+    content: "\e009"
+}
+.icon-tri_prev:before {
+    content: "\e00c"
+}
+.icon-tri_next:before {
+    content: "\e00d"
+}
+.icon-close:before {
+    content: "\e00e"
+}
+@-webkit-keyframes fade-in-down {
+    0% {
+        opacity: 0;
+        -moz-transform: translate(0, -10px);
+        -ms-transform: translate(0, -10px);
+        -webkit-transform: translate(0, -10px);
+        transform: translate(0, -10px)
+    }
+    100% {
+        opacity: 1;
+        -moz-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0)
+    }
+}
+@-moz-keyframes fade-in-down {
+    0% {
+        opacity: 0;
+        -moz-transform: translate(0, -10px);
+        -ms-transform: translate(0, -10px);
+        -webkit-transform: translate(0, -10px);
+        transform: translate(0, -10px)
+    }
+    100% {
+        opacity: 1;
+        -moz-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0)
+    }
+}
+@-ms-keyframes fade-in-down {
+    0% {
+        opacity: 0;
+        -moz-transform: translate(0, -10px);
+        -ms-transform: translate(0, -10px);
+        -webkit-transform: translate(0, -10px);
+        transform: translate(0, -10px)
+    }
+    100% {
+        opacity: 1;
+        -moz-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0)
+    }
+}
+@keyframes fade-in-down {
+    0% {
+        opacity: 0;
+        -moz-transform: translate(0, -10px);
+        -ms-transform: translate(0, -10px);
+        -webkit-transform: translate(0, -10px);
+        transform: translate(0, -10px)
+    }
+    100% {
+        opacity: 1;
+        -moz-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0)
+    }
+}
+@-webkit-keyframes select-box-slide-down {
+    0% {
+        height: 0
+    }
+    100% {
+        height: 170px
+    }
+}
+@-moz-keyframes select-box-slide-down {
+    0% {
+        height: 0
+    }
+    100% {
+        height: 170px
+    }
+}
+@-ms-keyframes select-box-slide-down {
+    0% {
+        height: 0
+    }
+    100% {
+        height: 170px
+    }
+}
+@keyframes select-box-slide-down {
+    0% {
+        height: 0
+    }
+    100% {
+        height: 170px
+    }
+}
+@-webkit-keyframes bounce-frame {
+    0% {
+        -moz-transform: scale(1, 1);
+        -ms-transform: scale(1, 1);
+        -webkit-transform: scale(1, 1);
+        transform: scale(1, 1)
+    }
+    50% {
+        -moz-transform: scale(1.1, 1.1);
+        -ms-transform: scale(1.1, 1.1);
+        -webkit-transform: scale(1.1, 1.1);
+        transform: scale(1.1, 1.1)
+    }
+    55% {
+        -moz-transform: scale(0.9, .9);
+        -ms-transform: scale(0.9, .9);
+        -webkit-transform: scale(0.9, .9);
+        transform: scale(0.9, .9)
+    }
+    100% {
+        -moz-transform: scale(1, 1);
+        -ms-transform: scale(1, 1);
+        -webkit-transform: scale(1, 1);
+        transform: scale(1, 1)
+    }
+}
+@-moz-keyframes bounce-frame {
+    0% {
+        -moz-transform: scale(1, 1);
+        -ms-transform: scale(1, 1);
+        -webkit-transform: scale(1, 1);
+        transform: scale(1, 1)
+    }
+    50% {
+        -moz-transform: scale(1.1, 1.1);
+        -ms-transform: scale(1.1, 1.1);
+        -webkit-transform: scale(1.1, 1.1);
+        transform: scale(1.1, 1.1)
+    }
+    55% {
+        -moz-transform: scale(0.9, .9);
+        -ms-transform: scale(0.9, .9);
+        -webkit-transform: scale(0.9, .9);
+        transform: scale(0.9, .9)
+    }
+    100% {
+        -moz-transform: scale(1, 1);
+        -ms-transform: scale(1, 1);
+        -webkit-transform: scale(1, 1);
+        transform: scale(1, 1)
+    }
+}
+@-ms-keyframes bounce-frame {
+    0% {
+        -moz-transform: scale(1, 1);
+        -ms-transform: scale(1, 1);
+        -webkit-transform: scale(1, 1);
+        transform: scale(1, 1)
+    }
+    50% {
+        -moz-transform: scale(1.1, 1.1);
+        -ms-transform: scale(1.1, 1.1);
+        -webkit-transform: scale(1.1, 1.1);
+        transform: scale(1.1, 1.1)
+    }
+    55% {
+        -moz-transform: scale(0.9, .9);
+        -ms-transform: scale(0.9, .9);
+        -webkit-transform: scale(0.9, .9);
+        transform: scale(0.9, .9)
+    }
+    100% {
+        -moz-transform: scale(1, 1);
+        -ms-transform: scale(1, 1);
+        -webkit-transform: scale(1, 1);
+        transform: scale(1, 1)
+    }
+}
+@keyframes bounce-frame {
+    0% {
+        -moz-transform: scale(1, 1);
+        -ms-transform: scale(1, 1);
+        -webkit-transform: scale(1, 1);
+        transform: scale(1, 1)
+    }
+    50% {
+        -moz-transform: scale(1.1, 1.1);
+        -ms-transform: scale(1.1, 1.1);
+        -webkit-transform: scale(1.1, 1.1);
+        transform: scale(1.1, 1.1)
+    }
+    55% {
+        -moz-transform: scale(0.9, .9);
+        -ms-transform: scale(0.9, .9);
+        -webkit-transform: scale(0.9, .9);
+        transform: scale(0.9, .9)
+    }
+    100% {
+        -moz-transform: scale(1, 1);
+        -ms-transform: scale(1, 1);
+        -webkit-transform: scale(1, 1);
+        transform: scale(1, 1)
+    }
+}bounce-frame@-webkit-keyframes boat {
+    0% {
+        -moz-transform: rotate(0) translateY(0);
+        -ms-transform: rotate(0) translateY(0);
+        -webkit-transform: rotate(0) translateY(0);
+        transform: rotate(0) translateY(0)
+    }
+    35% {
+        -moz-transform: rotate(-5deg) translateY(-4px);
+        -ms-transform: rotate(-5deg) translateY(-4px);
+        -webkit-transform: rotate(-5deg) translateY(-4px);
+        transform: rotate(-5deg) translateY(-4px)
+    }
+    60% {
+        -moz-transform: rotate(0) translateY(-6px);
+        -ms-transform: rotate(0) translateY(-6px);
+        -webkit-transform: rotate(0) translateY(-6px);
+        transform: rotate(0) translateY(-6px)
+    }
+    80% {
+        -moz-transform: rotate(5deg) translateY(-3px);
+        -ms-transform: rotate(5deg) translateY(-3px);
+        -webkit-transform: rotate(5deg) translateY(-3px);
+        transform: rotate(5deg) translateY(-3px)
+    }
+    100% {
+        -moz-transform: rotate(0) translateY(0);
+        -ms-transform: rotate(0) translateY(0);
+        -webkit-transform: rotate(0) translateY(0);
+        transform: rotate(0) translateY(0)
+    }
+}
+@-moz-keyframes boat {
+    0% {
+        -moz-transform: rotate(0) translateY(0);
+        -ms-transform: rotate(0) translateY(0);
+        -webkit-transform: rotate(0) translateY(0);
+        transform: rotate(0) translateY(0)
+    }
+    35% {
+        -moz-transform: rotate(-5deg) translateY(-4px);
+        -ms-transform: rotate(-5deg) translateY(-4px);
+        -webkit-transform: rotate(-5deg) translateY(-4px);
+        transform: rotate(-5deg) translateY(-4px)
+    }
+    60% {
+        -moz-transform: rotate(0) translateY(-6px);
+        -ms-transform: rotate(0) translateY(-6px);
+        -webkit-transform: rotate(0) translateY(-6px);
+        transform: rotate(0) translateY(-6px)
+    }
+    80% {
+        -moz-transform: rotate(5deg) translateY(-3px);
+        -ms-transform: rotate(5deg) translateY(-3px);
+        -webkit-transform: rotate(5deg) translateY(-3px);
+        transform: rotate(5deg) translateY(-3px)
+    }
+    100% {
+        -moz-transform: rotate(0) translateY(0);
+        -ms-transform: rotate(0) translateY(0);
+        -webkit-transform: rotate(0) translateY(0);
+        transform: rotate(0) translateY(0)
+    }
+}
+@-ms-keyframes boat {
+    0% {
+        -moz-transform: rotate(0) translateY(0);
+        -ms-transform: rotate(0) translateY(0);
+        -webkit-transform: rotate(0) translateY(0);
+        transform: rotate(0) translateY(0)
+    }
+    35% {
+        -moz-transform: rotate(-5deg) translateY(-4px);
+        -ms-transform: rotate(-5deg) translateY(-4px);
+        -webkit-transform: rotate(-5deg) translateY(-4px);
+        transform: rotate(-5deg) translateY(-4px)
+    }
+    60% {
+        -moz-transform: rotate(0) translateY(-6px);
+        -ms-transform: rotate(0) translateY(-6px);
+        -webkit-transform: rotate(0) translateY(-6px);
+        transform: rotate(0) translateY(-6px)
+    }
+    80% {
+        -moz-transform: rotate(5deg) translateY(-3px);
+        -ms-transform: rotate(5deg) translateY(-3px);
+        -webkit-transform: rotate(5deg) translateY(-3px);
+        transform: rotate(5deg) translateY(-3px)
+    }
+    100% {
+        -moz-transform: rotate(0) translateY(0);
+        -ms-transform: rotate(0) translateY(0);
+        -webkit-transform: rotate(0) translateY(0);
+        transform: rotate(0) translateY(0)
+    }
+}
+@keyframes boat {
+    0% {
+        -moz-transform: rotate(0) translateY(0);
+        -ms-transform: rotate(0) translateY(0);
+        -webkit-transform: rotate(0) translateY(0);
+        transform: rotate(0) translateY(0)
+    }
+    35% {
+        -moz-transform: rotate(-5deg) translateY(-4px);
+        -ms-transform: rotate(-5deg) translateY(-4px);
+        -webkit-transform: rotate(-5deg) translateY(-4px);
+        transform: rotate(-5deg) translateY(-4px)
+    }
+    60% {
+        -moz-transform: rotate(0) translateY(-6px);
+        -ms-transform: rotate(0) translateY(-6px);
+        -webkit-transform: rotate(0) translateY(-6px);
+        transform: rotate(0) translateY(-6px)
+    }
+    80% {
+        -moz-transform: rotate(5deg) translateY(-3px);
+        -ms-transform: rotate(5deg) translateY(-3px);
+        -webkit-transform: rotate(5deg) translateY(-3px);
+        transform: rotate(5deg) translateY(-3px)
+    }
+    100% {
+        -moz-transform: rotate(0) translateY(0);
+        -ms-transform: rotate(0) translateY(0);
+        -webkit-transform: rotate(0) translateY(0);
+        transform: rotate(0) translateY(0)
+    }
+}
+@-webkit-keyframes magnify-rtl {
+    0% {
+        -moz-transform: scale(1) translate3d(0, 0, 0);
+        -ms-transform: scale(1) translate3d(0, 0, 0);
+        -webkit-transform: scale(1) translate3d(0, 0, 0);
+        transform: scale(1) translate3d(0, 0, 0)
+    }
+    100% {
+        -moz-transform: scale(1.1) translate3d(-5px, -8px, 0);
+        -ms-transform: scale(1.1) translate3d(-5px, -8px, 0);
+        -webkit-transform: scale(1.1) translate3d(-5px, -8px, 0);
+        transform: scale(1.1) translate3d(-5px, -8px, 0)
+    }
+}
+@-moz-keyframes magnify-rtl {
+    0% {
+        -moz-transform: scale(1) translate3d(0, 0, 0);
+        -ms-transform: scale(1) translate3d(0, 0, 0);
+        -webkit-transform: scale(1) translate3d(0, 0, 0);
+        transform: scale(1) translate3d(0, 0, 0)
+    }
+    100% {
+        -moz-transform: scale(1.1) translate3d(-5px, -8px, 0);
+        -ms-transform: scale(1.1) translate3d(-5px, -8px, 0);
+        -webkit-transform: scale(1.1) translate3d(-5px, -8px, 0);
+        transform: scale(1.1) translate3d(-5px, -8px, 0)
+    }
+}
+@-ms-keyframes magnify-rtl {
+    0% {
+        -moz-transform: scale(1) translate3d(0, 0, 0);
+        -ms-transform: scale(1) translate3d(0, 0, 0);
+        -webkit-transform: scale(1) translate3d(0, 0, 0);
+        transform: scale(1) translate3d(0, 0, 0)
+    }
+    100% {
+        -moz-transform: scale(1.1) translate3d(-5px, -8px, 0);
+        -ms-transform: scale(1.1) translate3d(-5px, -8px, 0);
+        -webkit-transform: scale(1.1) translate3d(-5px, -8px, 0);
+        transform: scale(1.1) translate3d(-5px, -8px, 0)
+    }
+}
+@keyframes magnify-rtl {
+    0% {
+        -moz-transform: scale(1) translate3d(0, 0, 0);
+        -ms-transform: scale(1) translate3d(0, 0, 0);
+        -webkit-transform: scale(1) translate3d(0, 0, 0);
+        transform: scale(1) translate3d(0, 0, 0)
+    }
+    100% {
+        -moz-transform: scale(1.1) translate3d(-5px, -8px, 0);
+        -ms-transform: scale(1.1) translate3d(-5px, -8px, 0);
+        -webkit-transform: scale(1.1) translate3d(-5px, -8px, 0);
+        transform: scale(1.1) translate3d(-5px, -8px, 0)
+    }
+}
+@-webkit-keyframes magnify-ltr {
+    0% {
+        -moz-transform: scale(1) translate3d(0, 0, 0);
+        -ms-transform: scale(1) translate3d(0, 0, 0);
+        -webkit-transform: scale(1) translate3d(0, 0, 0);
+        transform: scale(1) translate3d(0, 0, 0)
+    }
+    100% {
+        -moz-transform: scale(1.1) translate3d(5px, -8px, 0);
+        -ms-transform: scale(1.1) translate3d(5px, -8px, 0);
+        -webkit-transform: scale(1.1) translate3d(5px, -8px, 0);
+        transform: scale(1.1) translate3d(5px, -8px, 0)
+    }
+}
+@-moz-keyframes magnify-ltr {
+    0% {
+        -moz-transform: scale(1) translate3d(0, 0, 0);
+        -ms-transform: scale(1) translate3d(0, 0, 0);
+        -webkit-transform: scale(1) translate3d(0, 0, 0);
+        transform: scale(1) translate3d(0, 0, 0)
+    }
+    100% {
+        -moz-transform: scale(1.1) translate3d(5px, -8px, 0);
+        -ms-transform: scale(1.1) translate3d(5px, -8px, 0);
+        -webkit-transform: scale(1.1) translate3d(5px, -8px, 0);
+        transform: scale(1.1) translate3d(5px, -8px, 0)
+    }
+}
+@-ms-keyframes magnify-ltr {
+    0% {
+        -moz-transform: scale(1) translate3d(0, 0, 0);
+        -ms-transform: scale(1) translate3d(0, 0, 0);
+        -webkit-transform: scale(1) translate3d(0, 0, 0);
+        transform: scale(1) translate3d(0, 0, 0)
+    }
+    100% {
+        -moz-transform: scale(1.1) translate3d(5px, -8px, 0);
+        -ms-transform: scale(1.1) translate3d(5px, -8px, 0);
+        -webkit-transform: scale(1.1) translate3d(5px, -8px, 0);
+        transform: scale(1.1) translate3d(5px, -8px, 0)
+    }
+}
+@keyframes magnify-ltr {
+    0% {
+        -moz-transform: scale(1) translate3d(0, 0, 0);
+        -ms-transform: scale(1) translate3d(0, 0, 0);
+        -webkit-transform: scale(1) translate3d(0, 0, 0);
+        transform: scale(1) translate3d(0, 0, 0)
+    }
+    100% {
+        -moz-transform: scale(1.1) translate3d(5px, -8px, 0);
+        -ms-transform: scale(1.1) translate3d(5px, -8px, 0);
+        -webkit-transform: scale(1.1) translate3d(5px, -8px, 0);
+        transform: scale(1.1) translate3d(5px, -8px, 0)
+    }
+}
+@-webkit-keyframes graph-scale {
+    0% {
+        -moz-transform: scaleY(0);
+        -ms-transform: scaleY(0);
+        -webkit-transform: scaleY(0);
+        transform: scaleY(0)
+    }
+    100% {
+        -moz-transform: scaleY(1);
+        -ms-transform: scaleY(1);
+        -webkit-transform: scaleY(1);
+        transform: scaleY(1)
+    }
+}
+@-moz-keyframes graph-scale {
+    0% {
+        -moz-transform: scaleY(0);
+        -ms-transform: scaleY(0);
+        -webkit-transform: scaleY(0);
+        transform: scaleY(0)
+    }
+    100% {
+        -moz-transform: scaleY(1);
+        -ms-transform: scaleY(1);
+        -webkit-transform: scaleY(1);
+        transform: scaleY(1)
+    }
+}
+@-ms-keyframes graph-scale {
+    0% {
+        -moz-transform: scaleY(0);
+        -ms-transform: scaleY(0);
+        -webkit-transform: scaleY(0);
+        transform: scaleY(0)
+    }
+    100% {
+        -moz-transform: scaleY(1);
+        -ms-transform: scaleY(1);
+        -webkit-transform: scaleY(1);
+        transform: scaleY(1)
+    }
+}
+@keyframes graph-scale {
+    0% {
+        -moz-transform: scaleY(0);
+        -ms-transform: scaleY(0);
+        -webkit-transform: scaleY(0);
+        transform: scaleY(0)
+    }
+    100% {
+        -moz-transform: scaleY(1);
+        -ms-transform: scaleY(1);
+        -webkit-transform: scaleY(1);
+        transform: scaleY(1)
+    }
+}
+@-webkit-keyframes shake {
+    0% {
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+    30% {
+        -moz-transform: rotate(18deg);
+        -ms-transform: rotate(18deg);
+        -webkit-transform: rotate(18deg);
+        transform: rotate(18deg)
+    }
+    40% {
+        -moz-transform: translate(-2px, 4px);
+        -ms-transform: translate(-2px, 4px);
+        -webkit-transform: translate(-2px, 4px);
+        transform: translate(-2px, 4px)
+    }
+    60% {
+        -moz-transform: rotate(-14deg);
+        -ms-transform: rotate(-14deg);
+        -webkit-transform: rotate(-14deg);
+        transform: rotate(-14deg)
+    }
+    80% {
+        -moz-transform: translate(3px, 2px);
+        -ms-transform: translate(3px, 2px);
+        -webkit-transform: translate(3px, 2px);
+        transform: translate(3px, 2px)
+    }
+    100% {
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+}
+@-moz-keyframes shake {
+    0% {
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+    30% {
+        -moz-transform: rotate(18deg);
+        -ms-transform: rotate(18deg);
+        -webkit-transform: rotate(18deg);
+        transform: rotate(18deg)
+    }
+    40% {
+        -moz-transform: translate(-2px, 4px);
+        -ms-transform: translate(-2px, 4px);
+        -webkit-transform: translate(-2px, 4px);
+        transform: translate(-2px, 4px)
+    }
+    60% {
+        -moz-transform: rotate(-14deg);
+        -ms-transform: rotate(-14deg);
+        -webkit-transform: rotate(-14deg);
+        transform: rotate(-14deg)
+    }
+    80% {
+        -moz-transform: translate(3px, 2px);
+        -ms-transform: translate(3px, 2px);
+        -webkit-transform: translate(3px, 2px);
+        transform: translate(3px, 2px)
+    }
+    100% {
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+}
+@-ms-keyframes shake {
+    0% {
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+    30% {
+        -moz-transform: rotate(18deg);
+        -ms-transform: rotate(18deg);
+        -webkit-transform: rotate(18deg);
+        transform: rotate(18deg)
+    }
+    40% {
+        -moz-transform: translate(-2px, 4px);
+        -ms-transform: translate(-2px, 4px);
+        -webkit-transform: translate(-2px, 4px);
+        transform: translate(-2px, 4px)
+    }
+    60% {
+        -moz-transform: rotate(-14deg);
+        -ms-transform: rotate(-14deg);
+        -webkit-transform: rotate(-14deg);
+        transform: rotate(-14deg)
+    }
+    80% {
+        -moz-transform: translate(3px, 2px);
+        -ms-transform: translate(3px, 2px);
+        -webkit-transform: translate(3px, 2px);
+        transform: translate(3px, 2px)
+    }
+    100% {
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+}
+@keyframes shake {
+    0% {
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+    30% {
+        -moz-transform: rotate(18deg);
+        -ms-transform: rotate(18deg);
+        -webkit-transform: rotate(18deg);
+        transform: rotate(18deg)
+    }
+    40% {
+        -moz-transform: translate(-2px, 4px);
+        -ms-transform: translate(-2px, 4px);
+        -webkit-transform: translate(-2px, 4px);
+        transform: translate(-2px, 4px)
+    }
+    60% {
+        -moz-transform: rotate(-14deg);
+        -ms-transform: rotate(-14deg);
+        -webkit-transform: rotate(-14deg);
+        transform: rotate(-14deg)
+    }
+    80% {
+        -moz-transform: translate(3px, 2px);
+        -ms-transform: translate(3px, 2px);
+        -webkit-transform: translate(3px, 2px);
+        transform: translate(3px, 2px)
+    }
+    100% {
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+}
+@-webkit-keyframes animateClip {
+    0% {
+        clip: rect(0, 100%, 100%, 0)
+    }
+    25% {
+        clip: rect(0, 100%, 100%, 20%)
+    }
+    50% {
+        clip: rect(0, 100%, 100%, 60%)
+    }
+    100% {
+        clip: rect(0, 100%, 100%, 90%)
+    }
+}
+@-moz-keyframes animateClip {
+    0% {
+        clip: rect(0, 100%, 100%, 0)
+    }
+    25% {
+        clip: rect(0, 100%, 100%, 20%)
+    }
+    50% {
+        clip: rect(0, 100%, 100%, 60%)
+    }
+    100% {
+        clip: rect(0, 100%, 100%, 90%)
+    }
+}
+@-ms-keyframes animateClip {
+    0% {
+        clip: rect(0, 100%, 100%, 0)
+    }
+    25% {
+        clip: rect(0, 100%, 100%, 20%)
+    }
+    50% {
+        clip: rect(0, 100%, 100%, 60%)
+    }
+    100% {
+        clip: rect(0, 100%, 100%, 90%)
+    }
+}
+@keyframes animateClip {
+    0% {
+        clip: rect(0, 100%, 100%, 0)
+    }
+    25% {
+        clip: rect(0, 100%, 100%, 20%)
+    }
+    50% {
+        clip: rect(0, 100%, 100%, 60%)
+    }
+    100% {
+        clip: rect(0, 100%, 100%, 90%)
+    }
+}
+@-webkit-keyframes two-coma {
+    0% {
+        background-position: 0 0
+    }
+    100% {
+        background-position: 0 200%
+    }
+}
+@-moz-keyframes two-coma {
+    0% {
+        background-position: 0 0
+    }
+    100% {
+        background-position: 0 200%
+    }
+}
+@-ms-keyframes two-coma {
+    0% {
+        background-position: 0 0
+    }
+    100% {
+        background-position: 0 200%
+    }
+}
+@keyframes two-coma {
+    0% {
+        background-position: 0 0
+    }
+    100% {
+        background-position: 0 200%
+    }
+}
+@-webkit-keyframes blink {
+    0% {
+        background-color: #fcc;
+        border-color: red
+    }
+    50% {
+        background-color: #fff;
+        border-color: #fff
+    }
+    100% {
+        background-color: #fcc;
+        border-color: red
+    }
+}
+@-moz-keyframes blink {
+    0% {
+        background-color: #fcc;
+        border-color: red
+    }
+    50% {
+        background-color: #fff;
+        border-color: #fff
+    }
+    100% {
+        background-color: #fcc;
+        border-color: red
+    }
+}
+@-ms-keyframes blink {
+    0% {
+        background-color: #fcc;
+        border-color: red
+    }
+    50% {
+        background-color: #fff;
+        border-color: #fff
+    }
+    100% {
+        background-color: #fcc;
+        border-color: red
+    }
+}
+@keyframes blink {
+    0% {
+        background-color: #fcc;
+        border-color: red
+    }
+    50% {
+        background-color: #fff;
+        border-color: #fff
+    }
+    100% {
+        background-color: #fcc;
+        border-color: red
+    }
+}
+@-webkit-keyframes coin {
+    0% {
+        -moz-transform: scale(0.05, 1);
+        -ms-transform: scale(0.05, 1);
+        -webkit-transform: scale(0.05, 1);
+        transform: scale(0.05, 1)
+    }
+    50% {
+        -moz-transform: scale(1, 1);
+        -ms-transform: scale(1, 1);
+        -webkit-transform: scale(1, 1);
+        transform: scale(1, 1)
+    }
+    100% {
+        -moz-transform: scale(0.05, 1);
+        -ms-transform: scale(0.05, 1);
+        -webkit-transform: scale(0.05, 1);
+        transform: scale(0.05, 1)
+    }
+}
+@-moz-keyframes coin {
+    0% {
+        -moz-transform: scale(0.05, 1);
+        -ms-transform: scale(0.05, 1);
+        -webkit-transform: scale(0.05, 1);
+        transform: scale(0.05, 1)
+    }
+    50% {
+        -moz-transform: scale(1, 1);
+        -ms-transform: scale(1, 1);
+        -webkit-transform: scale(1, 1);
+        transform: scale(1, 1)
+    }
+    100% {
+        -moz-transform: scale(0.05, 1);
+        -ms-transform: scale(0.05, 1);
+        -webkit-transform: scale(0.05, 1);
+        transform: scale(0.05, 1)
+    }
+}
+@-ms-keyframes coin {
+    0% {
+        -moz-transform: scale(0.05, 1);
+        -ms-transform: scale(0.05, 1);
+        -webkit-transform: scale(0.05, 1);
+        transform: scale(0.05, 1)
+    }
+    50% {
+        -moz-transform: scale(1, 1);
+        -ms-transform: scale(1, 1);
+        -webkit-transform: scale(1, 1);
+        transform: scale(1, 1)
+    }
+    100% {
+        -moz-transform: scale(0.05, 1);
+        -ms-transform: scale(0.05, 1);
+        -webkit-transform: scale(0.05, 1);
+        transform: scale(0.05, 1)
+    }
+}
+@keyframes coin {
+    0% {
+        -moz-transform: scale(0.05, 1);
+        -ms-transform: scale(0.05, 1);
+        -webkit-transform: scale(0.05, 1);
+        transform: scale(0.05, 1)
+    }
+    50% {
+        -moz-transform: scale(1, 1);
+        -ms-transform: scale(1, 1);
+        -webkit-transform: scale(1, 1);
+        transform: scale(1, 1)
+    }
+    100% {
+        -moz-transform: scale(0.05, 1);
+        -ms-transform: scale(0.05, 1);
+        -webkit-transform: scale(0.05, 1);
+        transform: scale(0.05, 1)
+    }
+}
+@-webkit-keyframes logo-animation {
+    0% {
+        background-position: 0 0
+    }
+    100% {
+        background-position: 0 -147px
+    }
+}
+@-moz-keyframes logo-animation {
+    0% {
+        background-position: 0 0
+    }
+    100% {
+        background-position: 0 -147px
+    }
+}
+@-ms-keyframes logo-animation {
+    0% {
+        background-position: 0 0
+    }
+    100% {
+        background-position: 0 -147px
+    }
+}
+@keyframes logo-animation {
+    0% {
+        background-position: 0 0
+    }
+    100% {
+        background-position: 0 -147px
+    }
+}
+@-webkit-keyframes newlogo-animation {
+    0% {
+        background-position: 0 0
+    }
+    100% {
+        background-position: 0 -4417px
+    }
+}
+@-moz-keyframes newlogo-animation {
+    0% {
+        background-position: 0 0
+    }
+    100% {
+        background-position: 0 -4417px
+    }
+}
+@-ms-keyframes newlogo-animation {
+    0% {
+        background-position: 0 0
+    }
+    100% {
+        background-position: 0 -4417px
+    }
+}
+@keyframes newlogo-animation {
+    0% {
+        background-position: 0 0
+    }
+    100% {
+        background-position: 0 -4417px
+    }
+}
+@-webkit-keyframes intro-shake {
+    20% {
+        -moz-transform: translateX(-38px);
+        -ms-transform: translateX(-38px);
+        -webkit-transform: translateX(-38px);
+        transform: translateX(-38px)
+    }
+    60% {
+        -moz-transform: translateY(18px);
+        -ms-transform: translateY(18px);
+        -webkit-transform: translateY(18px);
+        transform: translateY(18px)
+    }
+    80% {
+        -moz-transform: translateX(-18px);
+        -ms-transform: translateX(-18px);
+        -webkit-transform: translateX(-18px);
+        transform: translateX(-18px)
+    }
+    100% {
+        -moz-transform: translateY(-18px);
+        -ms-transform: translateY(-18px);
+        -webkit-transform: translateY(-18px);
+        transform: translateY(-18px)
+    }
+}
+@-moz-keyframes intro-shake {
+    20% {
+        -moz-transform: translateX(-38px);
+        -ms-transform: translateX(-38px);
+        -webkit-transform: translateX(-38px);
+        transform: translateX(-38px)
+    }
+    60% {
+        -moz-transform: translateY(18px);
+        -ms-transform: translateY(18px);
+        -webkit-transform: translateY(18px);
+        transform: translateY(18px)
+    }
+    80% {
+        -moz-transform: translateX(-18px);
+        -ms-transform: translateX(-18px);
+        -webkit-transform: translateX(-18px);
+        transform: translateX(-18px)
+    }
+    100% {
+        -moz-transform: translateY(-18px);
+        -ms-transform: translateY(-18px);
+        -webkit-transform: translateY(-18px);
+        transform: translateY(-18px)
+    }
+}
+@-ms-keyframes intro-shake {
+    20% {
+        -moz-transform: translateX(-38px);
+        -ms-transform: translateX(-38px);
+        -webkit-transform: translateX(-38px);
+        transform: translateX(-38px)
+    }
+    60% {
+        -moz-transform: translateY(18px);
+        -ms-transform: translateY(18px);
+        -webkit-transform: translateY(18px);
+        transform: translateY(18px)
+    }
+    80% {
+        -moz-transform: translateX(-18px);
+        -ms-transform: translateX(-18px);
+        -webkit-transform: translateX(-18px);
+        transform: translateX(-18px)
+    }
+    100% {
+        -moz-transform: translateY(-18px);
+        -ms-transform: translateY(-18px);
+        -webkit-transform: translateY(-18px);
+        transform: translateY(-18px)
+    }
+}
+@keyframes intro-shake {
+    20% {
+        -moz-transform: translateX(-38px);
+        -ms-transform: translateX(-38px);
+        -webkit-transform: translateX(-38px);
+        transform: translateX(-38px)
+    }
+    60% {
+        -moz-transform: translateY(18px);
+        -ms-transform: translateY(18px);
+        -webkit-transform: translateY(18px);
+        transform: translateY(18px)
+    }
+    80% {
+        -moz-transform: translateX(-18px);
+        -ms-transform: translateX(-18px);
+        -webkit-transform: translateX(-18px);
+        transform: translateX(-18px)
+    }
+    100% {
+        -moz-transform: translateY(-18px);
+        -ms-transform: translateY(-18px);
+        -webkit-transform: translateY(-18px);
+        transform: translateY(-18px)
+    }
+}
+@-webkit-keyframes intro-line {
+    0% {
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+    100% {
+        -moz-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9)
+    }
+}
+@-moz-keyframes intro-line {
+    0% {
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+    100% {
+        -moz-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9)
+    }
+}
+@-ms-keyframes intro-line {
+    0% {
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+    100% {
+        -moz-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9)
+    }
+}
+@keyframes intro-line {
+    0% {
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+    100% {
+        -moz-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9)
+    }
+}
+@-webkit-keyframes intro-onoma-do {
+    0% {
+        -webkit-transform: scale(4) rotate(-60deg);
+        -moz-transform: scale(4) rotate(-60deg);
+        -ms-transform: scale(4) rotate(-60deg);
+        transform: scale(4) rotate(-60deg);
+        margin-left: -490px;
+        top: 210px
+    }
+    70% {
+        -webkit-transform: scale(1.3) rotate(-8deg);
+        -moz-transform: scale(1.3) rotate(-8deg);
+        -ms-transform: scale(1.3) rotate(-8deg);
+        transform: scale(1.3) rotate(-8deg);
+        margin-left: -490px;
+        top: 110px
+    }
+    90% {
+        -webkit-transform: scale(0.5) rotate(10deg);
+        -moz-transform: scale(0.5) rotate(10deg);
+        -ms-transform: scale(0.5) rotate(10deg);
+        transform: scale(0.5) rotate(10deg);
+        margin-left: -490px;
+        top: 110px
+    }
+    100% {
+        -webkit-transform: scale(1) rotate(-1deg);
+        -moz-transform: scale(1) rotate(-1deg);
+        -ms-transform: scale(1) rotate(-1deg);
+        transform: scale(1) rotate(-1deg);
+        margin-left: -470px;
+        top: 90px
+    }
+}
+@-moz-keyframes intro-onoma-do {
+    0% {
+        -webkit-transform: scale(4) rotate(-60deg);
+        -moz-transform: scale(4) rotate(-60deg);
+        -ms-transform: scale(4) rotate(-60deg);
+        transform: scale(4) rotate(-60deg);
+        margin-left: -490px;
+        top: 210px
+    }
+    70% {
+        -webkit-transform: scale(1.3) rotate(-8deg);
+        -moz-transform: scale(1.3) rotate(-8deg);
+        -ms-transform: scale(1.3) rotate(-8deg);
+        transform: scale(1.3) rotate(-8deg);
+        margin-left: -490px;
+        top: 110px
+    }
+    90% {
+        -webkit-transform: scale(0.5) rotate(10deg);
+        -moz-transform: scale(0.5) rotate(10deg);
+        -ms-transform: scale(0.5) rotate(10deg);
+        transform: scale(0.5) rotate(10deg);
+        margin-left: -490px;
+        top: 110px
+    }
+    100% {
+        -webkit-transform: scale(1) rotate(-1deg);
+        -moz-transform: scale(1) rotate(-1deg);
+        -ms-transform: scale(1) rotate(-1deg);
+        transform: scale(1) rotate(-1deg);
+        margin-left: -470px;
+        top: 90px
+    }
+}
+@-ms-keyframes intro-onoma-do {
+    0% {
+        -webkit-transform: scale(4) rotate(-60deg);
+        -moz-transform: scale(4) rotate(-60deg);
+        -ms-transform: scale(4) rotate(-60deg);
+        transform: scale(4) rotate(-60deg);
+        margin-left: -490px;
+        top: 210px
+    }
+    70% {
+        -webkit-transform: scale(1.3) rotate(-8deg);
+        -moz-transform: scale(1.3) rotate(-8deg);
+        -ms-transform: scale(1.3) rotate(-8deg);
+        transform: scale(1.3) rotate(-8deg);
+        margin-left: -490px;
+        top: 110px
+    }
+    90% {
+        -webkit-transform: scale(0.5) rotate(10deg);
+        -moz-transform: scale(0.5) rotate(10deg);
+        -ms-transform: scale(0.5) rotate(10deg);
+        transform: scale(0.5) rotate(10deg);
+        margin-left: -490px;
+        top: 110px
+    }
+    100% {
+        -webkit-transform: scale(1) rotate(-1deg);
+        -moz-transform: scale(1) rotate(-1deg);
+        -ms-transform: scale(1) rotate(-1deg);
+        transform: scale(1) rotate(-1deg);
+        margin-left: -470px;
+        top: 90px
+    }
+}
+@keyframes intro-onoma-do {
+    0% {
+        -webkit-transform: scale(4) rotate(-60deg);
+        -moz-transform: scale(4) rotate(-60deg);
+        -ms-transform: scale(4) rotate(-60deg);
+        transform: scale(4) rotate(-60deg);
+        margin-left: -490px;
+        top: 210px
+    }
+    70% {
+        -webkit-transform: scale(1.3) rotate(-8deg);
+        -moz-transform: scale(1.3) rotate(-8deg);
+        -ms-transform: scale(1.3) rotate(-8deg);
+        transform: scale(1.3) rotate(-8deg);
+        margin-left: -490px;
+        top: 110px
+    }
+    90% {
+        -webkit-transform: scale(0.5) rotate(10deg);
+        -moz-transform: scale(0.5) rotate(10deg);
+        -ms-transform: scale(0.5) rotate(10deg);
+        transform: scale(0.5) rotate(10deg);
+        margin-left: -490px;
+        top: 110px
+    }
+    100% {
+        -webkit-transform: scale(1) rotate(-1deg);
+        -moz-transform: scale(1) rotate(-1deg);
+        -ms-transform: scale(1) rotate(-1deg);
+        transform: scale(1) rotate(-1deg);
+        margin-left: -470px;
+        top: 90px
+    }
+}
+@-webkit-keyframes intro-onoma-n {
+    0% {
+        -webkit-transform: scale(4) rotate(60deg);
+        -moz-transform: scale(4) rotate(60deg);
+        -ms-transform: scale(4) rotate(60deg);
+        transform: scale(4) rotate(60deg);
+        margin-left: 240px;
+        top: 310px
+    }
+    70% {
+        -webkit-transform: scale(1.3) rotate(8deg);
+        -moz-transform: scale(1.3) rotate(8deg);
+        -ms-transform: scale(1.3) rotate(8deg);
+        transform: scale(1.3) rotate(8deg);
+        margin-left: 240px;
+        top: 210px
+    }
+    90% {
+        -webkit-transform: scale(0.5) rotate(-10deg);
+        -moz-transform: scale(0.5) rotate(-10deg);
+        -ms-transform: scale(0.5) rotate(-10deg);
+        transform: scale(0.5) rotate(-10deg);
+        margin-left: 240px;
+        top: 210px
+    }
+    100% {
+        -webkit-transform: scale(1) rotate(1deg);
+        -moz-transform: scale(1) rotate(1deg);
+        -ms-transform: scale(1) rotate(1deg);
+        transform: scale(1) rotate(1deg);
+        margin-left: 200px;
+        top: 190px
+    }
+}
+@-moz-keyframes intro-onoma-n {
+    0% {
+        -webkit-transform: scale(4) rotate(60deg);
+        -moz-transform: scale(4) rotate(60deg);
+        -ms-transform: scale(4) rotate(60deg);
+        transform: scale(4) rotate(60deg);
+        margin-left: 240px;
+        top: 310px
+    }
+    70% {
+        -webkit-transform: scale(1.3) rotate(8deg);
+        -moz-transform: scale(1.3) rotate(8deg);
+        -ms-transform: scale(1.3) rotate(8deg);
+        transform: scale(1.3) rotate(8deg);
+        margin-left: 240px;
+        top: 210px
+    }
+    90% {
+        -webkit-transform: scale(0.5) rotate(-10deg);
+        -moz-transform: scale(0.5) rotate(-10deg);
+        -ms-transform: scale(0.5) rotate(-10deg);
+        transform: scale(0.5) rotate(-10deg);
+        margin-left: 240px;
+        top: 210px
+    }
+    100% {
+        -webkit-transform: scale(1) rotate(1deg);
+        -moz-transform: scale(1) rotate(1deg);
+        -ms-transform: scale(1) rotate(1deg);
+        transform: scale(1) rotate(1deg);
+        margin-left: 200px;
+        top: 190px
+    }
+}
+@-ms-keyframes intro-onoma-n {
+    0% {
+        -webkit-transform: scale(4) rotate(60deg);
+        -moz-transform: scale(4) rotate(60deg);
+        -ms-transform: scale(4) rotate(60deg);
+        transform: scale(4) rotate(60deg);
+        margin-left: 240px;
+        top: 310px
+    }
+    70% {
+        -webkit-transform: scale(1.3) rotate(8deg);
+        -moz-transform: scale(1.3) rotate(8deg);
+        -ms-transform: scale(1.3) rotate(8deg);
+        transform: scale(1.3) rotate(8deg);
+        margin-left: 240px;
+        top: 210px
+    }
+    90% {
+        -webkit-transform: scale(0.5) rotate(-10deg);
+        -moz-transform: scale(0.5) rotate(-10deg);
+        -ms-transform: scale(0.5) rotate(-10deg);
+        transform: scale(0.5) rotate(-10deg);
+        margin-left: 240px;
+        top: 210px
+    }
+    100% {
+        -webkit-transform: scale(1) rotate(1deg);
+        -moz-transform: scale(1) rotate(1deg);
+        -ms-transform: scale(1) rotate(1deg);
+        transform: scale(1) rotate(1deg);
+        margin-left: 200px;
+        top: 190px
+    }
+}
+@keyframes intro-onoma-n {
+    0% {
+        -webkit-transform: scale(4) rotate(60deg);
+        -moz-transform: scale(4) rotate(60deg);
+        -ms-transform: scale(4) rotate(60deg);
+        transform: scale(4) rotate(60deg);
+        margin-left: 240px;
+        top: 310px
+    }
+    70% {
+        -webkit-transform: scale(1.3) rotate(8deg);
+        -moz-transform: scale(1.3) rotate(8deg);
+        -ms-transform: scale(1.3) rotate(8deg);
+        transform: scale(1.3) rotate(8deg);
+        margin-left: 240px;
+        top: 210px
+    }
+    90% {
+        -webkit-transform: scale(0.5) rotate(-10deg);
+        -moz-transform: scale(0.5) rotate(-10deg);
+        -ms-transform: scale(0.5) rotate(-10deg);
+        transform: scale(0.5) rotate(-10deg);
+        margin-left: 240px;
+        top: 210px
+    }
+    100% {
+        -webkit-transform: scale(1) rotate(1deg);
+        -moz-transform: scale(1) rotate(1deg);
+        -ms-transform: scale(1) rotate(1deg);
+        transform: scale(1) rotate(1deg);
+        margin-left: 200px;
+        top: 190px
+    }
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, object, iframe, pre, code, p, blockquote, form, fieldset, legend, table, th, td, caption, tbody, tfoot, thead, article, aside, figure, footer, header, hgroup, menu, nav, section, audio, video, canvas, main {
+    margin: 0;
+    padding: 0
+}
+article, aside, figure, figcaption, footer, h1, h2, h3, h4, h5, h6, header, hgroup, menu, nav, section, main {
+    display: block
+}
+html {
+    overflow-y: scroll
+}
+html, body {
+    width: 100%;
+    min-height: 100%
+}
+body {
+    color: #000;
+    background: #fff;
+    font-family: 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ' Meiryo, 'Lucida Grande', sans-serif;
+    font-size: 13px;
+    *font-size: 82%;
+    line-height: 1.5
+}
+a:link {
+    color: #000;
+    text-decoration: underline
+}
+a:visited {
+    color: #000;
+    text-decoration: underline
+}
+a:hover {
+    color: #000;
+    text-decoration: none
+}
+a:active {
+    color: #000;
+    text-decoration: none
+}
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%
+}
+p {
+    line-height: 1.5
+}
+li {
+    list-style: none
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 100%;
+    font-family: inherit
+}
+caption, th, td {
+    text-align: left;
+    vertical-align: top;
+    font-weight: 400
+}
+fieldset {
+    border: 0
+}
+input, textarea, select, label {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: middle
+}
+label {
+    cursor: pointer
+}
+textarea {
+    overflow: auto
+}
+legend {
+    display: none
+}
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none
+}
+::selection {
+    background: #b3d4fc;
+    text-shadow: none
+}
+img {
+    border: 0;
+    vertical-align: middle
+}
+object {
+    vertical-align: middle;
+    outline: 0
+}
+em {
+    font-style: italic
+}
+strong {
+    font-weight: 700
+}
+small {
+    font-size: 100%
+}
+abbr, acronym {
+    border: 0;
+    font-variant: normal
+}
+q:before, q:after {
+    content: ''
+}
+address, caption, cite, code, dfn, var {
+    font-weight: 400;
+    font-style: normal
+}
+code, pre {
+    font-family: monospace
+}
+sup {
+    vertical-align: text-top
+}
+sub {
+    vertical-align: text-bottom
+}
+hr {
+    display: none
+}
+:first-child+html body, :first-child+html br {
+    letter-spacing: 0
+}
+.breadcrumb-nav, .article-summary, .article-summary .service-info, .article-meta, .article-tag, .site-header-inner .site-header-content, .site-nav .nav-list, .site-nav .nav-child, .site-language, .site-footer-nav, .site-related-links, #HorizontalToolbar, #HorizontalToolbar .layout-tool, #HorizontalToolbar .other-tool, #HorizontalToolbar .sort-tool, ul.share-button {
+    *zoom: 1
+}
+.breadcrumb-nav:after, .article-summary:after, .article-summary .service-info:after, .article-meta:after, .article-tag:after, .site-header-inner .site-header-content:after, .site-nav .nav-list:after, .site-nav .nav-child:after, .site-language:after, .site-footer-nav:after, .site-related-links:after, #HorizontalToolbar:after, #HorizontalToolbar .layout-tool:after, #HorizontalToolbar .other-tool:after, #HorizontalToolbar .sort-tool:after, ul.share-button:after {
+    content: '';
+    display: block;
+    clear: both;
+    height: 0
+}
+.vertical-toolbar {
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0)
+}
+.article-chinese-top {
+    background: url(http://www.kayac.com/assets/images/svg/comic_line.png) left -6px repeat-x, url(http://www.kayac.com/assets/images/svg/comic_line_v.png) -6px top repeat-y, url(http://www.kayac.com/assets/images/svg/comic_line_v.png) right top repeat-y, url(http://www.kayac.com/assets/images/svg/comic_line.png) left bottom repeat-x, #fff
+}
+.site-nav, .vertical-toolbar {
+    background-color: #262626;
+    background-image: url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAICAgICAgICAgIDAgICAwQDAgIDBAUEBAQEBAUGBQUFBQUFBgYHBwgHBwYJCQoKCQkMDAwMDAwMDAwMDAwMDAz/2wBDAQMDAwUEBQkGBgkNCwkLDQ8ODg4ODw8MDAwMDA8PDAwMDAwMDwwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAz/wAARCAADAAMDAREAAhEBAxEB/8QAFAABAAAAAAAAAAAAAAAAAAAACf/EABwQAAEDBQAAAAAAAAAAAAAAABQAE2MSI0SEkv/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwAmr7+S2TAWWx2VXrjxoP/Z")
+}
+.breadcrumb-item a:link, .article-summary>a:link, .site-header-inner a:link, .site-footer-nav .nav-item a:link, .site-related-links a:link, .button-kayac-projects a:link, .vertical-toolbar .toolbar-item a:link, #HorizontalToolbar a:link, .breadcrumb-item a:visited, .article-summary>a:visited, .site-header-inner a:visited, .site-footer-nav .nav-item a:visited, .site-related-links a:visited, .button-kayac-projects a:visited, .vertical-toolbar .toolbar-item a:visited, #HorizontalToolbar a:visited, .breadcrumb-item a:hover, .article-summary>a:hover, .site-header-inner a:hover, .site-footer-nav .nav-item a:hover, .site-related-links a:hover, .button-kayac-projects a:hover, .vertical-toolbar .toolbar-item a:hover, #HorizontalToolbar a:hover, .breadcrumb-item a:focus, .article-summary>a:focus, .site-header-inner a:focus, .site-footer-nav .nav-item a:focus, .site-related-links a:focus, .button-kayac-projects a:focus, .vertical-toolbar .toolbar-item a:focus, #HorizontalToolbar a:focus, .breadcrumb-item a:active, .article-summary>a:active, .site-header-inner a:active, .site-footer-nav .nav-item a:active, .site-related-links a:active, .button-kayac-projects a:active, .vertical-toolbar .toolbar-item a:active, #HorizontalToolbar a:active {
+    text-decoration: none
+}
+.breadcrumb-item, .article-summary .service-info dt, .site-header-inner .site-header-content .site-logo, .site-nav .nav-item, .site-search, .language-item, .site-footer-nav .nav-item, .site-footer-nav .nav-item a, .site-related-links .link-item, .site-related-links .link-item img, .footer-facebook-link, .footer-facebook-link .facebook-link-item img, #HorizontalToolbar .toolbar-item, #HorizontalToolbar .other-tool-item, #HorizontalToolbar .sort-tool-item, #HorizontalToolbar .layout-tool-item, #HorizontalToolbar .filter-spotlight, #HorizontalToolbar .group-filter-tool, .block-recommend-interview, .list-category-link, .list-category-link .item-category-link {
+    float: left;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1
+}
+a.link-button {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 38px;
+    border: solid 2px #000;
+    background: #000;
+    color: #fff;
+    font-size: 123.07692%;
+    font-weight: 700;
+    text-decoration: none
+}
+a.link-button:hover, a.disabled.link-button {
+    background: #fff;
+    color: #000
+}
+.page-top.page-cn .book-link {
+    position: relative;
+    padding-left: 24px;
+    font-weight: 700
+}
+.page-top.page-cn .book-link:before {
+    position: absolute;
+    top: 0;
+    left: 4px;
+    font-family: icokayac;
+    content: "\e009";
+    color: #000;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none
+}
+.hidden, #SiteSearchSubmit {
+    display: none!important;
+    visibility: hidden
+}
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px
+}
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto
+}
+.lt-ie8 .ie-visible {
+    clip: auto;
+    position: relative;
+    width: auto;
+    height: auto;
+    overflow: visible
+}
+.invisible {
+    visibility: hidden
+}
+.dummy {
+    color: red!important
+}
+.breadcrumb-item {
+    margin-right: 4px;
+    font-size: 107.69231%;
+    font-weight: 700
+}
+.breadcrumb-item a {
+    color: #373737
+}
+.breadcrumb-item a:hover {
+    text-decoration: underline
+}
+.breadcrumb-item:after {
+    content: ">";
+    margin-left: 4px
+}
+.breadcrumb-item:last-child:after {
+    content: none
+}
+.loader-label {
+    position: absolute;
+    overflow: hidden;
+    z-index: 99;
+    left: 50%;
+    margin-left: -300px;
+    width: 600px;
+    font-weight: 700;
+    font-size: 110%;
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -webkit-transition: all 800ms;
+    -moz-transition: all 800ms;
+    -ms-transition: all 800ms;
+    transition: all 800ms
+}
+.loader-label .icon {
+    position: relative;
+    left: 0;
+    width: 0;
+    vertical-align: middle
+}
+.loader-label .title {
+    padding-left: 14px
+}
+.loader-label.hide {
+    display: none
+}
+.loader-label.show {
+    display: block
+}
+.loader-label.prev {
+    top: 250px
+}
+.loader-label.next {
+    bottom: 370px
+}
+body.effect .loader-label.next {
+    bottom: 50px
+}
+.linear-content {
+    position: relative;
+    top: 0
+}
+.read-more {
+    position: relative;
+    margin: 0;
+    height: 60px
+}
+.read-more .label {
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    margin-left: -106px;
+    width: 212px;
+    height: 60px;
+    background: url(http://www.kayac.com/assets/images/common/readmore.png) no-repeat;
+    text-indent: -100%
+}
+.read-more .label:hover {
+    background-position: 0 -60px
+}
+.read-more .icon {
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 16px;
+    margin-left: -22px;
+    cursor: pointer
+}
+.read-more.loading .label {
+    background-position: 0 -120px
+}
+.read-more.loading .icon {
+    display: block
+}
+.article-summary {
+    position: relative;
+    margin-bottom: 16px;
+    height: 270px
+}
+.article-summary>a {
+    display: block;
+    width: 100%;
+    height: 100%
+}
+.article-summary.two-column-1 {
+    padding-right: 434px
+}
+.article-summary.two-column-1 .content-border-center {
+    right: 530px
+}
+.article-summary.two-column-1 .content-border-right {
+    right: 330px
+}
+.article-summary.two-column-1 .article-summary-content-wrapper:after {
+    display: none;
+    right: 290px
+}
+.article-summary.two-column-1 .eye-catch {
+    width: 364px
+}
+.article-summary.two-column-2 {
+    padding-right: 300px
+}
+.article-summary.two-column-2 .content-border-center {
+    right: 426px
+}
+.article-summary.two-column-2 .content-border-right {
+    right: 226px
+}
+.article-summary.two-column-2 .article-summary-content-wrapper:after {
+    display: none;
+    right: 186px
+}
+.article-summary.two-column-2 .eye-catch {
+    width: 230px
+}
+.article-summary.two-column-3 {
+    padding-right: 554px
+}
+.article-summary.two-column-3 .content-border-center {
+    right: 650px
+}
+.article-summary.two-column-3 .content-border-right {
+    right: 450px
+}
+.article-summary.two-column-3 .article-summary-content-wrapper:after {
+    display: none;
+    right: 410px
+}
+.article-summary.two-column-3 .eye-catch {
+    width: 484px
+}
+.article-summary.two-column-4 {
+    padding-right: 434px
+}
+.article-summary.two-column-4 .content-border-center {
+    right: 530px
+}
+.article-summary.two-column-4 .content-border-right {
+    right: 330px
+}
+.article-summary.two-column-4 .article-summary-content-wrapper:after {
+    display: none;
+    right: 290px
+}
+.article-summary.two-column-4 .eye-catch {
+    width: 364px
+}
+.article-summary.one-column .content-border-center {
+    right: 200px
+}
+.article-summary.one-column .content-border-right {
+    right: 0
+}
+.article-summary.one-column .article-summary-content-wrapper:after {
+    display: none;
+    right: -5px
+}
+.article-summary.one-column .eye-catch-wrapper {
+    display: none
+}
+.article-summary.one-column .eye-catch {
+    display: none
+}
+.article-summary .article-summary-content-wrapper {
+    display: table;
+    width: 100%;
+    height: 100%
+}
+.article-summary .article-summary-content-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden
+}
+.article-summary .article-summary-content {
+    position: relative;
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle
+}
+.article-summary .article-summary-content-body {
+    position: relative;
+    padding-left: 36px
+}
+.article-summary .article-social {
+    height: 20px;
+    padding-left: 24px;
+    font-weight: 700;
+    font-size: 84.61538%
+}
+.article-summary .article-title, .article-summary .title {
+    font-size: 276.92308%;
+    line-height: 1.3;
+    margin-bottom: 12px
+}
+.article-summary .eye-catch-wrapper {
+    z-index: 3;
+    position: absolute;
+    top: 0;
+    right: 0
+}
+.article-summary .eye-catch-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden
+}
+.article-summary .eye-catch {
+    position: relative;
+    margin: 0!important;
+    height: 266px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box
+}
+.article-summary .eye-catch img {
+    position: absolute;
+    bottom: 3px;
+    left: 5px
+}
+.article-summary .balloon {
+    position: absolute;
+    top: 0;
+    left: 0
+}
+.article-summary.two-column-1 .eye-catch img, .article-summary.two-column-4 .eye-catch img {
+    left: 7px
+}
+.article-summary.two-column-1 .eye-catch .balloon {
+    left: -130px;
+    top: -50px
+}
+.article-summary .no-eye-catch {
+    position: absolute;
+    top: 82px;
+    left: 94px;
+    z-index: 02;
+    width: 200px;
+    height: 100px;
+    border: solid 4px #262626;
+    overflow: hidden;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px
+}
+.article-summary .no-eye-catch img {
+    width: 200px;
+    height: 100px
+}
+.article-summary .service-info {
+    line-height: 36px
+}
+.article-summary .service-info dt {
+    width: 180px;
+    font-size: 123.07692%
+}
+.article-summary .service-info dd {
+    padding-left: 180px;
+    font-weight: 700;
+    font-size: 184.61538%
+}
+.news-item:hover .article-summary {
+    background-color: #ddd
+}
+.page-list .article-summary:hover.pickup .content-border-left, .page-index .article-summary:hover.pickup .content-border-left, .style-article-list .article-summary:hover.pickup .content-border-left, .related-news-list .article-summary:hover.pickup .content-border-left, .page-top .article-summary:hover.pickup .content-border-left, .news-list .article-summary:hover.pickup .content-border-left {
+    background-image: url(http://www.kayac.com/assets/images/svg/news_border/left_on.png)
+}
+.page-list .article-summary:hover.pickup.two-column-1 .content-border-right, .page-index .article-summary:hover.pickup.two-column-1 .content-border-right, .style-article-list .article-summary:hover.pickup.two-column-1 .content-border-right, .related-news-list .article-summary:hover.pickup.two-column-1 .content-border-right, .page-top .article-summary:hover.pickup.two-column-1 .content-border-right, .news-list .article-summary:hover.pickup.two-column-1 .content-border-right {
+    background-image: url(http://www.kayac.com/assets/images/svg/news_border/2col1_right_on.png)
+}
+.page-list .article-summary:hover.pickup.two-column-2 .content-border-right, .page-index .article-summary:hover.pickup.two-column-2 .content-border-right, .style-article-list .article-summary:hover.pickup.two-column-2 .content-border-right, .related-news-list .article-summary:hover.pickup.two-column-2 .content-border-right, .page-top .article-summary:hover.pickup.two-column-2 .content-border-right, .news-list .article-summary:hover.pickup.two-column-2 .content-border-right {
+    background-image: url(http://www.kayac.com/assets/images/svg/news_border/2col2_right_on.png)
+}
+.page-list .article-summary:hover.pickup.one-column .content-border-right, .page-index .article-summary:hover.pickup.one-column .content-border-right, .style-article-list .article-summary:hover.pickup.one-column .content-border-right, .related-news-list .article-summary:hover.pickup.one-column .content-border-right, .page-top .article-summary:hover.pickup.one-column .content-border-right, .news-list .article-summary:hover.pickup.one-column .content-border-right {
+    background-image: url(http://www.kayac.com/assets/images/svg/news_border/1col_right_on.png)
+}
+.page-list .article-summary:hover .content-border-left, .page-index .article-summary:hover .content-border-left, .style-article-list .article-summary:hover .content-border-left, .related-news-list .article-summary:hover .content-border-left, .page-top .article-summary:hover .content-border-left, .news-list .article-summary:hover .content-border-left {
+    background-image: url(http://www.kayac.com/assets/images/svg/news_border/left2_on.png)
+}
+.page-list .article-summary:hover .content-border-center, .page-index .article-summary:hover .content-border-center, .style-article-list .article-summary:hover .content-border-center, .related-news-list .article-summary:hover .content-border-center, .page-top .article-summary:hover .content-border-center, .news-list .article-summary:hover .content-border-center {
+    background-image: url(http://www.kayac.com/assets/images/svg/news_border/center_on.png)
+}
+.page-list .article-summary:hover.two-column-1 .content-border-right, .page-index .article-summary:hover.two-column-1 .content-border-right, .style-article-list .article-summary:hover.two-column-1 .content-border-right, .related-news-list .article-summary:hover.two-column-1 .content-border-right, .page-top .article-summary:hover.two-column-1 .content-border-right, .news-list .article-summary:hover.two-column-1 .content-border-right {
+    background-image: url(http://www.kayac.com/assets/images/svg/news_border/2col3_right_on.png)
+}
+.page-list .article-summary:hover.two-column-2 .content-border-right, .page-index .article-summary:hover.two-column-2 .content-border-right, .style-article-list .article-summary:hover.two-column-2 .content-border-right, .related-news-list .article-summary:hover.two-column-2 .content-border-right, .page-top .article-summary:hover.two-column-2 .content-border-right, .news-list .article-summary:hover.two-column-2 .content-border-right {
+    background-image: url(http://www.kayac.com/assets/images/svg/news_border/2col2_right2_on.png)
+}
+.page-list .article-summary:hover.one-column .content-border-right, .page-index .article-summary:hover.one-column .content-border-right, .style-article-list .article-summary:hover.one-column .content-border-right, .related-news-list .article-summary:hover.one-column .content-border-right, .page-top .article-summary:hover.one-column .content-border-right, .news-list .article-summary:hover.one-column .content-border-right {
+    background-image: url(http://www.kayac.com/assets/images/svg/news_border/1col_right2_on.png)
+}
+.page-list .article-summary:hover.two-column-3 .content-border-left, .page-index .article-summary:hover.two-column-3 .content-border-left, .style-article-list .article-summary:hover.two-column-3 .content-border-left, .related-news-list .article-summary:hover.two-column-3 .content-border-left, .page-top .article-summary:hover.two-column-3 .content-border-left, .news-list .article-summary:hover.two-column-3 .content-border-left {
+    background-image: url(http://www.kayac.com/assets/images/svg/news_border/left2_on.png)
+}
+.page-list .article-summary:hover.two-column-3 .content-border-right, .page-index .article-summary:hover.two-column-3 .content-border-right, .style-article-list .article-summary:hover.two-column-3 .content-border-right, .related-news-list .article-summary:hover.two-column-3 .content-border-right, .page-top .article-summary:hover.two-column-3 .content-border-right, .news-list .article-summary:hover.two-column-3 .content-border-right {
+    background-image: url(http://www.kayac.com/assets/images/svg/news_border/2col3_right_on.png)
+}
+.page-list .article-summary:hover.two-column-4 .content-border-left, .page-index .article-summary:hover.two-column-4 .content-border-left, .style-article-list .article-summary:hover.two-column-4 .content-border-left, .related-news-list .article-summary:hover.two-column-4 .content-border-left, .page-top .article-summary:hover.two-column-4 .content-border-left, .news-list .article-summary:hover.two-column-4 .content-border-left {
+    background-image: url(http://www.kayac.com/assets/images/svg/news_border/left2_on.png)
+}
+.page-list .article-summary:hover.two-column-4 .content-border-right, .page-index .article-summary:hover.two-column-4 .content-border-right, .style-article-list .article-summary:hover.two-column-4 .content-border-right, .related-news-list .article-summary:hover.two-column-4 .content-border-right, .page-top .article-summary:hover.two-column-4 .content-border-right, .news-list .article-summary:hover.two-column-4 .content-border-right {
+    background-image: url(http://www.kayac.com/assets/images/svg/news_border/2col3_right_on.png)
+}
+.article-summary.pickup .content-border-left, .article-header:hover .article-summary.pickup .content-border-left, .news-header:hover .article-summary.pickup .content-border-left {
+    background-image: url(http://www.kayac.com/assets/images/svg/news_border/left.png)
+}
+.article-summary.pickup.two-column-1 .content-border-right, .article-header:hover .article-summary.pickup.two-column-1 .content-border-right, .news-header:hover .article-summary.pickup.two-column-1 .content-border-right {
+    background-image: url(http://www.kayac.com/assets/images/svg/news_border/2col1_right.png)
+}
+.article-summary.pickup.two-column-2 .content-border-right, .article-header:hover .article-summary.pickup.two-column-2 .content-border-right, .news-header:hover .article-summary.pickup.two-column-2 .content-border-right {
+    background-image: url(http://www.kayac.com/assets/images/svg/news_border/2col2_right.png)
+}
+.article-summary.pickup.one-column .content-border-right, .article-header:hover .article-summary.pickup.one-column .content-border-right, .news-header:hover .article-summary.pickup.one-column .content-border-right {
+    background-image: url(http://www.kayac.com/assets/images/svg/news_border/1col_right.png)
+}
+.article-summary .content-border-left, .article-header:hover .article-summary .content-border-left, .news-header:hover .article-summary .content-border-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(http://www.kayac.com/assets/images/svg/news_border/left2.png);
+    width: 200px;
+    height: 266px;
+    -moz-transition: background-image 300ms;
+    -o-transition: background-image 300ms;
+    -webkit-transition: background-image 300ms;
+    transition: background-image 300ms
+}
+.article-summary .content-border-center, .article-header:hover .article-summary .content-border-center, .news-header:hover .article-summary .content-border-center {
+    position: absolute;
+    top: 0;
+    left: 200px;
+    background-image: url(http://www.kayac.com/assets/images/svg/news_border/center.png);
+    height: 266px;
+    -moz-transition: background-image 300ms;
+    -o-transition: background-image 300ms;
+    -webkit-transition: background-image 300ms;
+    transition: background-image 300ms
+}
+.article-summary .content-border-right, .article-header:hover .article-summary .content-border-right, .news-header:hover .article-summary .content-border-right {
+    position: absolute;
+    top: 0;
+    width: 200px;
+    height: 266px;
+    -moz-transition: background-image 300ms;
+    -o-transition: background-image 300ms;
+    -webkit-transition: background-image 300ms;
+    transition: background-image 300ms
+}
+.article-summary .eye-catch-wrapper, .article-header:hover .article-summary .eye-catch-wrapper, .news-header:hover .article-summary .eye-catch-wrapper {
+    -moz-transition: background-image 300ms;
+    -o-transition: background-image 300ms;
+    -webkit-transition: background-image 300ms;
+    transition: background-image 300ms
+}
+.article-summary.two-column-1 .content-border-right, .article-header:hover .article-summary.two-column-1 .content-border-right, .news-header:hover .article-summary.two-column-1 .content-border-right {
+    background-image: url(http://www.kayac.com/assets/images/svg/news_border/2col3_right.png)
+}
+.article-summary.two-column-1 .eye-catch-wrapper, .article-header:hover .article-summary.two-column-1 .eye-catch-wrapper, .news-header:hover .article-summary.two-column-1 .eye-catch-wrapper {
+    background-image: url(http://www.kayac.com/assets/images/svg/news_border/2col1_eyecatch.png)
+}
+.article-summary.two-column-2 .content-border-right, .article-header:hover .article-summary.two-column-2 .content-border-right, .news-header:hover .article-summary.two-column-2 .content-border-right {
+    background-image: url(http://www.kayac.com/assets/images/svg/news_border/2col2_right2.png)
+}
+.article-summary.two-column-2 .eye-catch-wrapper, .article-header:hover .article-summary.two-column-2 .eye-catch-wrapper, .news-header:hover .article-summary.two-column-2 .eye-catch-wrapper {
+    background-image: url(http://www.kayac.com/assets/images/svg/news_border/2col2_eyecatch.png)
+}
+.article-summary.one-column .content-border-right, .article-header:hover .article-summary.one-column .content-border-right, .news-header:hover .article-summary.one-column .content-border-right {
+    background-image: url(http://www.kayac.com/assets/images/svg/news_border/1col_right2.png)
+}
+.article-summary.two-column-3 .content-border-left, .article-header:hover .article-summary.two-column-3 .content-border-left, .news-header:hover .article-summary.two-column-3 .content-border-left {
+    background-image: url(http://www.kayac.com/assets/images/svg/news_border/left2.png)
+}
+.article-summary.two-column-3 .content-border-right, .article-header:hover .article-summary.two-column-3 .content-border-right, .news-header:hover .article-summary.two-column-3 .content-border-right {
+    background-image: url(http://www.kayac.com/assets/images/svg/news_border/2col3_right.png)
+}
+.article-summary.two-column-3 .eye-catch-wrapper, .article-header:hover .article-summary.two-column-3 .eye-catch-wrapper, .news-header:hover .article-summary.two-column-3 .eye-catch-wrapper {
+    background-image: url(http://www.kayac.com/assets/images/svg/news_border/2col3_eyecatch.png)
+}
+.article-summary.two-column-4 .content-border-left, .article-header:hover .article-summary.two-column-4 .content-border-left, .news-header:hover .article-summary.two-column-4 .content-border-left {
+    background-image: url(http://www.kayac.com/assets/images/svg/news_border/left2.png)
+}
+.article-summary.two-column-4 .content-border-right, .article-header:hover .article-summary.two-column-4 .content-border-right, .news-header:hover .article-summary.two-column-4 .content-border-right {
+    background-image: url(http://www.kayac.com/assets/images/svg/news_border/2col3_right.png)
+}
+.article-summary.two-column-4 .eye-catch-wrapper, .article-header:hover .article-summary.two-column-4 .eye-catch-wrapper, .news-header:hover .article-summary.two-column-4 .eye-catch-wrapper {
+    background-image: url(http://www.kayac.com/assets/images/svg/news_border/2col1_eyecatch.png)
+}
+body.effect .page-list .article-summary:hover .article-summary-content-wrapper:after, body.effect .page-index .article-summary:hover .article-summary-content-wrapper:after, body.effect .style-article-list .article-summary:hover .article-summary-content-wrapper:after, body.effect .related-news-list .article-summary:hover .article-summary-content-wrapper:after, body.effect .page-top .article-summary:hover .article-summary-content-wrapper:after, body.effect .news-list .article-summary:hover .article-summary-content-wrapper:after {
+    content: url(http://www.kayac.com/assets/images/svg/news_border/pi.png?1432536525);
+    position: absolute;
+    top: -10px;
+    z-index: 10;
+    display: block;
+    -webkit-animation: vibrate-big 60ms ease 6;
+    -moz-animation: vibrate-big 60ms ease 6;
+    -ms-animation: vibrate-big 60ms ease 6;
+    animation: vibrate-big 60ms ease 6
+}
+body.effect .article-header .article-summary:hover .article-summary-content-wrapper:after {
+    content: ''
+}
+.article-meta {
+    min-height: 56px;
+    height: auto!important;
+    height: 56px
+}
+.article-date {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    height: 32px;
+    margin-right: 20px;
+    line-height: 32px;
+    font-size: 184.61538%;
+    font-weight: 700;
+    color: #fff;
+    vertical-align: middle;
+    text-shadow: 1px 2px 0 #000, 1px -2px 0 #000, -1px 2px 0 #000, -1px -2px 0 #000, 2px 1px 0 #000, 2px -1px 0 #000, -2px 1px 0 #000, -2px -1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, -1px -1px 0 #000;
+    zoom: 1;
+    filter: progid: DXImageTransform.Microsoft.Glow(Color=#000, Strength=1);
+    -ms-filter: "progid:DXImageTransform.Microsoft.dropshadow(OffX=1, OffY=-1, Color=#000)progid:DXImageTransform.Microsoft.dropshadow(OffX=-1, OffY=-1, Color=#000)progid:DXImageTransform.Microsoft.dropshadow(OffX=1, OffY=0, Color=#000)progid:DXImageTransform.Microsoft.dropshadow(OffX=-1, OffY=0, Color=#000)progid:DXImageTransform.Microsoft.dropshadow(OffX=0, OffY=1, Color=#000)progid:DXImageTransform.Microsoft.dropshadow(OffX=1, OffY=1, Color=#000)progid:DXImageTransform.Microsoft.dropshadow(OffX=-1, OffY=1, Color=#000)"
+}
+.article-category {
+    color: #fff;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    height: 32px;
+    line-height: 32px;
+    font-size: 107.69231%
+}
+.article-category a {
+    color: inherit;
+    text-decoration: inherit;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1
+}
+.article-category.article-category-label {
+    padding: 0 10px
+}
+.article-category.article-category-link a {
+    padding: 0 10px
+}
+.article-category.category-news {
+    background: #c64f57
+}
+.article-category.category-news.article-category-link:hover {
+    background: #d2767c
+}
+.article-category.category-service {
+    background: #df9c50
+}
+.article-category.category-service.article-category-link:hover {
+    background: #e7b47b
+}
+.article-category.category-client {
+    background: #acbb55
+}
+.article-category.category-client.article-category-link:hover {
+    background: #beca79
+}
+.article-category.category-media {
+    background: #62ad94
+}
+.article-category.category-media.article-category-link:hover {
+    background: #84beab
+}
+.article-category.category-event {
+    background: #67a3b4
+}
+.article-category.category-event.article-category-link:hover {
+    background: #89b8c5
+}
+.article-category.category-recruit {
+    background: #a17ab2
+}
+.article-category.category-recruit.article-category-link:hover {
+    background: #b89ac5
+}
+.article-category.category-company {
+    background: #7d7d7d
+}
+.article-category.category-company.article-category-link:hover {
+    background: #979797
+}
+.article-tag {
+    display: block;
+    width: 100%;
+    color: #999
+}
+.article-tag-item {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    font-size: 92.30769%;
+    line-height: 2;
+    font-weight: 700
+}
+.article-tag-item:after {
+    content: "、"
+}
+.article-tag-item:last-child:after {
+    content: ""
+}
+.article-tag-item a {
+    color: inherit;
+    text-decoration: inherit
+}
+.lt-ie9 .article-summary {
+    border: solid 4px #404040
+}
+body.effect .article-summary.pickup .article-summary-content-wrapper:before, body.effect .article-summary.pickup .eye-catch-wrapper:before {
+    -webkit-animation: two-coma 1000ms steps(2) infinite;
+    -moz-animation: two-coma 1000ms steps(2) infinite;
+    -ms-animation: two-coma 1000ms steps(2) infinite;
+    animation: two-coma 1000ms steps(2) infinite
+}
+.article-summary.pickup .article-summary-content-wrapper:before {
+    display: block;
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 380px;
+    height: 330px;
+    background-image: url(http://www.kayac.com/assets/images/svg/news_border/pickup_left.png?1432536525);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    z-index: 100
+}
+.article-summary.pickup .eye-catch-wrapper:before {
+    display: block;
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 280px;
+    height: 330px;
+    background-image: url(http://www.kayac.com/assets/images/svg/news_border/pickup_right.png?1432536525);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    z-index: 10
+}
+.lt-ie9 .page-index .page-title {
+    display: block
+}
+.lt-ie9 .page-index .index-title-svg {
+    display: none
+}
+body {
+    position: relative;
+    min-width: 960px;
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAACtCAMAAACz626eAAAAdVBMVEX///8AAAC2traWlpYJCQkEBAQPDw/R0dEZGRlnZ2ckJCTIyMgyMjJZWVk4ODimpqZMTEyFhYV2dnbBwcG9vb3b29uYmJiLi4ulpaXS0tKxsbEDAwMICAgMDAwYGBgqKio5OTlbW1tubm5+fn6kpKTa2toAAAA+fOzwAAAAJnRSTlMA3ypK19vRDsd4uxith6c6k1pqHiIESFQ6Di7d19PHtaeFcmI8Bv2YO2YAAADrSURBVHhercpHbkUxDEPR6PVef+9V+19iZoQgAY5j+I54AP782T7P90DOnFvg5mqXZTsgY84scPPtUBQHoGAuLHBzdaqqE1AxVxa4+bZpmg3QMDcWuLlqu64FOubOAjffjsNwBAbmwQI3V9tp2gIT82SBm3d9LzYRBODmrq7FJoIA3PxbFrGJIAA3d/MsNhEE4OZfmopNBAG4uRtHsYkgADf/kkRsIgjAzd26ik0EAbj5V5Zin8+lBW7+XS4KEbpeFQK73RQidL8rBPZ4KETo+VQI7PVSiND7rRDY56MQoSRRCKxtFSL0/Sr8AvKdEtW2ZzPnAAAAAElFTkSuQmCC") 0 -46px repeat-x, url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAICAgICAgICAgIDAgICAwQDAgIDBAUEBAQEBAUGBQUFBQUFBgYHBwgHBwYJCQoKCQkMDAwMDAwMDAwMDAwMDAz/2wBDAQMDAwUEBQkGBgkNCwkLDQ8ODg4ODw8MDAwMDA8PDAwMDAwMDwwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAz/wAARCAAXABcDAREAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAgMACf/EACUQAQACAQMCBgMAAAAAAAAAAAECEQMAEiEiMRNBYWJxgaHB4f/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDuTsySJjGBAEIK2lUMVfTnnQEiFzyz2ROJV34LI8/nQUgxgzY5YxJcSUrct8XSUcfOgI743i6to3FYo7nirPXQCR15GNGwYNA3wDfn9X96B+LENiSIpZButtnk/Og2OGTLkJ43JjjGPTFajV325/egbEXbJiQ2lsq7WvC6Cb4bHatQooqyj3f3Qf/Z")
+}
+body.effect {
+    padding-top: 138px
+}
+#MainContents {
+    position: relative;
+    width: 90%;
+    min-width: 960px;
+    margin: 0 auto 40px;
+    top: 50px;
+    padding-bottom: 60px
+}
+.page-list .page-header {
+    position: relative;
+    padding-top: 42px
+}
+.page-index .page-header {
+    position: relative;
+    margin: 0 auto 20px
+}
+.page-index .page-title {
+    display: none;
+    margin-bottom: 16px;
+    text-align: center;
+    font-size: 461.53846%;
+    color: #fff;
+    text-shadow: 1px 2px 0 #000, 1px -2px 0 #000, -1px 2px 0 #000, -1px -2px 0 #000, 2px 1px 0 #000, 2px -1px 0 #000, -2px 1px 0 #000, -2px -1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, -1px -1px 0 #000;
+    zoom: 1;
+    filter: progid: DXImageTransform.Microsoft.Glow(Color=#000, Strength=1);
+    -ms-filter: "progid:DXImageTransform.Microsoft.dropshadow(OffX=1, OffY=-1, Color=#000)progid:DXImageTransform.Microsoft.dropshadow(OffX=-1, OffY=-1, Color=#000)progid:DXImageTransform.Microsoft.dropshadow(OffX=1, OffY=0, Color=#000)progid:DXImageTransform.Microsoft.dropshadow(OffX=-1, OffY=0, Color=#000)progid:DXImageTransform.Microsoft.dropshadow(OffX=0, OffY=1, Color=#000)progid:DXImageTransform.Microsoft.dropshadow(OffX=1, OffY=1, Color=#000)progid:DXImageTransform.Microsoft.dropshadow(OffX=-1, OffY=1, Color=#000)"
+}
+.page-index .index-title-svg {
+    margin-bottom: 16px;
+    -moz-transform: skewX(-12deg);
+    -ms-transform: skewX(-12deg);
+    -webkit-transform: skewX(-12deg);
+    transform: skewX(-12deg)
+}
+.page-index .page-description {
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 138.46154%;
+    font-weight: 700;
+    color: #373737
+}
+.page-index .like-button {
+    position: absolute;
+    bottom: 0;
+    right: 60px
+}
+#SiteHeader {
+    position: relative;
+    z-index: 2000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-width: 960px
+}
+.site-header-inner {
+    -webkit-transform-style: preserve-3d;
+    -webkit-perspective: 2500px;
+    position: relative;
+    top: 0;
+    width: 100%
+}
+.site-header-inner .site-header-content {
+    -webkit-transform: translate3d(0, 0, 0);
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 50px;
+    padding: 18px 0 0;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADAQMAAABs5if8AAAABlBMVEUDAwM3Nzd/eOhxAAAADklEQVQIHWNIYDjAsAAABMYBwY34Te4AAAAASUVORK5CYII=')
+}
+.site-header-inner .site-header-content .site-logo {
+    margin: 6px 40px 26px 26px
+}
+.site-logo {
+    height: 21px;
+    background: url(http://www.kayac.com/assets/images/common/kayac_icon.png) no-repeat
+}
+.site-logo:hover {
+    -webkit-animation: logo-animation 1s steps(7) infinite;
+    -moz-animation: logo-animation 1s steps(7) infinite;
+    -ms-animation: logo-animation 1s steps(7) infinite;
+    animation: logo-animation 1s steps(7) infinite
+}
+.site-logo a {
+    display: block;
+    width: 221px;
+    height: 16px;
+    margin: 3px 0 0 43px;
+    background: url(http://www.kayac.com/assets/images/common/kayac_logo.png) no-repeat right;
+    text-indent: -9999px
+}
+.site-logo img {
+    display: none
+}
+body.effect #SiteHeader.effect.top {
+    display: none
+}
+body.effect #SiteHeader.effect .site-header-inner {
+    -webkit-transition: top 200ms;
+    -moz-transition: top 200ms;
+    -ms-transition: top 200ms;
+    transition: top 200ms
+}
+body.effect #SiteHeader.effect .site-nav {
+    -webkit-transition: -webkit-transform 350ms cubic-bezier(0, 0, 1, .55), background-color 400ms ease-out;
+    -moz-transition: -moz-transform 350ms cubic-bezier(0, 0, 1, .55), background-color 400ms ease-out;
+    -ms-transition: -ms-transform 350ms cubic-bezier(0, 0, 1, .55), background-color 400ms ease-out;
+    transition: transform 350ms cubic-bezier(0, 0, 1, .55), background-color 400ms ease-out
+}
+body.effect #SiteHeader {
+    position: fixed;
+    height: 60px
+}
+body.effect #SiteHeader .site-header-inner {
+    top: 0;
+    height: 60px
+}
+body.effect #SiteHeader .site-nav {
+    -webkit-transform-origin: top;
+    -moz-transform-origin: top;
+    -ms-transform-origin: top;
+    transform-origin: top;
+    -webkit-transform: rotateX(0);
+    -moz-transform: rotateX(0);
+    -ms-transform: rotateX(0);
+    transform: rotateX(0)
+}
+body.effect #SiteHeader.quiet .site-header-inner {
+    top: -68px
+}
+body.effect #SiteHeader.quiet .site-nav {
+    -webkit-transform: rotateX(-90deg);
+    -moz-transform: rotateX(-90deg);
+    -ms-transform: rotateX(-90deg);
+    transform: rotateX(-90deg)
+}
+#SiteHeader .site-nav {
+    -webkit-transform: rotateX(0);
+    -moz-transform: rotateX(0);
+    -ms-transform: rotateX(0);
+    transform: rotateX(0)
+}
+.site-nav {
+    z-index: 3;
+    width: 100%;
+    height: 27px;
+    padding: 18px 0 21px;
+    border-top: solid 1px #696969;
+    border-top: solid 1px rgba(255, 255, 255, .3);
+    border-bottom: solid 3px #000;
+    text-align: center;
+    overflow: visible;
+    background-color: #262626
+}
+.site-nav.on-news a.news {
+    text-shadow: 1px 3px 0 white, 1px -1px 0 white, -1px 3px 0 white, -1px -1px 0 white, 2px 2px 0 white, 2px 0 0 white, -2px 2px 0 white, -2px 0 0 white, 1px 2px 0 white, 1px 0 0 white, -1px 2px 0 white, -1px 0 0 #fff;
+    zoom: 1;
+    filter: progid: DXImageTransform.Microsoft.Glow(Color=white, Strength=1);
+    -ms-filter: "progid:DXImageTransform.Microsoft.dropshadow(OffX=1, OffY=-1, Color=white)progid:DXImageTransform.Microsoft.dropshadow(OffX=-1, OffY=-1, Color=white)progid:DXImageTransform.Microsoft.dropshadow(OffX=1, OffY=0, Color=white)progid:DXImageTransform.Microsoft.dropshadow(OffX=-1, OffY=0, Color=white)progid:DXImageTransform.Microsoft.dropshadow(OffX=0, OffY=1, Color=white)progid:DXImageTransform.Microsoft.dropshadow(OffX=1, OffY=1, Color=white)progid:DXImageTransform.Microsoft.dropshadow(OffX=-1, OffY=1, Color=white)";
+    color: #000
+}
+.site-nav.on-vision a.vision {
+    text-shadow: 1px 3px 0 white, 1px -1px 0 white, -1px 3px 0 white, -1px -1px 0 white, 2px 2px 0 white, 2px 0 0 white, -2px 2px 0 white, -2px 0 0 white, 1px 2px 0 white, 1px 0 0 white, -1px 2px 0 white, -1px 0 0 #fff;
+    zoom: 1;
+    filter: progid: DXImageTransform.Microsoft.Glow(Color=white, Strength=1);
+    -ms-filter: "progid:DXImageTransform.Microsoft.dropshadow(OffX=1, OffY=-1, Color=white)progid:DXImageTransform.Microsoft.dropshadow(OffX=-1, OffY=-1, Color=white)progid:DXImageTransform.Microsoft.dropshadow(OffX=1, OffY=0, Color=white)progid:DXImageTransform.Microsoft.dropshadow(OffX=-1, OffY=0, Color=white)progid:DXImageTransform.Microsoft.dropshadow(OffX=0, OffY=1, Color=white)progid:DXImageTransform.Microsoft.dropshadow(OffX=1, OffY=1, Color=white)progid:DXImageTransform.Microsoft.dropshadow(OffX=-1, OffY=1, Color=white)";
+    color: #000
+}
+.site-nav.on-company a.company {
+    text-shadow: 1px 3px 0 white, 1px -1px 0 white, -1px 3px 0 white, -1px -1px 0 white, 2px 2px 0 white, 2px 0 0 white, -2px 2px 0 white, -2px 0 0 white, 1px 2px 0 white, 1px 0 0 white, -1px 2px 0 white, -1px 0 0 #fff;
+    zoom: 1;
+    filter: progid: DXImageTransform.Microsoft.Glow(Color=white, Strength=1);
+    -ms-filter: "progid:DXImageTransform.Microsoft.dropshadow(OffX=1, OffY=-1, Color=white)progid:DXImageTransform.Microsoft.dropshadow(OffX=-1, OffY=-1, Color=white)progid:DXImageTransform.Microsoft.dropshadow(OffX=1, OffY=0, Color=white)progid:DXImageTransform.Microsoft.dropshadow(OffX=-1, OffY=0, Color=white)progid:DXImageTransform.Microsoft.dropshadow(OffX=0, OffY=1, Color=white)progid:DXImageTransform.Microsoft.dropshadow(OffX=1, OffY=1, Color=white)progid:DXImageTransform.Microsoft.dropshadow(OffX=-1, OffY=1, Color=white)";
+    color: #000
+}
+.site-nav.on-service a.service {
+    text-shadow: 1px 3px 0 white, 1px -1px 0 white, -1px 3px 0 white, -1px -1px 0 white, 2px 2px 0 white, 2px 0 0 white, -2px 2px 0 white, -2px 0 0 white, 1px 2px 0 white, 1px 0 0 white, -1px 2px 0 white, -1px 0 0 #fff;
+    zoom: 1;
+    filter: progid: DXImageTransform.Microsoft.Glow(Color=white, Strength=1);
+    -ms-filter: "progid:DXImageTransform.Microsoft.dropshadow(OffX=1, OffY=-1, Color=white)progid:DXImageTransform.Microsoft.dropshadow(OffX=-1, OffY=-1, Color=white)progid:DXImageTransform.Microsoft.dropshadow(OffX=1, OffY=0, Color=white)progid:DXImageTransform.Microsoft.dropshadow(OffX=-1, OffY=0, Color=white)progid:DXImageTransform.Microsoft.dropshadow(OffX=0, OffY=1, Color=white)progid:DXImageTransform.Microsoft.dropshadow(OffX=1, OffY=1, Color=white)progid:DXImageTransform.Microsoft.dropshadow(OffX=-1, OffY=1, Color=white)";
+    color: #000
+}
+.site-nav.on-team a.team {
+    text-shadow: 1px 3px 0 white, 1px -1px 0 white, -1px 3px 0 white, -1px -1px 0 white, 2px 2px 0 white, 2px 0 0 white, -2px 2px 0 white, -2px 0 0 white, 1px 2px 0 white, 1px 0 0 white, -1px 2px 0 white, -1px 0 0 #fff;
+    zoom: 1;
+    filter: progid: DXImageTransform.Microsoft.Glow(Color=white, Strength=1);
+    -ms-filter: "progid:DXImageTransform.Microsoft.dropshadow(OffX=1, OffY=-1, Color=white)progid:DXImageTransform.Microsoft.dropshadow(OffX=-1, OffY=-1, Color=white)progid:DXImageTransform.Microsoft.dropshadow(OffX=1, OffY=0, Color=white)progid:DXImageTransform.Microsoft.dropshadow(OffX=-1, OffY=0, Color=white)progid:DXImageTransform.Microsoft.dropshadow(OffX=0, OffY=1, Color=white)progid:DXImageTransform.Microsoft.dropshadow(OffX=1, OffY=1, Color=white)progid:DXImageTransform.Microsoft.dropshadow(OffX=-1, OffY=1, Color=white)";
+    color: #000
+}
+.site-nav.on-recruit a.recruit {
+    text-shadow: 1px 3px 0 white, 1px -1px 0 white, -1px 3px 0 white, -1px -1px 0 white, 2px 2px 0 white, 2px 0 0 white, -2px 2px 0 white, -2px 0 0 white, 1px 2px 0 white, 1px 0 0 white, -1px 2px 0 white, -1px 0 0 #fff;
+    zoom: 1;
+    filter: progid: DXImageTransform.Microsoft.Glow(Color=white, Strength=1);
+    -ms-filter: "progid:DXImageTransform.Microsoft.dropshadow(OffX=1, OffY=-1, Color=white)progid:DXImageTransform.Microsoft.dropshadow(OffX=-1, OffY=-1, Color=white)progid:DXImageTransform.Microsoft.dropshadow(OffX=1, OffY=0, Color=white)progid:DXImageTransform.Microsoft.dropshadow(OffX=-1, OffY=0, Color=white)progid:DXImageTransform.Microsoft.dropshadow(OffX=0, OffY=1, Color=white)progid:DXImageTransform.Microsoft.dropshadow(OffX=1, OffY=1, Color=white)progid:DXImageTransform.Microsoft.dropshadow(OffX=-1, OffY=1, Color=white)";
+    color: #000
+}
+.site-nav.on-ir a.ir {
+    text-shadow: 1px 3px 0 white, 1px -1px 0 white, -1px 3px 0 white, -1px -1px 0 white, 2px 2px 0 white, 2px 0 0 white, -2px 2px 0 white, -2px 0 0 white, 1px 2px 0 white, 1px 0 0 white, -1px 2px 0 white, -1px 0 0 #fff;
+    zoom: 1;
+    filter: progid: DXImageTransform.Microsoft.Glow(Color=white, Strength=1);
+    -ms-filter: "progid:DXImageTransform.Microsoft.dropshadow(OffX=1, OffY=-1, Color=white)progid:DXImageTransform.Microsoft.dropshadow(OffX=-1, OffY=-1, Color=white)progid:DXImageTransform.Microsoft.dropshadow(OffX=1, OffY=0, Color=white)progid:DXImageTransform.Microsoft.dropshadow(OffX=-1, OffY=0, Color=white)progid:DXImageTransform.Microsoft.dropshadow(OffX=0, OffY=1, Color=white)progid:DXImageTransform.Microsoft.dropshadow(OffX=1, OffY=1, Color=white)progid:DXImageTransform.Microsoft.dropshadow(OffX=-1, OffY=1, Color=white)";
+    color: #000
+}
+.site-nav .nav-list {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    margin: 0 auto
+}
+.site-nav .nav-item {
+    position: relative;
+    margin-right: 50px;
+    text-align: left
+}
+.site-nav .nav-item:last-child {
+    margin-right: 0
+}
+.site-nav .nav-item a {
+    display: block;
+    color: #fff;
+    font-size: 138.46154%;
+    font-weight: 700
+}
+.site-nav .nav-item.current>a {
+    text-shadow: 1px 3px 0 white, 1px -1px 0 white, -1px 3px 0 white, -1px -1px 0 white, 2px 2px 0 white, 2px 0 0 white, -2px 2px 0 white, -2px 0 0 white, 1px 2px 0 white, 1px 0 0 white, -1px 2px 0 white, -1px 0 0 #fff;
+    zoom: 1;
+    filter: progid: DXImageTransform.Microsoft.Glow(Color=white, Strength=1);
+    -ms-filter: "progid:DXImageTransform.Microsoft.dropshadow(OffX=1, OffY=-1, Color=white)progid:DXImageTransform.Microsoft.dropshadow(OffX=-1, OffY=-1, Color=white)progid:DXImageTransform.Microsoft.dropshadow(OffX=1, OffY=0, Color=white)progid:DXImageTransform.Microsoft.dropshadow(OffX=-1, OffY=0, Color=white)progid:DXImageTransform.Microsoft.dropshadow(OffX=0, OffY=1, Color=white)progid:DXImageTransform.Microsoft.dropshadow(OffX=1, OffY=1, Color=white)progid:DXImageTransform.Microsoft.dropshadow(OffX=-1, OffY=1, Color=white)";
+    color: #000
+}
+.site-nav .nav-item:hover>a {
+    text-shadow: 1px 3px 0 white, 1px -1px 0 white, -1px 3px 0 white, -1px -1px 0 white, 2px 2px 0 white, 2px 0 0 white, -2px 2px 0 white, -2px 0 0 white, 1px 2px 0 white, 1px 0 0 white, -1px 2px 0 white, -1px 0 0 #fff;
+    zoom: 1;
+    filter: progid: DXImageTransform.Microsoft.Glow(Color=white, Strength=1);
+    -ms-filter: "progid:DXImageTransform.Microsoft.dropshadow(OffX=1, OffY=-1, Color=white)progid:DXImageTransform.Microsoft.dropshadow(OffX=-1, OffY=-1, Color=white)progid:DXImageTransform.Microsoft.dropshadow(OffX=1, OffY=0, Color=white)progid:DXImageTransform.Microsoft.dropshadow(OffX=-1, OffY=0, Color=white)progid:DXImageTransform.Microsoft.dropshadow(OffX=0, OffY=1, Color=white)progid:DXImageTransform.Microsoft.dropshadow(OffX=1, OffY=1, Color=white)progid:DXImageTransform.Microsoft.dropshadow(OffX=-1, OffY=1, Color=white)";
+    color: #000
+}
+.site-nav .nav-item:hover .nav-child {
+    display: block;
+    -webkit-animation: fade-in-down 180ms ease-out 0 1;
+    -moz-animation: fade-in-down 180ms ease-out 0 1;
+    -ms-animation: fade-in-down 180ms ease-out 0 1;
+    animation: fade-in-down 180ms ease-out 0 1
+}
+.site-nav .nav-child {
+    display: none;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    padding-top: 15px
+}
+.site-nav .nav-child:hover {
+    display: block
+}
+.site-nav .nav-child-list {
+    position: relative;
+    width: 220px;
+    z-index: 10;
+    padding: 24px 18px 9px;
+    background: #262626;
+    border: solid 2px #fff;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    -moz-box-shadow: 0 2px 2px rgba(0, 0, 0, .75);
+    -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, .75);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, .75)
+}
+.site-nav .nav-child-list:before, .site-nav .nav-child-list:after {
+    position: absolute;
+    bottom: 100%;
+    left: 34px;
+    content: "";
+    height: 0;
+    width: 0;
+    border: solid transparent;
+    pointer-events: none
+}
+.site-nav .nav-child-list:before {
+    border-bottom-color: #fff;
+    border-width: 11px;
+    margin-left: -11px
+}
+.site-nav .nav-child-list:after {
+    border-bottom-color: #262626;
+    border-width: 8px;
+    margin-left: -8px
+}
+.site-nav .nav-child-item {
+    margin-bottom: 15px
+}
+.site-nav .nav-child-item.current a {
+    text-shadow: 1px 3px 0 white, 1px -1px 0 white, -1px 3px 0 white, -1px -1px 0 white, 2px 2px 0 white, 2px 0 0 white, -2px 2px 0 white, -2px 0 0 white, 1px 2px 0 white, 1px 0 0 white, -1px 2px 0 white, -1px 0 0 #fff;
+    zoom: 1;
+    filter: progid: DXImageTransform.Microsoft.Glow(Color=white, Strength=1);
+    -ms-filter: "progid:DXImageTransform.Microsoft.dropshadow(OffX=1, OffY=-1, Color=white)progid:DXImageTransform.Microsoft.dropshadow(OffX=-1, OffY=-1, Color=white)progid:DXImageTransform.Microsoft.dropshadow(OffX=1, OffY=0, Color=white)progid:DXImageTransform.Microsoft.dropshadow(OffX=-1, OffY=0, Color=white)progid:DXImageTransform.Microsoft.dropshadow(OffX=0, OffY=1, Color=white)progid:DXImageTransform.Microsoft.dropshadow(OffX=1, OffY=1, Color=white)progid:DXImageTransform.Microsoft.dropshadow(OffX=-1, OffY=1, Color=white)";
+    color: #000
+}
+.site-nav .nav-child-item a {
+    display: block;
+    width: 100%;
+    font-size: 138.46154%;
+    line-height: 1
+}
+.site-nav .nav-child-item a:hover {
+    text-shadow: 1px 3px 0 white, 1px -1px 0 white, -1px 3px 0 white, -1px -1px 0 white, 2px 2px 0 white, 2px 0 0 white, -2px 2px 0 white, -2px 0 0 white, 1px 2px 0 white, 1px 0 0 white, -1px 2px 0 white, -1px 0 0 #fff;
+    zoom: 1;
+    filter: progid: DXImageTransform.Microsoft.Glow(Color=white, Strength=1);
+    -ms-filter: "progid:DXImageTransform.Microsoft.dropshadow(OffX=1, OffY=-1, Color=white)progid:DXImageTransform.Microsoft.dropshadow(OffX=-1, OffY=-1, Color=white)progid:DXImageTransform.Microsoft.dropshadow(OffX=1, OffY=0, Color=white)progid:DXImageTransform.Microsoft.dropshadow(OffX=-1, OffY=0, Color=white)progid:DXImageTransform.Microsoft.dropshadow(OffX=0, OffY=1, Color=white)progid:DXImageTransform.Microsoft.dropshadow(OffX=1, OffY=1, Color=white)progid:DXImageTransform.Microsoft.dropshadow(OffX=-1, OffY=1, Color=white)";
+    color: #000
+}
+.site-nav .nav-child-list-special {
+    width: 200px;
+    padding: 6px
+}
+.site-nav .nav-child-special {
+    margin-bottom: 8px;
+    padding: 1px;
+    border: solid 1px #696969;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px
+}
+.site-nav .nav-child-special:last-child {
+    margin-bottom: 0
+}
+.site-nav .nav-child-ttl {
+    height: 32px;
+    line-height: 32px;
+    color: #b4b4b4;
+    background: #4b4b4b;
+    text-align: center;
+    font-size: 107.69231%;
+    -moz-border-radius: 2px 2px 0 0;
+    -webkit-border-radius: 2px;
+    border-radius: 2px 2px 0 0
+}
+.site-nav .nav-grandchild {
+    padding-top: 12px;
+    padding-left: 12px
+}
+.site-nav .nav-grandchild-item {
+    margin-bottom: 12px;
+    font-size: 92.30769%
+}
+.site-search {
+    width: 275px;
+    height: 22px;
+    margin-bottom: 26px;
+    padding: 0;
+    border: 0
+}
+.site-search:hover #SiteSearchKeyword {
+    background-color: #666
+}
+.site-search:hover #SiteSearchSubmit {
+    background-position: left bottom
+}
+#SiteSearchKeyword {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    width: 210px;
+    padding: 7px 5px 5px;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADAQMAAABs5if8AAAABlBMVEUAAAAdHR0t84kpAAAAAXRSTlMAQObYZgAAAA5JREFUCB1jUGBwYGgAAAHmAOHjAMSKAAAAAElFTkSuQmCC);
+    background-color: #4b4b4b;
+    border: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    color: #fff
+}
+#SiteSearchKeyword:focus {
+    outline: 0
+}
+.site-search-button {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    margin-left: 5px;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    padding: 0;
+    border: 0;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+    font-size: 153.84615%;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    -moz-appearance: none;
+    -webkit-appearance: none
+}
+.site-search-button:hover {
+    color: #000;
+    background-color: #fff
+}
+.site-header-content .effect {
+    display: none;
+    position: absolute;
+    right: 146px;
+    top: 19px;
+    width: 32px;
+    height: 32px;
+    background: url(http://www.kayac.com/assets/images/common/mute.png) no-repeat
+}
+.site-header-content .effect.mute {
+    background-position: -32px 0
+}
+.site-header-content .effect.mute:hover {
+    background-position: -32px -32px
+}
+.site-header-content .effect.on {
+    background-position: 0 0
+}
+.site-header-content .effect.on:hover {
+    background-position: 0 -32px
+}
+.site-header-content .effect input {
+    width: 32px;
+    height: 32px;
+    margin: 0;
+    opacity: 0;
+    cursor: pointer
+}
+.site-language {
+    position: absolute;
+    top: 18px;
+    right: 24px
+}
+.language-item {
+    margin-right: 8px
+}
+.language-item:last-child {
+    margin-right: 0
+}
+.language-item a {
+    width: 32px;
+    height: 32px;
+    display: block;
+    background-image: url(http://www.kayac.com/assets/images/common/language.png);
+    background-repeat: no-repeat;
+    color: transparent
+}
+.language-item.ja a {
+    background-position: 0 0
+}
+.language-item.ja a:hover {
+    background-position: 0 -32px
+}
+.language-item.ja.current a {
+    background-position: 0 -64px
+}
+.language-item.en a {
+    background-position: -32px 0
+}
+.language-item.en a:hover {
+    background-position: -32px -32px
+}
+.language-item.en.current a {
+    background-position: -32px -64px
+}
+.language-item.cn a {
+    background-position: -64px 0
+}
+.language-item.cn a:hover {
+    background-position: -64px -32px
+}
+.language-item.cn.current a {
+    background-position: -64px -64px
+}
+.ie #SiteHeader:hover .site-nav {
+    top: 68px;
+    opacity: 1
+}
+.ie #SiteHeader .site-nav {
+    top: -27px;
+    height: 27px;
+    padding: 18px 0 21px
+}
+.lt-ie7 #SiteHeader {
+    position: relative;
+    top: 0;
+    left: 0
+}
+.lt-ie7 .site-header-content {
+    padding-bottom: 0
+}
+.lt-ie7 .site-nav {
+    height: 50px;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-top: 27px;
+    padding-bottom: 0
+}
+.lt-ie9 #SiteFooter {
+    overflow: hidden
+}
+.lt-ie9 #SiteFooter:hover {
+    overflow: visible
+}
+#SiteFooter {
+    position: relative;
+    width: 100%;
+    height: 415px;
+    background: #262626;
+    color: #fff
+}
+body.effect #SiteFooter.effect, body.effect .site-related-links, body.effect .site-footer-content, body.effect .footer-kayac-projects {
+    -webkit-transition: all 400ms cubic-bezier(0.77, 0, .175, 1)
+}
+body.effect .site-footer-content {
+    height: 270px
+}
+body.effect #SiteFooter {
+    position: fixed;
+    z-index: 2000;
+    bottom: 0;
+    left: 0;
+    height: 40px
+}
+body.effect #SiteFooter .site-related-links {
+    top: 35px
+}
+body.effect #SiteFooter.active {
+    height: 310px
+}
+body.effect #SiteFooter.active .site-related-links.first {
+    top: 35px
+}
+body.effect #SiteFooter.active .site-related-links.second {
+    top: 105px
+}
+body.effect #SiteFooter.active .site-related-links.third {
+    top: 175px
+}
+body.effect .button-kayac-projects a {
+    cursor: pointer
+}
+body.effect .footer-kayac-projects {
+    overflow: hidden;
+    bottom: 0;
+    height: 0
+}
+body.effect .show-project#SiteFooter {
+    height: 415px
+}
+body.effect .show-project .site-footer-content {
+    height: 360px
+}
+body.effect .show-project .footer-kayac-projects {
+    bottom: 40px;
+    height: 95px
+}
+.site-footer-content {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 360px;
+    background: #262626
+}
+.site-footer-view {
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    width: 100%;
+    height: 40px;
+    background: #262626
+}
+.site-footer-view .copyright {
+    display: block;
+    position: relative;
+    height: 40px;
+    line-height: 40px;
+    text-align: center
+}
+.site-footer-nav {
+    z-index: 2;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+    background: #262626;
+    text-align: center;
+    line-height: 1.2
+}
+.site-footer-nav ul {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1
+}
+.site-footer-nav .nav-item {
+    padding: 0 14px;
+    border-right: solid 1px #fff;
+    text-align: left
+}
+.site-footer-nav .nav-item:last-child {
+    border-right: 0
+}
+.site-footer-nav .nav-item a {
+    color: #fff
+}
+.site-related-links {
+    position: absolute;
+    top: 35px;
+    left: 50%;
+    margin-left: -480px;
+    width: 960px;
+    height: 42px;
+    background: #262626
+}
+.site-related-links a {
+    color: #fff
+}
+.site-related-links a:hover {
+    text-decoration: underline
+}
+.site-related-links.first {
+    top: 35px;
+    z-index: 3
+}
+.site-related-links.second {
+    top: 105px;
+    z-index: 2
+}
+.site-related-links.third {
+    top: 175px;
+    z-index: 1
+}
+.site-related-links .link-item {
+    height: 42px;
+    text-align: left
+}
+.site-related-links .link-item a {
+    display: block
+}
+.site-related-links .link-item .title, .site-related-links .link-item .description {
+    display: block;
+    margin-left: 52px
+}
+.site-related-links .link-item .title {
+    padding-top: 5px;
+    margin-bottom: 8px;
+    line-height: 1
+}
+.site-related-links .link-item .description {
+    font-size: 84.61538%
+}
+.site-related-links .link-item.blog {
+    width: 364px
+}
+.site-related-links .link-item.ceo {
+    width: 236px
+}
+.site-related-links .link-item.other {
+    width: 360px
+}
+.site-related-links .link-item.facepile {
+    width: 360px;
+    margin-top: -15px
+}
+.footer-facebook-link {
+    width: 360px
+}
+.footer-facebook-link .facebook-link-item {
+    height: 42px;
+    margin-bottom: 28px;
+    text-align: left
+}
+.footer-facebook-link .facebook-link-item a {
+    display: block
+}
+.footer-facebook-link .facebook-link-item .title, .footer-facebook-link .facebook-link-item .description {
+    display: block;
+    margin-left: 52px
+}
+.footer-facebook-link .facebook-link-item .title {
+    padding-top: 5px;
+    margin-bottom: 8px;
+    line-height: 1
+}
+.footer-facebook-link .facebook-link-item .description {
+    font-size: 84.61538%
+}
+.footer-facebook-link .facebook-like-list {
+    width: 360px;
+    height: 42px;
+    background: #ccc
+}
+.button-kayac-projects {
+    z-index: 9;
+    position: absolute;
+    top: 175px;
+    left: 50%;
+    margin-left: 160px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border: solid 2px #fff;
+    background: #262626;
+    font-size: 108%;
+    text-align: center
+}
+.button-kayac-projects a {
+    display: block;
+    width: 278px;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    cursor: default
+}
+.footer-kayac-projects {
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    padding-top: 15px;
+    background: #262626
+}
+.footer-kayac-projects .kayac-projects-content {
+    position: relative;
+    width: 100%;
+    padding: 14px 0 12px;
+    background: #9b9b9b;
+    color: 000;
+    border-bottom: dotted 1px #000
+}
+.footer-kayac-projects .kayac-projects-content a {
+    color: #000
+}
+.footer-kayac-projects .kayac-projects-content:before {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    content: "";
+    height: 0;
+    width: 0;
+    margin-left: 300px;
+    border: solid transparent;
+    pointer-events: none;
+    border-bottom-color: #9b9b9b;
+    border-width: 0 5px 11px
+}
+.footer-kayac-projects .kayac-projects-content .projects-list {
+    width: 900px;
+    margin: 0 auto -8px;
+    font-size: 84.61538%;
+    text-align: center;
+    line-height: 1
+}
+.footer-kayac-projects .kayac-projects-content .projects-list-item {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    padding: 0 8px;
+    margin-bottom: 8px;
+    border-right: solid 1px #000
+}
+.ie #SiteFooter {
+    height: 40px
+}
+.ie #SiteFooter:hover .site-footer-content {
+    bottom: 40px;
+    opacity: 1
+}
+.ie .site-footer-view {
+    height: 40px
+}
+.ie .site-footer-content {
+    position: absolute;
+    bottom: -500px;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    opacity: 0;
+    background: #262626
+}
+.lt-ie7 #SiteFooter {
+    position: static;
+    top: 0;
+    left: 0
+}
+.lt-ie7 .site-footer-view {
+    position: static;
+    top: 0;
+    left: 0;
+    padding-bottom: 0
+}
+.lt-ie7 .site-footer-content {
+    position: static;
+    top: 0;
+    bottom: 0;
+    left: 0
+}
+.lt-ie7 .site-footer-content-view {
+    padding-bottom: 10px
+}
+.lt-ie7 .btn-kayac-projects {
+    display: none
+}
+.lt-ie7 .footer-kayac-projects {
+    position: static;
+    padding-top: 0
+}
+.vertical-toolbar {
+    position: fixed;
+    top: 138px;
+    left: 95%;
+    width: 48px;
+    height: 126px;
+    margin-left: -32px;
+    padding: 0 8px;
+    border: solid 4px #fff;
+    border-top-width: 2px;
+    z-index: 1000;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    -moz-box-shadow: 0 2px 2px rgba(0, 0, 0, .75);
+    -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, .75);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, .75)
+}
+.vertical-toolbar.nested {
+    height: 190px
+}
+.vertical-toolbar.single {
+    height: 62px
+}
+.vertical-toolbar .toolbar-item {
+    position: relative;
+    height: 56px;
+    padding: 3px 0;
+    overflow: visible;
+    border-top: solid 1px #9b9b9b;
+    border-bottom: solid 1px #000;
+    color: #fff
+}
+.vertical-toolbar .toolbar-item .icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    line-height: 48px;
+    font-size: 20px
+}
+.vertical-toolbar .toolbar-item a {
+    position: absolute;
+    top: 3px;
+    right: -4px;
+    display: block;
+    border: solid 4px transparent;
+    height: 48px;
+    color: #fff;
+    cursor: pointer
+}
+.vertical-toolbar .toolbar-item a:hover {
+    width: auto;
+    background: #fff;
+    color: #000;
+    border: solid 4px #000;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    -moz-box-shadow: 0 2px 2px rgba(0, 0, 0, .75);
+    -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, .75);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, .75)
+}
+.vertical-toolbar .toolbar-item a:hover .toolbar-nav-info {
+    display: block
+}
+.vertical-toolbar .toolbar-item:first-child {
+    border-top: 0
+}
+.vertical-toolbar .toolbar-item:last-child {
+    border-bottom: 0
+}
+.vertical-toolbar .non-active a {
+    color: #696969;
+    color: rgba(105, 105, 105, .5);
+    cursor: default
+}
+.vertical-toolbar .non-active a:hover {
+    background: transparent;
+    color: #696969;
+    color: rgba(105, 105, 105, .5);
+    border: solid 4px transparent;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none
+}
+.vertical-toolbar .non-active a:hover .toolbar-nav-info {
+    display: none
+}
+.vertical-toolbar .toolbar-nav-info {
+    display: none;
+    margin-right: 56px;
+    height: 28px;
+    padding: 10px 0 10px 12px;
+    text-align: left;
+    color: #000;
+    font-weight: 700;
+    line-height: 1.6
+}
+.vertical-toolbar .toolbar-nav-info .nav-info-ex {
+    display: block;
+    font-size: 76.92308%;
+    width: 80px;
+    line-height: 1.2
+}
+.vertical-toolbar .toolbar-nav-info .nav-info-ttl {
+    width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis
+}
+.vertical-toolbar .toolbar-share {
+    border-bottom: 0
+}
+.vertical-toolbar .toolbar-back .nav-info-ex {
+    text-align: left
+}
+.page-news-detail .toolbar-next .nav-info-ttl, .page-news-detail .toolbar-prev .nav-info-ttl, .page-recruit-message .toolbar-next .nav-info-ttl, .page-recruit-message .toolbar-prev .nav-info-ttl {
+    width: 270px
+}
+.lt-ie8 .vertical-toolbar .toolbar-item {
+    border-top: 0
+}
+.lt-ie7 .vertical-toolbar {
+    position: absolute;
+    top: 160px;
+    right: 20px
+}
+#HorizontalToolbar {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    position: relative;
+    margin: 10px 0;
+    padding: 4px 0 2px;
+    z-index: 500;
+    background: #000;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px
+}
+.page-top #HorizontalToolbar, .page-news-detail #HorizontalToolbar {
+    background: 0 0
+}
+#HorizontalToolbar .toolbar-item {
+    height: 45px;
+    color: #fff;
+    border-right: solid 1px #404040;
+    border-left: solid 1px #000
+}
+#HorizontalToolbar .toolbar-item:last-child {
+    margin-right: 0;
+    border-right: 0
+}
+#HorizontalToolbar .toolbar-item:first-child {
+    border-left: 0
+}
+#HorizontalToolbar .layout-tool, #HorizontalToolbar .other-tool, #HorizontalToolbar .sort-tool {
+    padding: 7px
+}
+#HorizontalToolbar .layout-tool-item.manga, #HorizontalToolbar .layout-tool-item.grid, #HorizontalToolbar .layout-tool-item.list, #HorizontalToolbar .layout-tool-item.game, #HorizontalToolbar .layout-tool-item.jins {
+    font-size: 193%
+}
+#HorizontalToolbar .layout-tool-item.manga a, #HorizontalToolbar .layout-tool-item.grid a, #HorizontalToolbar .layout-tool-item.list a, #HorizontalToolbar .layout-tool-item.game a, #HorizontalToolbar .layout-tool-item.jins a {
+    padding: 2px 5px 0
+}
+#HorizontalToolbar .layout-tool-item.disable a {
+    pointer-events: none;
+    color: #666;
+    background-color: #000!important
+}
+#HorizontalToolbar .other-tool-item, #HorizontalToolbar .sort-tool-item, #HorizontalToolbar .layout-tool-item {
+    position: relative;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 3px
+}
+#HorizontalToolbar .other-tool-item:first-child, #HorizontalToolbar .sort-tool-item:first-child, #HorizontalToolbar .layout-tool-item:first-child {
+    margin-left: 0
+}
+#HorizontalToolbar .other-tool-item:last-child, #HorizontalToolbar .sort-tool-item:last-child, #HorizontalToolbar .layout-tool-item:last-child {
+    margin-right: 0
+}
+#HorizontalToolbar .other-tool-item a, #HorizontalToolbar .sort-tool-item a, #HorizontalToolbar .layout-tool-item a {
+    display: block;
+    line-height: 30px;
+    padding: 0 18px;
+    font-size: 107.69231%;
+    color: #fff;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px
+}
+#HorizontalToolbar .other-tool-item a:hover, #HorizontalToolbar .sort-tool-item a:hover, #HorizontalToolbar .layout-tool-item a:hover {
+    background: #FFF;
+    color: #000
+}
+#HorizontalToolbar .other-tool-item.current a, #HorizontalToolbar .sort-tool-item.current a, #HorizontalToolbar .layout-tool-item.current a {
+    color: #000;
+    background: #fff
+}
+#HorizontalToolbar .other-tool-item.current.game a, #HorizontalToolbar .other-tool-item.current.jins a, #HorizontalToolbar .sort-tool-item.current.game a, #HorizontalToolbar .sort-tool-item.current.jins a, #HorizontalToolbar .layout-tool-item.current.game a, #HorizontalToolbar .layout-tool-item.current.jins a {
+    background-color: #a72d2d;
+    color: #000
+}
+#HorizontalToolbar .other-tool-item.current.game a:hover, #HorizontalToolbar .other-tool-item.current.jins a:hover, #HorizontalToolbar .sort-tool-item.current.game a:hover, #HorizontalToolbar .sort-tool-item.current.jins a:hover, #HorizontalToolbar .layout-tool-item.current.game a:hover, #HorizontalToolbar .layout-tool-item.current.jins a:hover {
+    background-color: #fff;
+    color: #000
+}
+#HorizontalToolbar .other-tool-item.current.game a:before, #HorizontalToolbar .sort-tool-item.current.game a:before, #HorizontalToolbar .layout-tool-item.current.game a:before {
+    content: url(http://www.kayac.com/assets/images/team/member/btn_game.png?1432536523)
+}
+#HorizontalToolbar .other-tool-item.current.jins a:before, #HorizontalToolbar .sort-tool-item.current.jins a:before, #HorizontalToolbar .layout-tool-item.current.jins a:before {
+    content: url(http://www.kayac.com/assets/images/team/member/btn_glass.png?1432536524)
+}
+#HorizontalToolbar .other-tool-item.game a, #HorizontalToolbar .other-tool-item.jins a, #HorizontalToolbar .sort-tool-item.game a, #HorizontalToolbar .sort-tool-item.jins a, #HorizontalToolbar .layout-tool-item.game a, #HorizontalToolbar .layout-tool-item.jins a {
+    background-color: #a72d2d
+}
+#HorizontalToolbar .other-tool-item.game a:hover, #HorizontalToolbar .other-tool-item.jins a:hover, #HorizontalToolbar .sort-tool-item.game a:hover, #HorizontalToolbar .sort-tool-item.jins a:hover, #HorizontalToolbar .layout-tool-item.game a:hover, #HorizontalToolbar .layout-tool-item.jins a:hover {
+    background-color: #fff;
+    color: #000
+}
+#HorizontalToolbar .other-tool-item.trophy a, #HorizontalToolbar .sort-tool-item.trophy a, #HorizontalToolbar .layout-tool-item.trophy a {
+    position: relative;
+    width: 58px;
+    height: 32px;
+    padding: 0;
+    overflow: hidden
+}
+#HorizontalToolbar .other-tool-item.trophy a:hover, #HorizontalToolbar .sort-tool-item.trophy a:hover, #HorizontalToolbar .layout-tool-item.trophy a:hover {
+    background: #fff
+}
+#HorizontalToolbar .other-tool-item.trophy img, #HorizontalToolbar .sort-tool-item.trophy img, #HorizontalToolbar .layout-tool-item.trophy img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -18px
+}
+#HorizontalToolbar .other-tool-item.trophy.current a, #HorizontalToolbar .sort-tool-item.trophy.current a, #HorizontalToolbar .layout-tool-item.trophy.current a {
+    background: #ffff56
+}
+#HorizontalToolbar .other-tool-item.trophy.current a:hover, #HorizontalToolbar .sort-tool-item.trophy.current a:hover, #HorizontalToolbar .layout-tool-item.trophy.current a:hover {
+    background: #fff
+}
+#HorizontalToolbar .other-tool-item.trophy.current img, #HorizontalToolbar .sort-tool-item.trophy.current img, #HorizontalToolbar .layout-tool-item.trophy.current img {
+    top: -32px
+}
+#HorizontalToolbar .sort-tool .sort-tool-item {
+    min-width: 70px
+}
+#HorizontalToolbar .sort-new {
+    margin-right: 4px
+}
+#HorizontalToolbar .sort-pickup a:before {
+    display: block;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 15px;
+    height: 19px;
+    content: '';
+    background: url(http://www.kayac.com/assets/images/tmp/icon_pickup.png?1432536526) no-repeat
+}
+#HorizontalToolbar .sort-pickup a:after {
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    right: 2px;
+    width: 15px;
+    height: 19px;
+    content: '';
+    background: url(http://www.kayac.com/assets/images/tmp/icon_pickup.png?1432536526) no-repeat
+}
+#HorizontalToolbar .sort-hot a:before {
+    display: block;
+    position: absolute;
+    top: 8px;
+    left: 3px;
+    width: 26px;
+    height: 23px;
+    content: '';
+    background: url(http://www.kayac.com/assets/images/tmp/icon_hot_l.png?1438871210) no-repeat
+}
+#HorizontalToolbar .sort-hot a:after {
+    display: block;
+    position: absolute;
+    bottom: 7px;
+    right: 2px;
+    width: 24px;
+    height: 28px;
+    content: '';
+    background: url(http://www.kayac.com/assets/images/tmp/icon_hot_r.png?1438871242) no-repeat
+}
+#HorizontalToolbar .filter-tool {
+    padding: 6px;
+    height: 32px
+}
+#HorizontalToolbar .filter-spotlight {
+    position: relative;
+    height: 45px;
+    border: 0
+}
+#HorizontalToolbar .filter-spotlight .sort-tool {
+    padding: 0
+}
+#HorizontalToolbar .filter-spotlight .sort-tool .sort-tool-item {
+    min-width: 90px;
+    background-color: #000;
+    border: 2px solid #000;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px
+}
+#HorizontalToolbar .filter-spotlight .sort-tool .sort-tool-item a {
+    line-height: 41px;
+    font-size: 120%
+}
+#HorizontalToolbar .group-filter-tool {
+    position: relative;
+    margin-left: 10px;
+    background: #000;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    height: 45px
+}
+#HorizontalToolbar.client-toolbar, #HorizontalToolbar.member-toolbar {
+    background: #000;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px
+}
+#HorizontalToolbar .block-recommend-interview {
+    margin-left: 20px
+}
+.lt-ie8 #HorizontalToolbar .toolbar-item {
+    border-top: 0
+}
+.lt-ie8 #HorizontalToolbar .sort-tool {
+    width: 208px
+}
+.lt-ie8 #HorizontalToolbar .filter-tool {
+    width: 206px
+}
+.lt-ie7 #HorizontalToolbar .sort-tool {
+    height: 32px
+}
+.lt-ie7 #HorizontalToolbar .sort-tool .current {
+    background: #fff;
+    color: #000;
+    font-weight: 700
+}
+.lt-ie7 #HorizontalToolbar .sort-tool .current a {
+    background: #fff;
+    color: #000
+}
+.vertical-toolbar {
+    position: fixed;
+    top: 138px;
+    left: 95%;
+    width: 48px;
+    height: 126px;
+    margin-left: -32px;
+    padding: 0 8px;
+    border: solid 4px #fff;
+    border-top-width: 2px;
+    z-index: 1000;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    -moz-box-shadow: 0 2px 2px rgba(0, 0, 0, .75);
+    -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, .75);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, .75)
+}
+.vertical-toolbar.nested {
+    height: 190px
+}
+.vertical-toolbar.single {
+    height: 62px
+}
+.vertical-toolbar .toolbar-item {
+    position: relative;
+    height: 56px;
+    padding: 3px 0;
+    overflow: visible;
+    border-top: solid 1px #9b9b9b;
+    border-bottom: solid 1px #000;
+    color: #fff
+}
+.vertical-toolbar .toolbar-item .icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    line-height: 48px;
+    font-size: 20px
+}
+.vertical-toolbar .toolbar-item a {
+    position: absolute;
+    top: 3px;
+    right: -4px;
+    display: block;
+    border: solid 4px transparent;
+    height: 48px;
+    color: #fff;
+    cursor: pointer
+}
+.vertical-toolbar .toolbar-item a:hover {
+    width: auto;
+    background: #fff;
+    color: #000;
+    border: solid 4px #000;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    -moz-box-shadow: 0 2px 2px rgba(0, 0, 0, .75);
+    -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, .75);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, .75)
+}
+.vertical-toolbar .toolbar-item a:hover .toolbar-nav-info {
+    display: block
+}
+.vertical-toolbar .toolbar-item:first-child {
+    border-top: 0
+}
+.vertical-toolbar .toolbar-item:last-child {
+    border-bottom: 0
+}
+.vertical-toolbar .non-active a {
+    color: #696969;
+    color: rgba(105, 105, 105, .5);
+    cursor: default
+}
+.vertical-toolbar .non-active a:hover {
+    background: transparent;
+    color: #696969;
+    color: rgba(105, 105, 105, .5);
+    border: solid 4px transparent;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none
+}
+.vertical-toolbar .non-active a:hover .toolbar-nav-info {
+    display: none
+}
+.vertical-toolbar .toolbar-nav-info {
+    display: none;
+    margin-right: 56px;
+    height: 28px;
+    padding: 10px 0 10px 12px;
+    text-align: left;
+    color: #000;
+    font-weight: 700;
+    line-height: 1.6
+}
+.vertical-toolbar .toolbar-nav-info .nav-info-ex {
+    display: block;
+    font-size: 76.92308%;
+    width: 80px;
+    line-height: 1.2
+}
+.vertical-toolbar .toolbar-nav-info .nav-info-ttl {
+    width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis
+}
+.vertical-toolbar .toolbar-share {
+    border-bottom: 0
+}
+.vertical-toolbar .toolbar-back .nav-info-ex {
+    text-align: left
+}
+.page-news-detail .toolbar-next .nav-info-ttl, .page-news-detail .toolbar-prev .nav-info-ttl, .page-recruit-message .toolbar-next .nav-info-ttl, .page-recruit-message .toolbar-prev .nav-info-ttl {
+    width: 270px
+}
+.lt-ie8 .vertical-toolbar .toolbar-item {
+    border-top: 0
+}
+.lt-ie7 .vertical-toolbar {
+    position: absolute;
+    top: 160px;
+    right: 20px
+}
+.block-recommend-interview .label-recommend-interview {
+    font-size: 84.61538%;
+    line-height: 1
+}
+.list-category-link {
+    position: relative;
+    font-weight: 700;
+    text-align: center;
+    height: 45px;
+    padding-top: 4px
+}
+.list-category-link .item-category-link {
+    background: #000;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    min-width: 115px;
+    margin-left: 5px
+}
+.list-category-link .item-category-link:first-child {
+    margin-left: 0
+}
+.list-category-link .item-category-link a {
+    display: block;
+    line-height: 26px;
+    padding: 0 8px;
+    font-size: 107.69231%;
+    border: 2px solid #000;
+    color: #fff;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    text-decoration: none
+}
+.list-category-link .item-category-link a:hover {
+    border: 2px solid #000;
+    background: #fff;
+    color: #000
+}
+.list-category-link .item-category-link a:before {
+    display: inline-block;
+    position: relative;
+    top: 1px;
+    right: 5px;
+    margin-left: 5px
+}
+.list-category-link .item-category-link.current a {
+    border: 2px solid #000;
+    background: #fff;
+    color: #000
+}
+ul.share-button {}ul.share-button li {
+    display: inline-block
+}
+ul.share-button .facebook {
+    width: 110px
+}
+ul.share-button .twitter {
+    width: 110px
+}
+ul.share-button .facebook .fb_iframe_widget>span {
+    vertical-align: baseline!important
+}
+ul.share-button .facebook .fb_like {
+    z-index: 100
+}
+ul.share-button .hatebu, ul.share-button .plusone {
+    padding-right: 5px
+}
+ul.share-button iframe.twitter-share-button {
+    width: 110px!important
+}
+.article-footer .share-button, .news-footer .share-button {
+    padding: 30px 0 0 38px
+}
+.clearfix {
+    overflow: hidden;
+    *zoom: 1
+}
+.sound-button {
+    display: inline-block;
+    vertical-align: middle;
+    width: 44px;
+    height: 44px;
+    background: url(http://www.kayac.com/assets/images/common/audio_button.png) no-repeat;
+    background-position: 0 -44px;
+    text-indent: -9999px;
+    cursor: pointer
+}
+.sound-button.off {
+    background-position: 0 0
+}
+.sound-button.off:hover {
+    -webkit-animation: shake .1ms infinite;
+    -moz-animation: shake .1ms infinite;
+    -ms-animation: shake .1ms infinite;
+    animation: shake .1ms infinite
+}
+.lt-ie9 .news-article {
+    padding-top: 50px
+}
+.lt-ie9 .news-summary {
+    border: solid 4px #404040
+}
+.lt-ie9 .news-header {
+    border-top: 0;
+    border-right: 0;
+    border-left: 0
+}
+.main-visual {
+    position: relative;
+    height: 430px
+}
+.main-visual .new-mark {
+    position: absolute;
+    z-index: 2;
+    margin-left: -159px;
+    left: 50%;
+    top: 87px
+}
+.main-visual .new-logo {
+    position: absolute;
+    z-index: 2;
+    margin-left: -160px;
+    left: 50%;
+    top: 310px
+}
+.main-visual .line {
+    position: absolute;
+    z-index: 1;
+    margin-left: -580px;
+    left: 50%;
+    top: -350px
+}
+.main-visual .oar {
+    display: none;
+    position: absolute;
+    z-index: 3;
+    margin-left: -143px;
+    left: 50%;
+    top: 70px;
+    width: 128px;
+    height: 234px;
+    background-repeat: no-repeat
+}
+.main-visual .oar.p1 {
+    background-image: url(http://www.kayac.com/assets/images/top/oar-atari.png)
+}
+.main-visual .oar.p2 {
+    background-image: url(http://www.kayac.com/assets/images/top/oar-barbar.png)
+}
+.main-visual .oar.p3 {
+    background-image: url(http://www.kayac.com/assets/images/top/oar-bat.png)
+}
+.main-visual .oar.p4 {
+    background-image: url(http://www.kayac.com/assets/images/top/oar-bone_fish.png)
+}
+.main-visual .oar.p5 {
+    background-image: url(http://www.kayac.com/assets/images/top/oar-color_pink.png)
+}
+.main-visual .oar.p6 {
+    background-image: url(http://www.kayac.com/assets/images/top/oar-fish.png)
+}
+.main-visual .oar.p7 {
+    background-image: url(http://www.kayac.com/assets/images/top/oar-fork.png)
+}
+.main-visual .oar.p8 {
+    background-image: url(http://www.kayac.com/assets/images/top/oar-girl.png)
+}
+.main-visual .oar.p9 {
+    background-image: url(http://www.kayac.com/assets/images/top/oar-help.png)
+}
+.main-visual .oar.p10 {
+    background-image: url(http://www.kayac.com/assets/images/top/oar-kanabou.png)
+}
+.main-visual .oar.p11 {
+    background-image: url(http://www.kayac.com/assets/images/top/oar-leek.png)
+}
+.main-visual .oar.p12 {
+    background-image: url(http://www.kayac.com/assets/images/top/oar-lightning.png)
+}
+.main-visual .oar.p13 {
+    background-image: url(http://www.kayac.com/assets/images/top/oar-long_sword.png)
+}
+.main-visual .oar.p14 {
+    background-image: url(http://www.kayac.com/assets/images/top/oar-magic_stick.png)
+}
+.main-visual .oar.p15 {
+    background-image: url(http://www.kayac.com/assets/images/top/oar-octopus.png)
+}
+.main-visual .oar.p16 {
+    background-image: url(http://www.kayac.com/assets/images/top/oar-pencil.png)
+}
+.main-visual .oar.p17 {
+    background-image: url(http://www.kayac.com/assets/images/top/oar-shamoji.png)
+}
+.main-visual .oar.p18 {
+    background-image: url(http://www.kayac.com/assets/images/top/oar-sword.png)
+}
+.main-visual .oar.p19 {
+    background-image: url(http://www.kayac.com/assets/images/top/oar-tire.png)
+}
+.main-visual .oar.p20 {
+    background-image: url(http://www.kayac.com/assets/images/top/oar-unbrella.png)
+}
+.main-visual .oar.p21 {
+    background-image: url(http://www.kayac.com/assets/images/top/oar-wing.png)
+}
+.main-visual .oar.p22 {
+    background-image: url(http://www.kayac.com/assets/images/top/oar-zipper.png)
+}
+.main-visual .kayac {
+    position: absolute;
+    z-index: 2;
+    margin-left: -160px;
+    left: 50%;
+    top: 85px;
+    width: 320px;
+    height: 192px;
+    background: url(http://www.kayac.com/assets/images/top/kayac_animate.png) no-repeat
+}
+.main-visual .do {
+    position: absolute;
+    z-index: 2;
+    margin-left: -470px;
+    left: 50%;
+    top: 90px
+}
+.main-visual .n {
+    position: absolute;
+    z-index: 2;
+    margin-left: 200px;
+    left: 50%;
+    top: 190px
+}
+.main-visual .new-mark, .main-visual .new-logo, .main-visual .kayac, .main-visual .line, .main-visual .do, .main-visual .n {
+    display: none
+}
+ul.share-button {
+    position: absolute;
+    display: none;
+    z-index: 4;
+    margin-left: -170px;
+    left: 50%;
+    top: 595px
+}
+ul.share-button .facebook {
+    width: 120px
+}
+ul.share-button .hatebu {
+    padding-right: 8px
+}
+body.effect .kayac.two {
+    background-position: 0 -4416px
+}
+body.effect .intro .do, body.effect .intro .n {
+    display: block
+}
+body.effect .intro .do {
+    -webkit-animation: intro-onoma-do 200ms cubic-bezier(0, 0, 1, .55);
+    -moz-animation: intro-onoma-do 200ms cubic-bezier(0, 0, 1, .55);
+    -ms-animation: intro-onoma-do 200ms cubic-bezier(0, 0, 1, .55);
+    animation: intro-onoma-do 200ms cubic-bezier(0, 0, 1, .55)
+}
+body.effect .intro .n {
+    -webkit-animation: intro-onoma-n 200ms cubic-bezier(0, 0, 1, .55);
+    -moz-animation: intro-onoma-n 200ms cubic-bezier(0, 0, 1, .55);
+    -ms-animation: intro-onoma-n 200ms cubic-bezier(0, 0, 1, .55);
+    animation: intro-onoma-n 200ms cubic-bezier(0, 0, 1, .55)
+}
+body.effect .intro .line {
+    -webkit-animation: intro-line 1200ms;
+    -moz-animation: intro-line 1200ms;
+    -ms-animation: intro-line 1200ms;
+    animation: intro-line 1200ms
+}
+body.effect .shake {
+    -webkit-animation: intro-shake 100ms;
+    -moz-animation: intro-shake 100ms;
+    -ms-animation: intro-shake 100ms;
+    animation: intro-shake 100ms
+}
+body.effect .kayac.animate {
+    -webkit-animation: newlogo-animation 1600ms steps(23);
+    -moz-animation: newlogo-animation 1600ms steps(23);
+    -ms-animation: newlogo-animation 1600ms steps(23);
+    animation: newlogo-animation 1600ms steps(23)
+}
+body.effect.news .scroll-item {
+    visibility: hidden
+}
+body.effect.news .scroll-item.show {
+    visibility: visible;
+    -webkit-animation: bounce-frame 200ms;
+    -moz-animation: bounce-frame 200ms;
+    -ms-animation: bounce-frame 200ms;
+    animation: bounce-frame 200ms
+}
+.main-visual .balloon {
+    position: absolute;
+    left: 50%;
+    top: 20px;
+    z-index: 9
+}
+body.cn {
+    font-family: "Microsoft YaHei", SimHei, SimSun, Arial, sans-serif
+}
+body.cn #SiteFooter {
+    height: 40px!important
+}
+body.cn .main-visual .balloon {
+    display: none!important
+}
+body.cn .site-logo a {
+    background: url(http://www.kayac.com/assets/images/common/kayac_logo_cn.png?1432536525) no-repeat right;
+    width: 114px
+}
+body.cn .article-vision-style-dice .article-summary-content-wrapper {
+    background: 0 0
+}
+body.cn ul.share-button .renren {
+    position: relative;
+    top: 4px
+}
+body.cn.effect .page-list .article-summary:hover .article-summary-content-wrapper:after, body.cn.effect .page-index .article-summary:hover .article-summary-content-wrapper:after, body.cn.effect .style-article-list .article-summary:hover .article-summary-content-wrapper:after, body.cn.effect .related-news-list .article-summary:hover .article-summary-content-wrapper:after, body.cn.effect .page-top .article-summary:hover .article-summary-content-wrapper:after, body.cn.effect .news-list .article-summary:hover .article-summary-content-wrapper:after {
+    content: url(http://www.kayac.com/assets/images/svg/news_border/pi_cn.png?1432536525)!important
+}
+.page-top.page-cn .top-note {
+    padding: 3px 0;
+    width: 220px;
+    color: red;
+    font-weight: 700;
+    text-align: center
+}
+.page-top.page-cn .section-description {
+    width: 460px;
+    margin: 0 auto 30px
+}
+.page-top.page-cn .section-description p {
+    margin: 1em 0;
+    font-size: 123.07692%
+}
+.page-top.page-cn .section-description strong {
+    position: relative;
+    top: -30px;
+    font-size: 230%;
+    font-weight: 700
+}
+.page-top.page-cn .section-description em {
+    font-style: normal;
+    font-size: 180%;
+    font-weight: 700
+}
+.page-top.page-cn .share-button {
+    text-align: center
+}
+.page-top.page-cn .section-member, .page-top.page-cn .section-service, .page-top.page-cn .section-publish {
+    position: relative
+}
+.page-top.page-cn .book-cover {
+    float: left;
+    margin: 0 0 20px 10px;
+    border: 1px solid #000;
+    -webkit-box-shadow: -1px 1px 0 #000, 1px 1px 0 #000;
+    -moz-box-shadow: -1px 1px 0 #000, 1px 1px 0 #000;
+    box-shadow: -1px 1px 0 #000, 1px 1px 0 #000
+}
+.page-top.page-cn .book-detail {
+    margin-left: 220px;
+    font-size: 123.07692%
+}
+.page-top.page-cn .book-title {
+    font-size: 160%;
+    font-weight: 700
+}
+.page-top.page-cn .book-description {
+    font-size: 85%
+}
+.page-top.page-cn .book-link {
+    display: block;
+    clear: both
+}
+.article-chinese-top .photo {
+    float: none;
+    margin: 0
+}
+.article-chinese-top .name {
+    margin: 8px 0 0;
+    text-align: left
+}
+.article-chinese-top .project-member-list {
+    margin: auto
+}
+.article-chinese-top .project-member-list .project-member-name, .article-chinese-top .project-member-list .project-member-role {
+    text-align: left
+}
+.article-chinese-top .service-list {
+    padding: 0;
+    margin: 0 auto 40px;
+    background: 0 0
+}
+.article-chinese-top .service-article-list li {
+    font-size: 100%
+}
+.article-chinese-top .service-article-list h2 {
+    padding: 0;
+    margin-bottom: 36px;
+    background: 0 0
+}
+body.cn .main-visual {
+    position: relative;
+    height: 430px
+}
+body.cn .main-visual .new-mark {
+    position: absolute;
+    z-index: 2;
+    margin-left: -159px;
+    left: 50%;
+    top: 87px
+}
+body.cn .main-visual .new-logo {
+    position: absolute;
+    z-index: 2;
+    margin-left: -160px;
+    left: 50%;
+    top: 310px
+}
+body.cn .main-visual .line {
+    position: absolute;
+    z-index: 1;
+    margin-left: -580px;
+    left: 50%;
+    top: -350px
+}
+body.cn .main-visual .oar {
+    display: none;
+    position: absolute;
+    z-index: 3;
+    margin-left: -143px;
+    left: 50%;
+    top: 70px;
+    width: 128px;
+    height: 234px;
+    background-repeat: no-repeat
+}
+body.cn .main-visual .oar.p1 {
+    background-image: url(http://www.kayac.com/assets/images/top/oar-atari.png)
+}
+body.cn .main-visual .oar.p2 {
+    background-image: url(http://www.kayac.com/assets/images/top/oar-barbar.png)
+}
+body.cn .main-visual .oar.p3 {
+    background-image: url(http://www.kayac.com/assets/images/top/oar-bat.png)
+}
+body.cn .main-visual .oar.p4 {
+    background-image: url(http://www.kayac.com/assets/images/top/oar-bone_fish.png)
+}
+body.cn .main-visual .oar.p5 {
+    background-image: url(http://www.kayac.com/assets/images/top/oar-color_pink.png)
+}
+body.cn .main-visual .oar.p6 {
+    background-image: url(http://www.kayac.com/assets/images/top/oar-fish.png)
+}
+body.cn .main-visual .oar.p7 {
+    background-image: url(http://www.kayac.com/assets/images/top/oar-fork.png)
+}
+body.cn .main-visual .oar.p8 {
+    background-image: url(http://www.kayac.com/assets/images/top/oar-girl.png)
+}
+body.cn .main-visual .oar.p9 {
+    background-image: url(http://www.kayac.com/assets/images/top/oar-help.png)
+}
+body.cn .main-visual .oar.p10 {
+    background-image: url(http://www.kayac.com/assets/images/top/oar-kanabou.png)
+}
+body.cn .main-visual .oar.p11 {
+    background-image: url(http://www.kayac.com/assets/images/top/oar-leek.png)
+}
+body.cn .main-visual .oar.p12 {
+    background-image: url(http://www.kayac.com/assets/images/top/oar-lightning.png)
+}
+body.cn .main-visual .oar.p13 {
+    background-image: url(http://www.kayac.com/assets/images/top/oar-long_sword.png)
+}
+body.cn .main-visual .oar.p14 {
+    background-image: url(http://www.kayac.com/assets/images/top/oar-magic_stick.png)
+}
+body.cn .main-visual .oar.p15 {
+    background-image: url(http://www.kayac.com/assets/images/top/oar-octopus.png)
+}
+body.cn .main-visual .oar.p16 {
+    background-image: url(http://www.kayac.com/assets/images/top/oar-pencil.png)
+}
+body.cn .main-visual .oar.p17 {
+    background-image: url(http://www.kayac.com/assets/images/top/oar-shamoji.png)
+}
+body.cn .main-visual .oar.p18 {
+    background-image: url(http://www.kayac.com/assets/images/top/oar-sword.png)
+}
+body.cn .main-visual .oar.p19 {
+    background-image: url(http://www.kayac.com/assets/images/top/oar-tire.png)
+}
+body.cn .main-visual .oar.p20 {
+    background-image: url(http://www.kayac.com/assets/images/top/oar-unbrella.png)
+}
+body.cn .main-visual .oar.p21 {
+    background-image: url(http://www.kayac.com/assets/images/top/oar-wing.png)
+}
+body.cn .main-visual .oar.p22 {
+    background-image: url(http://www.kayac.com/assets/images/top/oar-zipper.png)
+}
+body.cn .main-visual .kayac {
+    position: absolute;
+    z-index: 2;
+    margin-left: -160px;
+    left: 50%;
+    top: 85px;
+    width: 320px;
+    height: 192px;
+    background: url(http://www.kayac.com/assets/images/top/kayac_animate.png) no-repeat
+}
+body.cn .main-visual .do {
+    position: absolute;
+    z-index: 2;
+    margin-left: -470px;
+    left: 50%;
+    top: 90px
+}
+body.cn .main-visual .n {
+    position: absolute;
+    z-index: 2;
+    margin-left: 200px;
+    left: 50%;
+    top: 190px
+}
+body.cn .main-visual .new-mark, body.cn .main-visual .new-logo, body.cn .main-visual .kayac, body.cn .main-visual .line, body.cn .main-visual .do, body.cn .main-visual .n {
+    display: none
+}
+body.effect.cn .kayac.two {
+    background-position: 0 -4416px
+}
+body.effect.cn .intro .do, body.effect.cn .intro .n {
+    display: block
+}
+body.effect.cn .intro .do {
+    -webkit-animation: intro-onoma-do 800ms cubic-bezier(0, 0, 1, .55);
+    -moz-animation: intro-onoma-do 800ms cubic-bezier(0, 0, 1, .55);
+    -ms-animation: intro-onoma-do 800ms cubic-bezier(0, 0, 1, .55);
+    animation: intro-onoma-do 800ms cubic-bezier(0, 0, 1, .55)
+}
+body.effect.cn .intro .n {
+    -webkit-animation: intro-onoma-n 800ms cubic-bezier(0, 0, 1, .55);
+    -moz-animation: intro-onoma-n 800ms cubic-bezier(0, 0, 1, .55);
+    -ms-animation: intro-onoma-n 800ms cubic-bezier(0, 0, 1, .55);
+    animation: intro-onoma-n 800ms cubic-bezier(0, 0, 1, .55)
+}
+body.effect.cn .intro .line {
+    -webkit-animation: intro-line 1200ms;
+    -moz-animation: intro-line 1200ms;
+    -ms-animation: intro-line 1200ms;
+    animation: intro-line 1200ms
+}
+body.effect.cn .shake {
+    -webkit-animation: intro-shake 100ms;
+    -moz-animation: intro-shake 100ms;
+    -ms-animation: intro-shake 100ms;
+    animation: intro-shake 100ms
+}
+body.effect.cn .kayac.animate {
+    -webkit-animation: newlogo-animation 1600ms steps(23);
+    -moz-animation: newlogo-animation 1600ms steps(23);
+    -ms-animation: newlogo-animation 1600ms steps(23);
+    animation: newlogo-animation 1600ms steps(23)
+}
+body.en .site-logo a {
+    background: url(http://www.kayac.com/assets/images/common/kayac_logo_en.png?1432536525) no-repeat right;
+    width: 114px
+}
+body.en .main-visual .balloon {
+    display: none!important
+}
+body.en .article-vision-style-dice .article-summary-content-wrapper {
+    background: 0 0
+}
+body.en .page-vision-index .balloon.who, body.en .page-vision-detail .balloon.who {
+    top: 110px;
+    left: 260px
+}
+body.en .page-vision-index .balloon.style, body.en .page-vision-detail .balloon.style {
+    top: 117px
+}
+body.en .page-company-index .balloon.about, body.en .page-company-detail .balloon.about {
+    top: 10px;
+    left: 230px
+}
+body.en .page-company-index .balloon.map, body.en .page-company-detail .balloon.map {
+    top: 130px;
+    left: 20px
+}
+body.en .page-company-index .balloon.finance, body.en .page-company-detail .balloon.finance {
+    top: 135px;
+    left: 295px
+}
+body.en .page-company-index .balloon.institution, body.en .page-company-detail .balloon.institution {
+    top: -16px;
+    left: -20px
+}
+body.en .page-company-index .balloon.office, body.en .page-company-detail .balloon.office {
+    top: 140px;
+    left: 270px
+}
+body.en.effect .site-footer-content {
+    height: 140px
+}
+body.en #SiteFooter.active {
+    height: 180px
+}
+body.en #SiteFooter .site-related-links {
+    width: auto!important
+}
+body.en .site-related-links.second {
+    top: 35px!important;
+    margin-left: -90px
+}
+body.en .company-info-location .location-office {
+    font-size: 110%
+}
+body.en .company-info-location .btnMap {
+    top: 97px;
+    right: -20px
+}
+body.en .read-more .label {
+    background-image: url(http://www.kayac.com/assets/images/common/readmore_en.png)
+}
+body.en .service-list .closed a:after {
+    right: 45px;
+    content: "CLOSED"
+}
+body.en .contact-sheet-box-1 .balloon {
+    background-image: url(http://www.kayac.com/assets/images/contact/balloon1_en.png)
+}
+body.en .contact-sheet-box-2 .balloon {
+    background-image: url(http://www.kayac.com/assets/images/contact/balloon2_en.png)
+}
+body.en.effect .page-list .article-summary:hover .article-summary-content-wrapper:after, body.en.effect .page-index .article-summary:hover .article-summary-content-wrapper:after, body.en.effect .style-article-list .article-summary:hover .article-summary-content-wrapper:after, body.en.effect .related-news-list .article-summary:hover .article-summary-content-wrapper:after, body.en.effect .page-top .article-summary:hover .article-summary-content-wrapper:after, body.en.effect .news-list .article-summary:hover .article-summary-content-wrapper:after {
+    content: url(http://www.kayac.com/assets/images/svg/news_border/pi_en.png)
+}
+body.en .member-list-grid .member-cell.retired:before, body.en .member-list-grid .employer-item.retired:before, body.en .page-top.page-cn .member-cell.retired:before, body.en .page-top.page-cn .employer-item.retired:before {
+    content: url(http://www.kayac.com/assets/images/team/member/retired_en.png)
+}
+body.en .article-vision-style-manga .hero-rule-4 .balloon {
+    background-image: url(http://www.kayac.com/assets/images/vision/style/manga/words_en.png)
+}
+body.en .about-article .language-note {
+    margin: 10px 0 25px
+}
+body.en .language-note {
+    margin: 10px 0 -5px;
+    color: red;
+    font-weight: 700
+}
+body.en .language-note:before {
+    content: "* "
+}
