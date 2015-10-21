@@ -1,42 +1,43 @@
+/*ロゴがうごくやつ*/
+.ugoku_logo {
+    height: 192px;
+    width: 390px;
+    background: url(http://www.kayac.com/assets/images/top/kayac_animate.png) no-repeat;
+    animation: logo-ugoku 1s steps(7) infinite
+}
+@keyframes logo-ugoku {
+    0% {
+        background-position: 0 0
+    }
+    100% {
+        background-position: 0 -147px
+    }
+}
 
-.scroll-item {
+
+
+/*スクロールの時のポヨンてやつ*/
+.news-item {
     visibility: hidden;
 }
 
-.scroll-item.show {
-    visibility: visible;
-    -webkit-animation: bounce-frame 200ms;
-    -moz-animation: bounce-frame 200ms;
-    -ms-animation: bounce-frame 200ms;
-    animation: bounce-frame 200ms;
-}
-
-.article-summary .content-border-center, .article-header:hover .article-summary .content-border-center, .news-header:hover .article-summary .content-border-center {
-    position: absolute;
-    top: 0;
-    left: 200px;
-    background-image: url(http://www.kayac.com/assets/images/svg/news_border/center.png);
-    height: 266px;
-    -moz-transition: background-image 300ms;
-    -o-transition: background-image 300ms;
-    -webkit-transition: background-image 300ms;
-    transition: background-image 300ms;
-}
-
-.article-summary .content-border-right, .article-header:hover .article-summary .content-border-right, .news-header:hover .article-summary .content-border-right {
-    position: absolute;
-    top: 0;
-    width: 200px;
-    height: 266px;
-    -moz-transition: background-image 300ms;
-    -o-transition: background-image 300ms;
-    -webkit-transition: background-image 300ms;
-    transition: background-image 300ms;
-}
-
-.show{
+.news-item.show{
     visibility:visible;
-    -webkit-animation:bounce-frame 200ms;
-    -moz-animation:bounce-frame 200ms;
-    -ms-animation:bounce-frame 200ms;
-    animation:bounce-frame 200ms}
+    animation:bown 400ms
+}
+
+@keyframes bown {
+    0% {
+        transform: scale(1, 1)
+    }
+    50% {
+        transform: scale(1.2, 1.2)
+    }
+    55% {
+        transform: scale(0.9, .9)
+    }
+    100% {
+        transform: scale(1, 1)
+    }
+}
+
