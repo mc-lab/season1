@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<link rel="stylesheet" href="../css/sanitize.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../css/common.css" />
+  <meta charset="UTF-8">
+  <title>[メディクリラボ No.2]CSS Niteのサイトを模倣_東野</title>
+</head>
+
+<body>
+
+<!-- header navigation -->
+<nav class="navbar proj2_nav">
+	<div class="container">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="#"><img src="../img/logo.svg" height="27"></a>
+	    </div>
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav navbar-right">
+	        <li><a href="#">開催情報</a></li>
+					<li><a href="#">アーカイブ</a></li>
+					<li><a href="#">ブログ</a></li>
+					<li><a href="#"><i class="fa fa-twitter"><span class="screen-reader-text">Twitter</span></i></a></li>
+					<li><a href="#"><i class="fa fa-facebook-square"><span class="screen-reader-text">Facebook</span></i></a></li>
+	      </ul>
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</div>
+</nav>
+<!-- //End header navigation -->
+
+<div class="container proj2_header">
+	<div class="row">
+		<h1 class="text-center">セミナー開催情報</h1>
+		<p class="text-center">CSS Nite以外のセミナーへのお問い合わせは、<br>それぞれのイベントの主催者までお願いします。</p>
+	</div>
+</div>
+
+<div class="container text-center">
+	<ul class="btn-group" role="group">
+		<li class="filter btn btn-default" data-filter="all">すべて</li>
+		<li class="filter btn btn-default" data-filter=".category-1">カテゴリー１</li>
+		<li class="filter btn btn-default" data-filter=".category-2">カテゴリー２</li>
+		<li class="filter btn btn-default" data-filter=".category-3">カテゴリー３</li>
+		<li class="filter btn btn-default" data-filter=".category-4">カテゴリー４</li>
+	</ul>
+</div>
+
+<section class="proj2_portfolio">
+	<div class="container">
+		<div class="row">
+			<ul id="Grid" class="list-unstyled">
+				<li class="mix category-1" data-value="1"><span>1</span></li>
+				<li class="mix category-2 category-3" data-value="2"><span>2</span></li>
+				<li class="mix category-3" data-value="3"><span>3</span></li>
+				<li class="mix category-4 category-2" data-value="4"><span>4</span></li>
+				<li class="mix category-1" data-value="5"><span>5</span></li>
+				<li class="mix category-2" data-value="6"><span>6</span></li>
+				<li class="mix category-3 category-4" data-value="7"><span>7</span></li>
+				<li class="mix category-4" data-value="8"><span>8</span></li>
+				<li class="mix category-1" data-value="9"><span>9</span></li>
+				<li class="mix category-2 category-1" data-value="10"><span>10</span></li>
+				<li class="mix category-3" data-value="11"><span>11</span></li>
+				<li class="mix category-4" data-value="12"><span>12</span></li>
+			</ul>
+		</div>
+	</div>
+</section>
+
+
+<!-- JavaScript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="http://cdn.jsdelivr.net/jquery.mixitup/2.0.0/jquery.mixitup.min.js"></script>
+  <script src="../js/common.js"></script>
+<!-- //End JavaScript -->
+</body>
+</html>
