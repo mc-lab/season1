@@ -1,0 +1,174 @@
+@charset "UTF-8";
+@font-face {
+    font-weight: 400;
+    font-style: normal
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, object, iframe, pre, code, p, blockquote, form, fieldset, legend, table, th, td, caption, tbody, tfoot, thead, article, aside, figure, footer, header, hgroup, menu, nav, section, audio, video, canvas, main {
+    margin: 0;
+    padding: 0
+}
+article, aside, figure, figcaption, footer, h1, h2, h3, h4, h5, h6, header, hgroup, menu, nav, section, main {
+    display: block
+}
+html {
+    overflow-y: scroll
+}
+html, body {
+    width: 100%;
+    min-height: 100%
+}
+body {
+    color: #000;
+    background: #fff;
+    font-family: 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ' Meiryo, 'Lucida Grande', sans-serif;
+    font-size: 13px;
+    *font-size: 82%;
+    line-height: 1.5
+}
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%
+}
+p {
+    line-height: 1.5
+}
+li {
+    list-style: none
+}
+
+img {
+    border: 0;
+    vertical-align: middle
+}
+
+.article-summary {
+    position: relative;
+    margin-bottom: 16px;
+    height: 270px
+}
+.article-summary.one-column .content-border-center {
+    right: 200px
+}
+.article-summary.one-column .content-border-right {
+    right: 0
+}
+.article-summary.one-column .article-summary-content-wrapper:after {
+    display: none;
+    right: -5px
+}
+.article-summary .article-summary-content-wrapper {
+    display: table;
+    width: 100%;
+    height: 100%
+}
+.article-summary .article-summary-content {
+    position: relative;
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle
+}
+.article-summary .article-summary-content-body {
+    position: relative;
+    padding-left: 36px;
+    padding-right: 36px
+}
+.article-summary .article-title, 
+.article-summary .title {
+    font-size: 276.92308%;
+    line-height: 1.3;
+    margin-bottom: 12px
+}
+.article-summary .content-border-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../img/left2.png);
+    width: 200px;
+    min-height: 266px;
+    -moz-transition: background-image 300ms;
+    -o-transition: background-image 300ms;
+    -webkit-transition: background-image 300ms;
+    transition: background-image 300ms
+}
+.article-summary .content-border-center {
+    position: absolute;
+    top: 0;
+    left: 200px;
+    background-image: url(../img/center.png);
+    min-height: 266px;
+    -moz-transition: background-image 300ms;
+    -o-transition: background-image 300ms;
+    -webkit-transition: background-image 300ms;
+    transition: background-image 300ms
+}
+.article-summary .content-border-right {
+    position: absolute;
+    top: 0;
+    width: 200px;
+    min-height: 266px;
+    -moz-transition: background-image 300ms;
+    -o-transition: background-image 300ms;
+    -webkit-transition: background-image 300ms;
+    transition: background-image 300ms
+}
+.article-summary.one-column .content-border-right {
+    background-image: url(../img/1col_right2.png)
+}
+
+
+#MainContents {
+    position: relative;
+    width: 90%;
+    min-width: 960px;
+    margin: 0 auto 40px;
+    top: 50px;
+    padding-bottom: 60px
+}
+
+.clearfix {
+    overflow: hidden;
+    *zoom: 1
+}
+
+.main-visual {
+    position: relative;
+    height: 500px
+}
+
+@keyframes rollInL {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+    transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes rollInR {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg);
+    transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.animeL {
+    animation: rollInL 0.5s ease-in-out;
+    transform-origin: 50% 50%;
+}
+
+.animeR {
+    animation: rollInR 0.5s ease-in-out;
+    transform-origin: 50% 50%;
+}
