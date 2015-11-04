@@ -9,7 +9,7 @@ html, body{
 }
 .header_bar {
     width: 100%;
-    height: 80px;
+    height: 14px;
     background-color: #fff;
     text-align: center;
     z-index: 10;
@@ -18,36 +18,36 @@ html, body{
 }
 
 .header_bar .header_logo{
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 20px;
     width: 90px;
     position: relative;
 }
 
 .header_bar  .header_content{
     position: relative;
-    top:8px;
+    top: 20px;
+    left: 0px;
 }
 
 
 .header_bar .header_logo:before {
     content: "";
-    width: 246px;
-    height: 8px;
+    width: 253px;
+    height: 4px;
     background-color: #fff;
     position: absolute;
-    top: 77px;
+    top: 14px;
     left: -73px;
     border-radius: 3px;
 }
 
 
 .header_bar .header_logo:after {
-    width: 400px;
-    height: 400px;
+    width: 500px;
+    height: 500px;
     border-radius: 200px;
-    top: -400px;
-    left: -150px;
+    top: -470px;
+    left: -310px;
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
     z-index: -1;
     /*border: 2px solid #000;*/
@@ -60,6 +60,7 @@ html, body{
     background-color: #fff;
     position: relative;
 }
+
 
 
 .ts_cover {
@@ -187,7 +188,7 @@ html, body{
 
 .mt_site_footer{
 	width:100%;
-	height: 60px;
+	height: 50px;
 	position: fixed;
 	bottom: 0px;
 	padding: 20px;
@@ -197,7 +198,7 @@ html, body{
 
 .mt_footer{
 	/*border: 5px solid #fff;*/
-	height: 90px;
+	height: 80px;
 	margin: auto;
 }
 
@@ -213,6 +214,11 @@ html, body{
 	list-style-type: none;
 	margin-right:15px;
 	margin-left: 15px;
+  cursor: pointer;
+}
+
+.mt_member li:hover{
+  text-decoration:underline;
 }
 
 .clearfix:after {
@@ -224,8 +230,9 @@ html, body{
 }
 
 .mt_copy{
-	text-align: center;
-	margin-top: 15px;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 10px;
 }
 
 .mt_modal {
@@ -270,7 +277,7 @@ html, body{
 @keyframes kenzan  {
     0% {
         opacity: 0;
-     	top:10%;   
+     	top:10%;
     }
     100% {
         opacity: 1;
@@ -363,3 +370,42 @@ html, body{
 }
 
 
+
+.mt_box {
+    position: relative;
+    background: #ccc;
+    height: 20px;
+    width: 50px;
+    margin-bottom: 20px;
+    border-radius: 50px;
+}
+
+.mt_box:after {
+      content: '';
+      position: absolute;
+      height: 30px;
+      width: 30px;
+      border-radius: 15px;
+      z-index: -1;
+      background: #fff;
+      bottom: -20px;
+      left: 45px;
+      margin:auto;
+            }
+
+.mt_box:before {
+                content: '';
+                position: absolute;
+                height: 30px;
+                width: 30px;
+                border-radius: 15px;
+                z-index: -1;
+                background: #ccc;
+                bottom: -15px;
+                left: 35px;
+                margin:auto;
+            }
+
+.mt_click{
+  font-size: 11px;
+}
