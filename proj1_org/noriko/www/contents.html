@@ -1,0 +1,99 @@
+    <div class="contents">
+        <div class="header_bar">
+        <div class="header_logo">
+            <div class="header_content">
+            <img src="../img/mcl_logo.png" height="120" width="130"/>
+            </div>
+        </div>
+        </div>
+
+        <div class="ts_cover">
+            <div class="ts_main_img"></div>
+            <div class="ts_main_prologue">
+                <img src="../img/timeago.png" height="120" width="630"/>
+                <p>〜とある王国のものがたり〜</p>
+            </div>
+            <div class="ts_main_intro">
+                <img src="../img/prologue.png" width="900"/>
+            </div>
+        </div>
+
+        <div class="ts_main_scroll"><img src="../img/scroll.png" width="600"/></div>
+        <div class="contents">
+  <div class="line"></div>
+</div>
+        <ul class="no_dot">
+            <li class="nf_casette" id ="n_field1">
+                <div class="anm type1">
+                    <img src="../img/nishiji_para.jpeg"/>
+                </div>
+                <h3 class="title">魔王パワー</h3>
+                <h4 class="actor">NISHIJI</h4>
+            </li>
+            <li class="nf_casette" id ="n_field2">
+                <div class="anm type1">
+                    <img src="../img/sasa_para.jpeg"/>
+                </div>
+                <h3 class="title">勇者の行進</h3>
+                <h4 class="actor">SASANO</h4> 
+            </li>
+            <li class="nf_casette" id ="n_field3">
+                <div class="anm type2">
+                    <img src="../img/buchi_para.jpeg"/>
+                </div>
+                <h3 class="title">平和な村に魔王現る</h3>
+                <h4 class="actor">NISHIJI & TANIBUHCI</h4>
+            </li>
+            <li class="nf_casette" id ="n_field4">
+                <div class="anm type3">
+                    <img src="../img/byebye_para.jpeg"/>
+                </div>
+                <h3 class="title">魔王、僧侶、魔法使いが<br>勇者を見送る</h3>          
+                <h4 class="actor">SASA & AZU、MAMI、NORIKO</h4>                    
+            </li>
+            <li class="nf_casette" id ="n_field5">
+                <div class="anm type3">
+                    <img src="../img/maou_para.jpeg"/>
+                </div>
+                <h3 class="title">魔王、勇者をつかまえる！</h3>          
+                <h4 class="actor">SASA & NISHIJI</h4>                    
+            </li>            
+            <li class="nf_casette" id ="n_field6">
+                
+            </li>
+        </ul>
+
+        <div class="mt_site_footer">
+            <div class='mt_footer'>
+                <ul class='mt_member clearfix'>
+                    <li data-modal='senpai'>SASANO</li>
+                    <li data-modal='higashinosan'>HIGASHINO</li>
+                    <li data-modal='norikosan'>FUKUYAMA</li>
+                    <li data-modal='sensei'>NISHIJIMA</li>
+                    <li data-modal='watashi'>TANIBUCHI</li>
+                    <li data-modal='karinsama'>AZUMA</li>
+                </ul>
+                <div class="mt_copy">Copyright © Media Creation Lab.</div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+    $(function() {
+        $(".mt_member li").click(function(){
+            index = '.'+$(this).data('modal');
+            console.log(index);
+            $(".mt_modal").show();
+            $(index).show();
+            $(index).addClass('kenzan');
+
+        });
+
+        $(".mt_modal_bg").click(function(){
+            $(".mt_modal").hide();
+            $(".mt_prof").hide()
+                .removeClass('kenzan');
+
+        });
+    });
+    </script>
