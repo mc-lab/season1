@@ -480,6 +480,7 @@ ul {
     right: 0;
     left: 0;
     margin: 100px auto;
+    opacity: 0;
 }
 
 .ka_content {
@@ -603,12 +604,20 @@ ul {
 
 
 .ka_animeL {
-    animation: ka_rollInL 1s ease-in-out;
+    animation-name: ka_rollInL ;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode:forwards;
     transform-origin: 50% 50%;
 }
 
 .ka_animeR {
-    animation: ka_rollInR 1s ease-in-out;
+    animation-name: ka_rollInR ;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode:forwards;
     transform-origin: 50% 50%;
 }
 
@@ -877,8 +886,45 @@ html.loaded{
 
 
 
-
 /* 福山ここから */
+
+.line_out {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.line {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    width: 0px;
+    height: 5px;
+    background: #EC4E20;
+}
+
+.no1 .line {
+    left:0;
+    right:0;
+    max-width:1050px;
+}
+
+.nf_outside {
+    left:0;
+    right:0;
+    height: 390px;
+    max-width: 1100px;
+    z-index: 2;
+    background-color: white;
+    margin:0 auto;
+    position: absolute;
+}
+.kara {
+    height: 200px;
+    width: 1040px;
+}
 
 .nf_casette {
     left: -100px;
@@ -889,10 +935,11 @@ html.loaded{
     border-width:1px;
     border-style:solid;
     text-align:right;
-    margin: 100px auto;
+    margin: 30px auto 30px auto;
     box-shadow: 0 0 50px #add8e6 inset, 5px 5px 0 #cecece;
     -moz-box-shadow: 0 0 50px #add8e6 inset, 5px 5px 0 #cecece;
     -webkit-box-shadow: 0 0 50px #add8e6 inset, 5px 5px 0 #cecece;
+    z-index: 1;
 }
 
 .no_dot li {
@@ -954,6 +1001,14 @@ html.loaded{
     animation:type3 infinite steps(22,end) 5s;
 }
 
+.type4 img {
+    animation:type4 infinite steps(24,end) 9s;
+}
+
+.type5 img {
+    animation:type5 infinite steps(18,end) 7s;
+}
+
 @keyframes type1 {
     100%{
         transform: translate3d(0,-10500px,0);
@@ -971,6 +1026,19 @@ html.loaded{
         transform: translate3d(0,-8250px,0);
     }
 }
+
+@keyframes type4 {
+    100%{
+        transform: translate3d(0,-9000px,0);
+    }
+}
+
+@keyframes type5 {
+    100%{
+        transform: translate3d(0,-6750px,0);
+    }
+}
+/* 福山　ここまで */
 /* 福山　ここまで */
 
 
