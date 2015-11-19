@@ -585,35 +585,53 @@ ul {
     width: 500px;
     height: 375px;
     animation-duration: 5000ms;
-    background: url(../img/yusha1.jpg) no-repeat
+    animation-timing-function: steps(28);
+    background: url(../img/story/01_maou_28.jpg) no-repeat;
+    animation-name: ka_movie-animation1;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
 }
 
 .ka_movie2 {
     width: 500px;
     height: 375px;
-    animation-duration: 2000ms;
-    background: url(../img/maou.jpg) no-repeat
-}
-
-.ka_play.ka_animate {
-    animation-name: ka_movie-animation;
-    animation-timing-function: steps(28);
+    animation-duration: 3000ms;
+    animation-timing-function: steps(14);
+    background: url(../img/story/02_murabito_14.jpg) no-repeat;
+    animation-name: ka_movie-animation2;
     animation-iteration-count: infinite;
     animation-direction: normal;
 }
 
+.ka_movie3 {
+    width: 500px;
+    height: 375px;
+    animation-duration: 4000ms;
+    animation-timing-function: steps(22);
+    background: url(../img/story/03_omiokuri_22.jpg) no-repeat;
+    animation-name: ka_movie-animation3;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+.ka_play:not(.ka_animate) {
+    animation-name: ka_movie-animation;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
 
 .ka_animeL {
-    animation-name: ka_rollInL ;
+    animation-name: ka_rollInL;
     animation-duration: 1s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: 1;
     animation-fill-mode:forwards;
     transform-origin: 50% 50%;
 }
+
 
 .ka_animeR {
-    animation-name: ka_rollInR ;
+    animation-name: ka_rollInR;
     animation-duration: 1s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: 1;
@@ -621,12 +639,28 @@ ul {
     transform-origin: 50% 50%;
 }
 
-@keyframes ka_movie-animation {
+@keyframes ka_movie-animation1 {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 0 -10500px;
+    }
+}
+@keyframes ka_movie-animation2 {
     0% {
         background-position: 0 0
     }
     100% {
-        background-position: 0 -10500px
+        background-position: 0 -5250px;
+    }
+}
+@keyframes ka_movie-animation3 {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 0 -8250px;
     }
 }
 
@@ -989,56 +1023,36 @@ html.loaded{
  max-width:none;
 }
 
-.type1 img {
-    animation:type1 infinite steps(28,end) 5s;
+.nf_type1 img {
+    animation:nf_type1 infinite steps(28,end) 5s;
 }
 
-.type2 img {
-    animation:type2 infinite steps(14,end) 5s;
+.nf_type2 img {
+    animation:nf_type2 infinite steps(26,end) 5s;
 }
 
-.type3 img {
-    animation:type3 infinite steps(22,end) 5s;
+.nf_type3 img {
+    animation:nf_type3 infinite steps(22,end) 5s;
 }
 
-.type4 img {
-    animation:type4 infinite steps(24,end) 9s;
-}
 
-.type5 img {
-    animation:type5 infinite steps(18,end) 7s;
-}
-
-@keyframes type1 {
+@keyframes nf_type1 {
     100%{
         transform: translate3d(0,-10500px,0);
     }
 }
 
-@keyframes type2 {
+@keyframes nf_type2 {
     100%{
-        transform: translate3d(0,-5250px,0);
+        transform: translate3d(0,-9750px,0);
     }
 }
 
-@keyframes type3 {
+@keyframes nf_type3 {
     100%{
         transform: translate3d(0,-8250px,0);
     }
 }
-
-@keyframes type4 {
-    100%{
-        transform: translate3d(0,-9000px,0);
-    }
-}
-
-@keyframes type5 {
-    100%{
-        transform: translate3d(0,-6750px,0);
-    }
-}
-/* 福山　ここまで */
 /* 福山　ここまで */
 
 
@@ -1053,36 +1067,91 @@ html.loaded{
   text-align: left;
 }
 .mh_imgMovie01{
-  background: url(../img/yusha1.jpg) no-repeat left top;
-  animation-duration : 3000ms;
-  animation-timing-function: steps(28, end);
+  background: url(../img/story/07_datentakai_24.jpg) no-repeat left top;
+  animation-duration : 5000ms;
+  animation-timing-function: steps(24, end);
   animation-iteration-count: infinite;
 }
-.mh_imgMovie01.mh_bgOrigin{
+
+
+.mh_imgMovie02{
+  background: url(../img/story/08_souryonoganbari_16.jpg) no-repeat left top;
+  animation-duration : 5000ms;
+  animation-timing-function: steps(16, end);
+  animation-iteration-count: infinite;
+}
+
+
+.mh_imgMovie03{
+  background: url(../img/story/09_endroll_70.jpg) no-repeat left top;
+  animation-duration : 15000ms;
+  animation-timing-function: steps(70, end);
+  animation-iteration-count: infinite;
+}
+
+.mh_bgOrigin{
   background-size: 500px;
   width: 500px;
   height: 375px;
   border: 10px solid #fff;
-  animation-name: mh_animation_a;
 }
-.mh_imgMovie01.mh_bgAuto{
+.mh_bgAuto{
   background-size: 100%;
   width: 1040px;
   height: 400px;
   position: relative;
 }
+
+.mh_imgMovie01.mh_bgOrigin{
+  animation-name: mh_animation_a1;
+}
+.mh_imgMovie02.mh_bgOrigin{
+  animation-name: mh_animation_a2;
+}
+.mh_imgMovie03.mh_bgOrigin{
+  animation-name: mh_animation_a3;
+}
+
 .mh_imgMovie01.mh_bgAuto.is-active{
-  animation-name: mh_animation_b;
+  animation-name: mh_animation_b1;
 }
-@keyframes mh_animation_a {
+
+.mh_imgMovie02.mh_bgAuto.is-active{
+  animation-name: mh_animation_b2;
+}
+
+.mh_imgMovie03.mh_bgAuto.is-active{
+  animation-name: mh_animation_b3;
+}
+
+@keyframes mh_animation_a1 {
     0% {background-position: 0 0}
-    100% {background-position: 0 -10500px}
+    100% {background-position: 0 -9000px}
 }
-@keyframes mh_animation_b {
+@keyframes mh_animation_b1 {
     0% {background-position: 0 0}
-    100% {background-position: 0 -21840px}
+    100% {background-position: 0 -18720px}
 }
-.mh_imgMovie01.mh_bgAuto:after{
+
+@keyframes mh_animation_a2 {
+    0% {background-position: 0 0}
+    100% {background-position: 0 -6000px}
+}
+@keyframes mh_animation_b2 {
+    0% {background-position: 0 0}
+    100% {background-position: 0 -12480px}
+}
+
+@keyframes mh_animation_a3 {
+    0% {background-position: 0 0}
+    100% {background-position: 0 -26250px}
+}
+@keyframes mh_animation_b3 {
+    0% {background-position: 0 0}
+    100% {background-position: 0 -54600px}
+}
+
+.mh_bgAuto:after{
   width: 100%;
   height: 100%;
   position: absolute;
@@ -1132,12 +1201,12 @@ html.loaded{
   font-size: 30px;
 }
 .mh_slide__text{
-  margin: 10px 10px 50px;
+  margin: 10px 10px 0px;
   font-size: 14px;
 }
 .mh_slide__member{
   width: 500px;
-  margin: 0;
+  margin-top: 50px;
   padding: 0;
   list-style: none;
 }
