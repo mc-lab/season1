@@ -91,7 +91,8 @@ ul {
 
 .ts_main_img {
     height: 500px;
-    background: url("http://livedoor.2.blogimg.jp/himasoku123/imgs/2/5/25292a5b.jpg") no-repeat center center;
+    background: url(http://blog-imgs-31-origin.fc2.com/m/i/t/mitinokuoblivion/20110621155954c03.jpg) no-repeat center center;
+    /*background: url(../img/main_img.jpg) no-repeat center center;*/
     background-size: cover;
     z-index: -5;
     position: relative;
@@ -152,15 +153,23 @@ ul {
 }
 
 .ts_stories {
-    display: none;
+    visibility: hidden;
     opacity: 0;
     text-align: center;
+    position: absolute;
+    top: -99999999px;
     transition-property: opacity;
     transition-duration: 0.7s;
     transition-timing-function: linear;
     -webkit-transition-property: opacity;
     -webkit-transition-duration: 0.7s;
     -webkit-transition-timing-function: linear;
+}
+
+.ts_stories.show_contents {
+    visibility: visible;
+    position: static;
+    top: auto;
 }
 
 
@@ -490,6 +499,7 @@ ul {
     padding: 10px 50px;
     border-style: dashed;
     border-radius: 25px;
+    background-color: #FFF;
 }
 
 .ka_title {
@@ -708,7 +718,7 @@ html.loaded{
   position: static;
   margin:0 0 200px;
   height: auto;
-  background-color: transparent;
+  background-color: #f1f1f1;
 }
 
 .hn-cover {
@@ -1068,7 +1078,7 @@ html.loaded{
 }
 .mh_imgMovie01{
   background: url(../img/story/07_datentakai_24.jpg) no-repeat left top;
-  animation-duration : 5000ms;
+  animation-duration : 6500ms;
   animation-timing-function: steps(24, end);
   animation-iteration-count: infinite;
 }

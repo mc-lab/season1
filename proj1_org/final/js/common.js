@@ -24,7 +24,7 @@ $(function() {
 
     setInterval(function(){
         $('.ts_main_scroll').css('opacity','1');
-        $('.ts_stories').show().css('opacity','1');
+        $('.ts_stories').addClass('show_contents').css('opacity','1');
     } , '56000');
 
 
