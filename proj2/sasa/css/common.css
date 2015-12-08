@@ -1,0 +1,59 @@
+li {
+  list-style: none;
+}
+
+/*clearfix*/
+.clearfix:after{
+content:"";
+display:block;
+clear:both;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.categories {
+  width: 60%;
+  margin: auto;
+}
+
+.categories li {
+  float: left;
+  width: 25%;
+}
+
+.contents {
+  width: 80%;
+  margin: auto;
+}
+.glid4 {
+  display: inline-block;
+  width: 150px;
+  height: 200px;
+  margin: 10px;
+}
+
+.contents li {
+  position: relative;
+  transition: all 600ms ease;
+  transition: opacity 600ms linear , transform 600ms linear;
+  background-color: #ccc;
+  border-color: #333;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.contents .showed {
+  opacity: 1;
+  display: inline-block;
+  transform: translate(0px,0px);
+  transform: scale(1.0,1.0);
+}
+
+
+.contents .hidden {
+  opacity: 0;
+  transform: scale(0.1,0.1);
+}
+
