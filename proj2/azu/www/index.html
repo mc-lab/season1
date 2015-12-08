@@ -1,12 +1,154 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<link rel="stylesheet" type="text/css" href="../css/common.css"  />
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<script src="../js/common.js"></script>
-<meta charset="UTF-8">
-<title>メディア・クリエイション・ラボ☆</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CSS Nite</title>
+<meta name="Description" content="" />
+<meta name="Keywords" content="" />
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="../css/custom.css" rel="stylesheet">
 </head>
-<body>
+<body id="page-top">
+<nav class="navbar navbar-default navbar-cssnite">
+	<div class="container">
+		</div>
+</nav>
+<div class="container page-title">
+	<div class="row">
+		<h1 class="text-center">メディア・クリエイション・ラボ★</h1>
+		<p class="text-center">メディア・クリエイション・ラボ★<br>お願いします。</p>
+		<div class="container">
+			<div class="controls text-center hidden-xs">
+				<ul class="event-finder">
+					<div class="btn-group">
+						<li class="filter btn btn-default active" data-filter="all">All</li>
+						<li class="filter btn btn-default" data-filter=".a">A</li>
+						<li class="filter btn btn-default" data-filter=".b">B</li>
+						<li class="filter btn btn-default" data-filter=".c">C</li>
+						<li class="filter btn btn-default" data-filter=".other">Other</li>
+					</div>
+				</ul>
+			</div>
+		</div>
+</div>
+</div>
+<section class="portfolio">
+	<div class="container">
+		<div class="row outer-container">
+			<ul id="grid" class="mcontainer list-unstyled">
+
+				<li class="mix a other">
+					<div class="mix-wrap">
+							<div class="mix-body">
+								<h3>AAA & OTHER</h3>
+							</div>
+						</div>
+				</li>
+				<li class="mix b other">
+					<div class="mix-wrap">
+							<div class="mix-body">
+								<h3>BBB & OTHER</h3>
+							</div>
+						</div>
+				</li>
+				<li class="mix c other">
+					<div class="mix-wrap">
+							<div class="mix-body">
+								<h3>CCCCC & OTHER</h3>
+							</div>
+						</div>
+				</li>
+				<li class="mix a">
+				 	<div class="mix-wrap">
+							<div class="mix-body">
+								<h3>A ONLY</h3>
+							</div>
+						</div>
+				</li>
+				<li class="mix b">
+				 	<div class="mix-wrap">
+							<div class="mix-body">
+								<h3>BB ONLY</h3>
+							</div>
+						</div>
+				</li>
+				<li class="mix c">
+				 	<div class="mix-wrap">
+							<div class="mix-body">
+								<h3>CCC ONLY</h3>
+							</div>
+						</div>
+				</li>
+				<li class="mix a b">
+					<div class="mix-wrap">
+						<div class="mix-body">
+							<h3>AAA & BBB</h3>
+						</div>
+						</a></div>
+				</li>
+				<li class="mix c b">
+					<div class="mix-wrap">
+						<div class="mix-body">
+							<h3>CC & BBB</h3>
+						</div>
+						</a></div>
+				</li>
+				<li class="mix a c">
+					<div class="mix-wrap">
+						<div class="mix-body">
+							<h3>AAA & CCC</h3>
+						</div>
+						</a></div>
+				</li>
+				<li class="mix other">
+					<div class="mix-wrap">
+						<div class="mix-body">
+							<h3>OTHER</h3>
+						</div>
+						</a></div>
+				</li>
+			</ul>
+		</div>
+</div>
+</section>
+<div class="container-fulid">
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-6 col-lg-4 col-md-6">
+					<h3>メディア・クリエイションラボ★について</h3>
+					<p>メディア・クリエイションラボ★についてうんちゃらかんちゃら</p>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 copyright">
+					<p>Copyright © Wedding Park rights reserved. </p>
+				</div>
+			</div>
+		</div>
+	</footer>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" type="text/javascript"></script> -->
+<script src="http://cdn.jsdelivr.net/jquery.mixitup/2.0.0/jquery.mixitup.min.js"></script>
+
+<script>
+$(function(){$('#grid').mixItUp(
+	{
+		animation: {
+			animateResizeContainer: false,
+		},
+		load: {
+			filter: '.b',
+			sort: 'date:asc'
+		}
+	});
+})
+</script>
 </body>
 </html>
