@@ -133,19 +133,77 @@ img {
     background: url(../img/maou.jpg) no-repeat
 }
 
-.ka_play.ka_animate {
-    animation-name: ka_movie-animation;
+.ka_movie3 {
+    width: 500px;
+    height: 375px;
+    animation-duration: 8000ms;
+    background: url(../img/datentakai_22.jpg) no-repeat
+}
+.ka_movie4 {
+    width: 500px;
+    height: 375px;
+    animation-duration: 5000ms;
+    background: url(../img/murabito_14.jpg) no-repeat
+}
+
+.ka_movie1.ka_play.ka_animate {
+	animation-name: ka_movie-animation1;
+	animation-timing-function: steps(28);
+	animation-iteration-count: infinite;
+	animation-direction: normal;
+}
+.ka_movie2.ka_play.ka_animate {
+    animation-name: ka_movie-animation2;
     animation-timing-function: steps(28);
     animation-iteration-count: infinite;
     animation-direction: normal;
 }
 
-@keyframes ka_movie-animation {
+.ka_movie3.ka_play.ka_animate{
+    animation-name: ka_movie-animation3;
+    animation-timing-function: steps(22);
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+.ka_movie4.ka_play.ka_animate{
+    animation-name: ka_movie-animation4;
+    animation-timing-function: steps(14);
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+
+@keyframes ka_movie-animation1 {
     0% {
         background-position: 0 0
     }
     100% {
         background-position: 0 -10500px
+    }
+}
+@keyframes ka_movie-animation2 {
+    0% {
+        background-position: 0 0
+    }
+    100% {
+        background-position: 0 -10500px
+    }
+}
+@keyframes ka_movie-animation3 {
+    0% {
+        background-position: 0 0
+    }
+    100% {
+        background-position: 0 -8250px
+    }
+}
+@keyframes ka_movie-animation4 {
+    0% {
+        background-position: 0 0
+    }
+    100% {
+        background-position: 0 -5250px
     }
 }
 
