@@ -1,13 +1,210 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="ja" class="os_mac">
 <head>
-<link rel="stylesheet" type="text/css" href="../css/common.css"  />
+<meta charset="UTF-8" />
+<title>Q co.,ltd.【株式会社キュー】</title>
+<!--
+<link rel="shortcut icon" type="image/vnd.microsoft.icon" sizes="16x16" href="../img/favicon.ico" />
+<link rel="stylesheet" href="../js/jquery-ui.css" />
+<link rel="stylesheet" href="../js/jquery-ui.theme.css" />
+
+-->
+<link rel="stylesheet" href="../css/main.css" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<meta charset="UTF-8">
-<title>サイトのタイトル</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+
+<script type="text/javascript">
+$(function() {
+    var offset = 0;
+    var startX;
+    var startY;
+    var startInitX;
+    var startInitY;
+    var endX;
+    var endY;
+    var flag = false;
+    var canvas = $('canvas').get(0);
+    var context;
+    if (canvas.getContext) {
+        context = canvas.getContext('2d');
+    }
+ 
+    $('#drawArea').mousedown(function(e) {
+        // ペンを置く動作
+        onPenImageDown();
+        
+        flag = true;
+        startX = e.pageX - $(this).offset().left ;
+        startY = e.pageY - $(this).offset().top - 25;
+        startInitX = startX;
+        startInitY = startY;
+        return false; // for chrome
+    });
+ 
+    $('#drawArea').mousemove(function(e) {
+        if (flag) {
+            endX = e.pageX - $('canvas').offset().left - offset;
+            endY = e.pageY - $('canvas').offset().top - offset;
+            context.lineWidth = 4;
+            context.beginPath();
+            context.moveTo(startX, startY);
+            context.lineTo(endX, endY);
+            context.stroke();
+            startX = endX;
+            startY = endY;
+        }
+    });
+ 
+    $('#drawArea').on('mouseup', function() {
+        // ペンを上げる動作
+        onPenImageUp();
+        
+        flag = false; 
+        
+        context.lineTo(startInitX,startInitY);
+        // 線で円を閉じる　　context . stroke() …… 現在の線スタイルでサブパスを輪郭表示する
+        context.stroke();
+       
+        var x = context.outerWidth();
+        console.log(x);
+        //var rect = getCreateCanvasRect();
+        //canvas_style_set(0, 0, this.block.outerWidth(), this.block.outerHeight() + this.foot_lag);
+        set_draw_line_canvas(startInitX,startInitY,500,500);
+    });
+ 
+        
+        function set_draw_line_canvas(x, y, w, h) {
+            // HTMLImageElement オブジェクトを作成する
+            var image = new Image();
+
+            var canvas2 = document.createElement("canvas");
+            var context2 = canvas2.getContext("2d");
+            console.log(context2);
+            canvas2.id = 'canvas2';
+            //context2.fillStyle = "rgba(192, 80, 77, 0.7)";
+            
+            $(canvas2).attr({
+                width: w,
+                height: h
+            }).css({
+                position: "absolute",
+                top: 0,
+                left: 0,
+                zIndex: -1
+            }).end();
+            
+            console.log(canvas2);
+            //context2.drawImage(image, x, y, w, h, 0, 0, w, h);
+            //context2.drawImage(image, 50, 50, 50, 50, 50, 50, 200, 50);
+            
+            //var image = document.getElementById("source");
+            image.src = "../img/kuma.jpg";
+            
+            context2.fillStyle = "rgba(0,0,0,0)";
+
+            //context2.drawImage(image, 33, 71);
+            image.onload = function() {
+                context2.drawImage(image, x, y);
+            }
+
+            //context.drawImage(image, x, y, w, h, 0, 0, w, h);
+
+            this.draw_line_canvas = canvas2;
+            $('#drawArea').append(canvas2);
+
+        //this.wrap_div.appendChild(this.draw_line_canvas);
+        };
+ 
+        function canvas_style_set (x, y, w, h) {
+            this.canvas_X = x;
+            this.canvas_Y = y;
+            this.canvas_W = w;
+            this.canvas_H = h;
+            var block_W = this.block.outerWidth();
+            var block_H = this.block.outerHeight();
+            $(this.wrap_div).css({
+                position: "absolute",
+                zIndex: 100,
+                top: ((y + (h / 2)) / block_H * 100) + "%",
+                left: ((x + (w / 2)) / block_W * 100) + "%",
+                width: w,
+                height: h,
+                marginTop: h / -2,
+                marginLeft: w / -2
+            }).end();
+            $(this.canvas).attr({
+                width: w,
+                height: h
+            }).css({
+                position: "absolute",
+                top: 0,
+                left: 0
+            }).end();
+        };
+ 
+    
+    // onmousedown時のイベントハンドラ
+//    $('#pen')
+//        .on('mousedown', function(){
+//            //penをおろす
+//            onPenImageDown();
+//    
+//        });
+
+    // onmouseup時のイベントハンドラ
+//    $('#pen')
+//        .on('mouseup', function(){
+//            //penをあげる
+//            onPenImageUp();    
+//        });
+
+    // onmouseup時に画像を表示
+    function onPenImageUp() {
+        $("#imageArea").attr("src", "../img/pen_move.png");
+    }
+    // onmousedown時に画像を表示
+    function onPenImageDown() {
+        $("#imageArea").attr("src", "../img/pen_draw.png");
+    }
+    
+    document.onmousemove = mouseImage;
+    
+    // マウスにペン画像を追従させる
+    function mouseImage() {
+        var cx = event.pageX;
+        var cy = event.pageY - 220;
+        $('#pen').css({
+            left:cx,
+            top:cy,
+            opacity: 1
+        }).show();
+    }
+
+});
+</script>
+
 </head>
-<body>
-<h1>オリジナルコンテンツ</h1>
-<script src="../js/common.js"></script>
+<body id="wrapper_index">
+
+    <div id="drawArea" style="border:1px" >お絵かきエリア
+        <canvas id="canvas" width="2000" height="2000"></canvas>
+        <div id="pen" style="display:none;">    
+        <img id="imageArea" src="../img/pen_move.png">
+        </div>
+                  
+    </div>
+
+<script id="tpl_bomb" type="text/template">
+<div class="block_bomb">
+<div class="body"><div class="fire"></div></div>
+<div class="explode frame_1"></div>
+</div>
+</script>
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?v=3&sensor=false"></script>
+<script type="text/javascript" src="../js/data.js"></script>
+<script type="text/javascript" src="../js/lib.js"></script>
+<!--
+<script type="text/javascript" src="../js/common.js"></script>
+-->
 </body>
 </html>
