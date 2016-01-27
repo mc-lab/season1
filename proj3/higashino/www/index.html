@@ -1,13 +1,34 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<link rel="stylesheet" type="text/css" href="../css/common.css"  />
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<meta charset="UTF-8">
-<title>サイトのタイトル</title>
+	<link rel="stylesheet" type="text/css" href="../css/common.css"  />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<meta charset="UTF-8">
+	<title>スクロールで縦横線を描く</title>
 </head>
-<body>
-<h1>オリジナルコンテンツ</h1>
-<script src="../js/common.js"></script>
+	<body>
+	<div class="drawArea page_block fixed style_show">
+		<div class="drawArea-contents">
+
+			<!-- 縦書き -->
+			<div class="line_vertical">
+				<div class="hand">
+					<img src="../img/hand.png" alt="">
+				</div>
+			</div>
+
+			<!-- 横書き -->
+			<div class="line_horizontal">
+				<div class="hand">
+					<img src="../img/hand.png" alt="">
+				</div>
+			</div>
+
+			<div class="block_map"></div>
+
+		</div>
+
+	</div>
+	<script src="../js/common.js"></script>
 </body>
 </html>
