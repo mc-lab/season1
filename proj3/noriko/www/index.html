@@ -115,33 +115,7 @@ $(function() {
         //this.wrap_div.appendChild(this.draw_line_canvas);
         };
  
-        function canvas_style_set (x, y, w, h) {
-            this.canvas_X = x;
-            this.canvas_Y = y;
-            this.canvas_W = w;
-            this.canvas_H = h;
-            var block_W = this.block.outerWidth();
-            var block_H = this.block.outerHeight();
-            $(this.wrap_div).css({
-                position: "absolute",
-                zIndex: 100,
-                top: ((y + (h / 2)) / block_H * 100) + "%",
-                left: ((x + (w / 2)) / block_W * 100) + "%",
-                width: w,
-                height: h,
-                marginTop: h / -2,
-                marginLeft: w / -2
-            }).end();
-            $(this.canvas).attr({
-                width: w,
-                height: h
-            }).css({
-                position: "absolute",
-                top: 0,
-                left: 0
-            }).end();
-        };
- 
+        
     
     // onmousedown時のイベントハンドラ
 //    $('#pen')
