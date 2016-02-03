@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<link rel="stylesheet" type="text/css" href="../css/movie.css"  />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<meta charset="UTF-8">
+<title>サイトのタイトル</title>
+</head>
+<body>
+
+<section class="main">
+<div class="info">
+    <div class="logo"><img src="../img/mcl_logo.png" height="200"></div>
+    <div class="company">
+        <p>メディア・クリエイション・ラボ（Weddingpark） <br><br>
+        〒107-0062 東京都港区南青山 3-11-13 <br>
+        新青山東急ビル 6F<br><br>
+        TEL: 03-5414-2290</p>
+    </div>
+    <div class="access">
+        <p>東京メトロ 表参道A4出口より徒歩4分（銀座線・日比谷線・半蔵門線）</p>
+        <div clas="search_access">
+            <form action="https://www.google.co.jp/maps" target="_blank">
+                <p>出発<input type="text" class="station" name="saddr"></p>
+                <p>到着<input type="text" class="station" name="daddr" value="表参道駅"></p>
+                <button type="submit" class="btn_search"><span>検索</span></button>
+                <input type="hidden" name="ttype" value="dep">
+            </form>
+        </div>
+    </div>
+</div>
+<div class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1967.9083653417465!2d139.71053399397596!3d35.6645974250191!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c9fcad2bef1%3A0xce1204bad0ca64c6!2z5paw6Z2S5bGx5p2x5oCl44OT44Or!5e0!3m2!1sja!2sjp!4v1453107376763" width="500" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <canvas class="map_canvas" width="500" height="500"></canvas>
+</div>
+<div class="bg_movie">
+    <video id="video_companymap_html5_api" class="vjs-tech" loop="" preload="auto" autoplay src="http://www.q-co.jp/movie/companymap.ogv"></video>
+</div>
+</section>
+
+
+<script src="../js/movie.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+body {
+    width: 100%;
+    height: 10000px;
+    margin: 0;
+    background-color: #000;
+}
+.main {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+.info {
+    color: #fff;
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    font-size: 80%;
+    z-index: 10;
+}
+
+.info .company {
+    border-bottom: 1px solid #ddd;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.info .access .station {
+    margin-left: 10px;
+    height: 20px;
+    color: #be0018;
+    font-size: 110%;
+}
+
+.info .btn_search {
+    position: absolute;
+    bottom: -30px;
+    right: 0;
+    width: 80px;
+    font-size: 12px;
+    line-height: 26px;
+    text-align: center;
+    color: white;
+    background: #be0018;
+    border: 0;
+}
+
+.map {
+    position: absolute;
+    top: 20%;
+    left: 55%;
+    z-index: 10;
+    width: 500px;
+    height: 500px;
+    padding: 15px;
+    background: white;
+}
+
+.map .map_canvas {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.bg_movie video {
+    height: 100%;
+    width: 100%;
+}

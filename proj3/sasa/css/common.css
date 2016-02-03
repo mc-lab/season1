@@ -1,0 +1,31 @@
+body {
+    width: 100%;
+    margin: 0;
+}
+.draw_area {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    cursor: none;
+    user-select: none; /* CSS3 */
+    -moz-user-select: none; /* Firefox */
+    -webkit-user-select: none; /* Safari、Chrome */
+    -ms-user-select: none; /* IE10から */
+}
+
+.draw_canvas {
+  height: 100vh;
+  width: 100vw;
+}
+
+#pen {
+    position: absolute;
+    top:0;
+    left:0;
+    opacity:0;
+}
+
+#pen .draw {
+    display: none;
+}
+
