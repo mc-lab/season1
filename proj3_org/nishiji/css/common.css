@@ -1,29 +1,28 @@
 @charset 'UTF-8';
 
-html,body{
+html,
+body{
   height: 100%;
+}
+.nh_container{
+  position: relative;
 }
 .nh_wrap{
   width: 100%;
-  height: 100%;
   overflow: hidden;
   position: relative;
   color: #111;
-  /*background: url(../img/nh_bg.jpg) center center / cover no-repeat fixed;*/
-}
-.nh_wrap.nh_fixed{
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
 }
 .nh_inner{
-  margin: 0 auto;
-  padding: 130px 0 100px;
+  margin: auto;
   width: 730px;
-  position: relative;
-  z-index: 1;
+  height: 650px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 5;
 }
 .nh_title{
   margin: 0 0 20px;
@@ -45,7 +44,7 @@ html,body{
   padding: 10px 20px;
   width: 160px;
   float: left;
-  background: rgba(0,0,0,.5);
+  background: rgba(0,0,0,.3);
   font-weight: normal;
   box-sizing: border-box;
 }
@@ -54,7 +53,7 @@ html,body{
   margin-bottom: 2px;
   margin-left: 162px;
   padding: 10px 20px;
-  background: rgba(0,0,0,.5);
+  background: rgba(0,0,0,.3);
   box-sizing: border-box;
 }
 .nh_map{
@@ -78,7 +77,17 @@ html,body{
   position: absolute;
   top: 0;
   left: 0;
-  background: url(../img/nh_bg.png) repeat 50% 50%;
+  background: linear-gradient(rgba(255, 119, 189, .6) 0%, rgba(36, 173, 238, .6) 100%);
+}
+.nh_cover{
+  width: auto;
+  height: auto;
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,.6);
 }
 .nh_video{
   width: auto;
