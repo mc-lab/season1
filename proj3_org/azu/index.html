@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1 ,user-scalable=no">
+<title></title>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="css/ka_members.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="http://cdn.jsdelivr.net/jquery.mixitup/2.0.0/jquery.mixitup.min.js"></script>
+<script src="js/ka_members.js"></script>
+</head>
+<body>
+<div class="ka_empty"></div>
+<div class="ka_container container">
+<nav>
+		<div class="container">
+				<h1 class="text-center">社員紹介</h1>
+				<div class="ka_controls text-center">
+					<div class="btn-group">
+						<ul>
+								<li class="filter btn btn-default active" data-filter="all">すべて</li>
+								<li class="filter btn btn-default" data-filter=".ka_officer">役員</li>
+								<li class="filter btn btn-default" data-filter=".ka_sales">営業本部</li>
+								<li class="filter btn btn-default" data-filter=".ka_media-dev">メディア開発本部</li>
+								<li class="filter btn btn-default" data-filter=".ka_management">経営本部</li>
+								<li class="filter btn btn-default" data-filter=".ka_president-office">社長室</li>
+								<li class="filter btn btn-default" data-filter=".ka_mcl">MCL</li>
+						</ul>
+					</div>
+				</div>
+		</div>
+</nav>
+<section class="ka_portfolio">
+		<div class="ka_container">
+					<div class="row ka_outer-container">
+							<ul id="grid">
+									<li class="mix ka_officer" data-date="001">
+											<div class="ka_mix-wrap">
+												<a href="#"><img src="img/00_officer/hishiki_sq.jpg" height="110" width="110" alt="" class="ka_img-responsive"></a>
+													<div class="ka_mix-body">
+															<h3>日紫喜 誠吾</h3>
+															<p>代表取締役社長</p>
+													</div>
+											</div>
+									</li>
+									<li class="mix ka_officer ka_media-dev" data-date="002">
+											<div class="ka_mix-wrap">
+													<a href="#"><img src="img/00_officer/sakuma.jpg" height="110" width="110" alt="" class="ka_img-responsive"></a>
+													<div class="ka_mix-body">
+															<h3>作間 友幸</h3>
+															<p>取締役 メディア開発本部長</p>
+													</div>
+											</div>
+									</li>
+									<li class="mix ka_officer ka_sales" data-date="003">
+											<div class="ka_mix-wrap">
+													<a href="#"><img src="img/00_officer/fusa.jpg" height="110" width="110" alt="" class="ka_img-responsive"></a>
+													<div class="ka_mix-body">
+															<h3>房 紘士</h3>
+															<p>取締役 営業本部長</p>
+													</div>
+											</div>
+									</li>
+									<li class="mix ka_sales ka_president-office" data-date="004">
+											<div class="ka_mix-wrap">
+													<a href="#"><img src="img/01_sales/kobayashi.jpg" height="110" width="110" alt="" class="ka_img-responsive"></a>
+													<div class="ka_mix-body">
+															<h3>小林 司忠</h3>
+															<p>Photorait 営業責任者</p>
+													</div>
+											</div>
+									</li>
+									<li class="mix ka_sales" data-date="005">
+											<div class="ka_mix-wrap">
+													<a href="#"><img src="img/01_sales/uchida.jpg" height="110" width="110" alt="" class="ka_img-responsive"></a>
+													<div class="ka_mix-body">
+															<h3>内田 開己</h3>
+															<p>仙台営業所 所長</p>
+													</div>
+											</div>
+									</li>
+									<li class="mix ka_sales" data-date="006">
+											<div class="ka_mix-wrap">
+													<a href="#"><img src="img/01_sales/akamatsu.jpg" height="110" width="110" alt="" class="ka_img-responsive"></a>
+													<div class="ka_mix-body">
+															<h3>赤松 優太</h3>
+															<p>シニアアカウントプランナー</p>
+													</div>
+											</div>
+									</li>
+									<li class="mix ka_sales" data-date="007">
+											<div class="ka_mix-wrap">
+													<a href="#"><img src="img/01_sales/ootani.jpg" height="110" width="110" alt="" class="ka_img-responsive"></a>
+													<div class="ka_mix-body">
+															<h3>大谷 亜沙美</h3>
+															<p>シニアアカウントプランナー</p>
+													</div>
+											</div>
+									</li>
+									<li class="mix ka_sales ka_president-office" data-date="008">
+											<div class="ka_mix-wrap">
+													<a href="#"><img src="img/01_sales/yokota.jpg" height="110" width="110" alt="" class="ka_img-responsive"></a>
+													<div class="ka_mix-body">
+															<h3>横田 祐香</h3>
+															<p>Ringraph 営業責任者</p>
+													</div>
+											</div>
+									</li>
+									<li class="mix ka_sales" data-date="009">
+											<div class="ka_mix-wrap">
+													<a href="#"><img src="img/01_sales/ogasa.jpg" height="110" width="110" alt="" class="ka_img-responsive"></a>
+													<div class="ka_mix-body">
+															<h3>小笠 真也</h3>
+															<p>大阪営業所 シニアアカウントプランナー</p>
+													</div>
+											</div>
+									</li>
+									<li class="mix ka_sales" data-date="010">
+											<div class="ka_mix-wrap">
+													<a href="#"><img src="img/01_sales/shimizu.jpg" height="110" width="110" alt="" class="ka_img-responsive"></a>
+													<div class="ka_mix-body">
+															<h3>清水 望</h3>
+															<p>シニアアカウントプランナー</p>
+													</div>
+											</div>
+									</li>
+									<li class="mix ka_sales" data-date="011">
+											<div class="ka_mix-wrap">
+													<a href="#"><img src="img/01_sales/namura.jpg" height="110" width="110" alt="" class="ka_img-responsive"></a>
+													<div class="ka_mix-body">
+															<h3>名村 陵兵</h3>
+															<p>アカウントプランナー</p>
+													</div>
+											</div>
+									</li>
+									<li class="mix ka_sales" data-date="012">
+											<div class="ka_mix-wrap">
+													<a href="#"><img src="img/01_sales/mizojiri.jpg" height="110" width="110" alt="" class="ka_img-responsive"></a>
+													<div class="ka_mix-body">
+															<h3>溝尻 楽子</h3>
+															<p>アカウントプランナー</p>
+													</div>
+											</div>
+									</li>
+									<li class="mix ka_sales" data-date="013">
+											<div class="ka_mix-wrap">
+													<a href="#"><img src="img/01_sales/ozaki.jpg" height="110" width="110" alt="" class="ka_img-responsive"></a>
+													<div class="ka_mix-body">
+															<h3>尾崎 佳苗</h3>
+															<p>アカウントプランナー</p>
+													</div>
+											</div>
+									</li>
+									<li class="mix ka_media-dev" data-date="014">
+											<div class="ka_mix-wrap">
+													<a href="#"><img src="img/02_media-dev/sekiguchi.jpg" width="110" alt="" class="ka_img-responsive"></a>
+													<div class="ka_mix-body">
+															<h3>関口 拓朗</h3>
+															<p>メディア統括</p>
+													</div>
+											</div>
+									</li>
+									<li class="mix ka_management ka_media-dev" data-date="015">
+											<div class="ka_mix-wrap">
+													<a href="#"><img src="img/02_media-dev/kikuchi.jpg" width="110" alt="" class="ka_img-responsive"></a>
+													<div class="ka_mix-body">
+															<h3>菊地 亜希</h3>
+															<p>リーダー 兼 ブランドマネージャー</p>
+													</div>
+											</div>
+									</li>
+									<li class="mix ka_media-dev" data-date="016">
+											<div class="ka_mix-wrap">
+													<a href="#"><img src="img/02_media-dev/kanzaki.jpg" width="110" alt="" class="ka_img-responsive"></a>
+													<div class="ka_mix-body">
+															<h3>神崎 詠次</h3>
+															<p>ディレクター</p>
+													</div>
+											</div>
+									</li>
+									<li class="mix ka_media-dev" data-date="017">
+											<div class="ka_mix-wrap">
+													<a href="#"><img src="img/02_media-dev/kato.jpg" width="110" alt="" class="ka_img-responsive"></a>
+													<div class="ka_mix-body">
+															<h3>加藤 絵理</h3>
+															<p>ディレクター</p>
+													</div>
+											</div>
+									</li>
+									<li class="mix ka_media-dev" data-date="018">
+											<div class="ka_mix-wrap">
+													<a href="#"><img src="img/02_media-dev/toda.jpg" width="110" alt="" class="ka_img-responsive"></a>
+													<div class="ka_mix-body">
+															<h3>戸田 朱美</h3>
+															<p>ディレクター</p>
+													</div>
+											</div>
+									</li>
+									<li class="mix ka_management" data-date="019">
+											<div class="ka_mix-wrap">
+													<a href="#"><img src="img/03_management/segawa.jpg" width="110" alt="" class="ka_img-responsive"></a>
+													<div class="ka_mix-body">
+															<h3>瀬川 由絵</h3>
+															<p>コーポレートコミュニケーション室 室長</p>
+													</div>
+											</div>
+									</li>
+									<li class="mix ka_media-dev" data-date="020">
+											<div class="ka_mix-wrap">
+													<a href="#"><img src="img/02_media-dev/nishi.jpg" width="110" alt="" class="ka_img-responsive"></a>
+													<div class="ka_mix-body">
+															<h3>西 朗</h3>
+															<p>システム統括</p>
+													</div>
+											</div>
+									</li>
+									<li class="mix ka_media-dev" data-date="021">
+											<div class="ka_mix-wrap">
+													<a href="#"><img src="img/02_media-dev/suganuma.jpg" width="110" alt="" class="ka_img-responsive"></a>
+													<div class="ka_mix-body">
+															<h3>菅沼 幸子</h3>
+															<p>シニアシステムエンジニア</p>
+													</div>
+											</div>
+									</li>
+									<li class="mix ka_media-dev ka_mcl" data-date="022">
+											<div class="ka_mix-wrap">
+													<a href="#"><div class="ka_img-responsive" data-class="ka_sasano" data-animation="ka_anm13"></div></a>
+													<div class="ka_mix-body">
+															<h3>笹野 拓人</h3>
+															<p>システムエンジニア 開発リーダー</p>
+													</div>
+											</div>
+									</li>
+									<li class="mix ka_media-dev" data-date="023">
+											<div class="ka_mix-wrap">
+													<a href="#"><img src="img/02_media-dev/kuriyama.jpg" width="110" alt="" class="ka_img-responsive"></a>
+													<div class="ka_mix-body">
+															<h3>栗山 茜</h3>
+															<p>システムエンジニア</p>
+													</div>
+											</div>
+									</li>
+									<li class="mix ka_media-dev ka_mcl" data-date="024">
+											<div class="ka_mix-wrap">
+													<a href="#"><div class="ka_img-responsive" data-class="ka_tanibuchi" data-animation="ka_anm11"></div></a>
+													<div class="ka_mix-body">
+															<h3>谷渕 美咲</h3>
+															<p>システムエンジニア</p>
+													</div>
+											</div>
+									</li>
+									<li class="mix ka_media-dev" data-date="025">
+											<div class="ka_mix-wrap">
+													<a href="#"><img src="img/02_media-dev/koyama.jpg" width="110" alt="" class="ka_img-responsive"></a>
+													<div class="ka_mix-body">
+															<h3>小山 翔平</h3>
+															<p>システムエンジニア</p>
+													</div>
+											</div>
+									</li>
+									<li class="mix ka_media-dev" data-date="026">
+											<div class="ka_mix-wrap">
+													<a href="#"><img src="img/02_media-dev/akutsu.jpg" width="110" alt="" class="ka_img-responsive"></a>
+													<div class="ka_mix-body">
+															<h3>阿久津 智哉</h3>
+															<p>システムエンジニア</p>
+													</div>
+											</div>
+									</li>
+									<li class="mix ka_media-dev ka_mcl" data-date="027">
+											<div class="ka_mix-wrap">
+													<a href="#"><div class="ka_img-responsive" data-class="ka_azuma" data-animation="ka_anm11"></div></a>
+													<div class="ka_mix-body">
+															<h3>東 和樹</h3>
+															<p>システムエンジニア</p>
+													</div>
+											</div>
+									</li>
+									<li class="mix ka_media-dev ka_president-office" data-date="028">
+											<div class="ka_mix-wrap">
+													<a href="#"><img src="img/04_president_office/yamada.jpg" width="110" alt="" class="ka_img-responsive"></a>
+													<div class="ka_mix-body">
+															<h3>山田 綾子</h3>
+															<p>Photorait 事業責任者</p>
+													</div>
+											</div>
+									</li>
+									<li class="mix ka_sales ka_president-office" data-date="029">
+											<div class="ka_mix-wrap">
+													<a href="#"><img src="img/04_president_office/koshi.jpg" width="110" alt="" class="ka_img-responsive"></a>
+													<div class="ka_mix-body">
+															<h3>越 貴裕</h3>
+															<p>BS 事業責任者</p>
+													</div>
+											</div>
+									</li>
+									<li class="mix ka_sales ka_president-office" data-date="030">
+											<div class="ka_mix-wrap">
+													<a href="#"><img src="img/04_president_office/oonuma.jpg" width="110" alt="" class="ka_img-responsive"></a>
+													<div class="ka_mix-body">
+															<h3>大沼 夏帆</h3>
+															<p>Ringraph 事業責任者</p>
+													</div>
+											</div>
+									</li>
+									<li class="mix ka_media-dev ka_mcl" data-date="031">
+											<div class="ka_mix-wrap">
+													<a href="#"><div class="ka_img-responsive" data-class="ka_noriko" data-animation="ka_anm20"></div></a>
+													<div class="ka_mix-body">
+															<h3>福山 典子</h3>
+															<p>システムエンジニア</p>
+													</div>
+											</div>
+									</li>
+									<!-- <li class="mix ka_media-dev ka_mcl" data-date="032">
+											<div class="ka_mix-wrap">
+													<a href="#"><div class="ka_img-responsive" data-class="ka_anm8_higashino ka_img"></div></a>
+													<div class="ka_mix-body">
+															<h3>東野 真実</h3>
+															<p>デザイナー</p>
+													</div>
+											</div>
+									</li> -->
+									<li class="mix ka_media-dev ka_mcl" data-date="033">
+											<div class="ka_mix-wrap">
+													<a href="#"><div class="ka_img-responsive" data-class="ka_nishijima" data-animation="ka_anm15"></div></a>
+													<div class="ka_mix-body">
+															<h3>西嶋 寿世</h3>
+															<p>デザイナー</p>
+													</div>
+											</div>
+									</li>
+									<li class="mix ka_media-dev ka_mcl" data-date="034">
+											<div class="ka_mix-wrap">
+													<a href="#"><div class="ka_img-responsive" data-class="ka_chiba" data-animation="ka_anm16"></div></a>
+													<div class="ka_mix-body">
+															<h3>千葉 隼人</h3>
+															<p>デザイナー</p>
+													</div>
+											</div>
+									</li>
+							</ul>
+					</div>
+		</div>
+</section>
+<div class="ka_empty"></div>
+</body>
+</html>
