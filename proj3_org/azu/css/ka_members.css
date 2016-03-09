@@ -9,6 +9,7 @@
 	-webkit-transform-origin: 50% 0;
 	animation-duration: 0.4s;
 	animation-timing-function: ease;
+	vertical-align: top;
 }
 
 
@@ -33,6 +34,16 @@
 	margin: 0; margin-bottom: .5em; width: 100%; height: 170px;
 }
 
+.ka_higashino {
+	 margin: 0 auto 0;
+	 background: url(../img/02_media-dev/anm_higashino.jpg) 0 0 no-repeat #ccc;
+	 height: 100%;
+	 overflow: hidden;
+	 padding-top: 100%;
+	 width: 100%;
+ }
+
+
 .ka_azuma {
 	 margin: 0 auto 0;
 	 background: url(../img/02_media-dev/anm_azuma.jpg) 0 0 no-repeat #ccc;
@@ -51,9 +62,6 @@
 	width: 100%;
 }
 
-.ka_anm16 {
-	animation: sprite16 2s steps(16, start) infinite;
-}
 
 .ka_nishijima {
 	margin: 0 auto 0;
@@ -62,10 +70,6 @@
 	overflow: hidden;
 	padding-top: 100%;
 	width: 100%;
-}
-
-.ka_anm15 {
-	animation: sprite15 3s steps(15, start) infinite;
 }
 
 .ka_noriko {
@@ -77,10 +81,6 @@
 	 width: 100%;
 }
 
-.ka_anm20 {
-	animation: sprite20 2.5s steps(20, start) infinite;
-}
-
 .ka_sasano {
 	margin: 0 auto 0;
 	background: url(../img/02_media-dev/anm_sasano.jpg) 0 0 no-repeat #ccc;
@@ -90,10 +90,6 @@
 	width: 100%;
 }
 
-.ka_anm13 {
-	animation: sprite13 3s steps(13, start) infinite;
-	animation-duration: 3s;
-}
 
 .ka_tanibuchi {
 	margin: 0 auto 0;
@@ -102,10 +98,15 @@
 	padding-top: 100%; width: 100%;
 }
 
-.ka_anm11 {
-	animation: sprite11 3s steps(11, start) infinite;
-}
+.ka_anm8 { animation: sprite8 3s steps(8, start) infinite; }
+.ka_anm11 { animation: sprite11 3s steps(11, start) infinite; }
+.ka_anm13 {	animation: sprite13 3s steps(13, start) infinite; }
+.ka_anm15 { animation: sprite15 3s steps(15, start) infinite; }
+.ka_anm16 { animation: sprite16 2s steps(16, start) infinite; }
+.ka_anm20 {	animation: sprite20 2.5s steps(20, start) infinite; }
 
+@keyframes sprite8 { 0% { background-position: 0 0; }
+  100% { background-position: -1360px 0; } }
 @keyframes sprite11 { 0% { background-position: 0 0; }
   100% { background-position: -1870px 0; } }
 @keyframes sprite13 { 0% { background-position: 0 0; }
