@@ -128,13 +128,16 @@ $(function() {
         var s = $(this).scrollTop()/6 - start_point ;
         var m = $(".nf_block_content").height();
         var windowHeight = $(window).height();
+
                 if(s > -10 && s < 1200) {
                     $(".nf_mp_title").show();
                     $('.nf_mp_title').css({'position': 'fixed', 'top': 0});
+                    $('.nf_block_content').css({'position': 'fixed'});
+                    $(".nf_nine_pieces").css({'position': 'fixed'});
                 } else if (s >= 1200){
                     $('.nf_block_content').css({'position': 'relative', 'height': windowHeight});
-                    $(".nf_mp_title").css({'position': 'relative', 'height': windowHeight});
-                    $(".nf_nine_pieces").css({'position': 'relative', 'height': windowHeight});
+                    // $(".nf_mp_title").css({'position': 'relative', 'height': windowHeight});
+                    // $(".nf_nine_pieces").css({'position': 'relative', 'height': windowHeight});
                 } else {
                     $(".nf_mp_title").hide();
                 }
@@ -154,7 +157,6 @@ $(function() {
                             if(count >= end)
                                     break;
                             var pos = DRAW_ARR["MAIN_COPY"][j];
-                            //console.log("pos");console.log(pos);
                             for(i = 0; i < pos.length - 1; i++){
                                     ctx.moveTo(pos[i][0], pos[i][1]);
                                     ctx.lineTo(pos[i+1][0], pos[i+1][1]);
