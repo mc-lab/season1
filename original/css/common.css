@@ -704,6 +704,39 @@ th {
     min-height: 8000px;
 }
 
+
+.nf_title {
+  width: 100%;
+  text-align: center;
+  font-weight: normal;
+  font-size: 2em;
+  letter-spacing:0.3em;
+  color: #fff;
+  background-color: #008C9E;
+  height: 300px;
+  position: fixed;
+}
+
+
+
+.nf_title span {
+  position: absolute;
+  top: 35px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.nf_title span:before {
+  display: inline-block;
+  vertical-align: middle;
+  width: 35px;
+  height: 1px;
+  margin-right: 12px;
+  background: #fff;
+  content: '';
+}
+
 .nf_block_content {
     height: 300px;
     width: 1124px;
@@ -743,11 +776,12 @@ th {
 }
 .nf_nine_pieces {
     float: right;
-    margin-right: -178px;
     bottom: 0;
     position: fixed;
-    left: 15%;
-    width: 700px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: 320px;
+    background-color: #ffffff;
 }
 .nf_truth {
     color:#26ABD7;
@@ -760,20 +794,59 @@ th {
     font-size: 1.2em;
 
 }
-.nf_nine_pieces dl {
-    float: left;
-    width: 250px;
-    margin: 0 40px 10px 0;
+.nf_nine_pieces {
+  right: 20px;
+  width: 350px;
+  border: solid 1px #DDD;
 }
-.nf_nine_pieces dl dt {
-    padding: 6px 10px 4px 10px;
-    background: #F1577A;
-    color: #FFF;
-    font-size: 1em;
-    line-height: 1.5;
-    font-weight: bold;
+.nf_nine_pieces h3 {
+  padding: 18px 10px 20px 10px;
+  text-align: center;
+  color: #555;
+  font-size: 1.9em;
+  line-height: 1.5;
+  font-weight: bold;
 }
 
+.nf_nine_pieces h3 strong {
+  color: #EA0439;
+  font-size: 110%;
+}
+.nf_nine_pieces div.inner {
+  width: 350px;
+  margin: 0 0 0 20px;
+  overflow: hidden;
+}
+.nf_nine_pieces div.inner dl {
+  float: left;
+  width: 150px;
+  margin: 0 20px 0 0;
+}
+.nf_nine_pieces div.inner dl dt {
+  padding: 6px 10px 4px 10px;
+  background: #F1577A;
+  color: #FFF;
+  font-size: 1.6em;
+  line-height: 1.5;
+  font-weight: bold;
+}
+.nf_nine_pieces div.inner dl dd {
+  padding: 5px 0 20px 0;
+  font-size: 1.3em;
+  line-height: 1.7;
+}
+
+.nf_title {
+  width: 100%;
+  text-align: center;
+  font-weight: normal;
+  font-size: 2em;
+  letter-spacing:0.3em;
+  color: #fff;
+  background-color: #008C9E;
+  height: 300px;
+  position: fixed;
+}
 
 html {
     font-family: Verdana,"游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
@@ -807,6 +880,10 @@ body {
 
 .font_ss {
   font-size: 0.8em;
+}
+
+#ts_main{
+  margin-bottom:100px;
 }
 
 

@@ -113,9 +113,22 @@ var DRAW_ARR = {
 };
 
 $(function() {
+var $target = $('.nf_container'),
+      targetOffsetTop = $target.offset().top,
+      windowHeight = $(window).height(),
+      targetHeight =  8000;
+
+
+ // (^o^)< 表示位置を固定
+  $(window).on('scroll', function () {
+    if($(this).scrollTop() > targetOffsetTop) {
+      $('.nf_wrap').css({'position': 'fixed', 'top': 0});
+    } else {
+      $('.nf_wrap').css({'position': 'relative', 'height': windowHeight});
+    }
+  });
         //■　■　■　スタート位置の設定
         var start_point = 50;
-
     process = 0;
         //DRAW_ARR["MAIN_COPY"].length = 61  (61筆）
     for(j = 0; j < DRAW_ARR["MAIN_COPY"].length; j++){
@@ -125,26 +138,18 @@ $(function() {
     $(".nf_nine_pieces").css({opacity: 0.0});
     $(".nf_vision").css({opacity: 0.0});
     $(window).scroll(function () {
-        var s = $(this).scrollTop()/6 - start_point ;
-        var m = $(".nf_block_content").height();
-        var windowHeight = $(window).height();
+        var s = $(this).scrollTop()/10 - start_point ;
+        var wariai = ($(window).scrollTop()+targetOffsetTop) / 8000;
 
-                if(s > -10 && s < 1200) {
+                if(s > 0) {
                     $(".nf_mp_title").show();
-                    $('.nf_mp_title').css({'position': 'fixed', 'top': 0});
-                    $('.nf_block_content').css({'position': 'fixed'});
-                    $(".nf_nine_pieces").css({'position': 'fixed'});
-                } else if (s >= 1200){
-                    $('.nf_block_content').css({'position': 'relative', 'height': windowHeight});
-                    // $(".nf_mp_title").css({'position': 'relative', 'height': windowHeight});
-                    // $(".nf_nine_pieces").css({'position': 'relative', 'height': windowHeight});
                 } else {
                     $(".nf_mp_title").hide();
                 }
-
+        var m = $(".nf_block_content").height();
         var ctx = $('#nf_canvas')[0].getContext('2d');
                 ctx.lineWidth = 4;
-                ctx.strokeStyle = "rgb(255,105,180)";
+                ctx.strokeStyle = "rgb(255,255,255)";
 
         if (s <= m) {
                     var end = parseInt(s/m * process*1/6);
@@ -157,6 +162,7 @@ $(function() {
                             if(count >= end)
                                     break;
                             var pos = DRAW_ARR["MAIN_COPY"][j];
+                            //console.log("pos");console.log(pos);
                             for(i = 0; i < pos.length - 1; i++){
                                     ctx.moveTo(pos[i][0], pos[i][1]);
                                     ctx.lineTo(pos[i+1][0], pos[i+1][1]);
@@ -167,10 +173,13 @@ $(function() {
                     ctx.stroke();
         }
         if (s <= m*2) {
-                        $(".nf_vision").css({opacity: (s - m)/m});
+                        $(".nf_nine_pieces").css({opacity: (s - m)/m});
         }
-        if (s <= m*3){
-                        $(".nf_nine_pieces").css({opacity: (s - 2*m)/m});
+
+        if (wariai >= 1) {
+            $('.nf_title').css({'position': 'absolute', 'bottom': 0, 'top': 'auto'});
+            $('.nf_block_content').css({'position': 'absolute', 'bottom': 0, 'top': 'auto'});
+            $('.nf_nine_pieces').css({'position': 'absolute', 'bottom': 0, 'top': 'auto'});
         }
     }).scroll();
 });
