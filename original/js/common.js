@@ -113,77 +113,63 @@ var DRAW_ARR = {
 };
 
 $(function() {
-var $target = $('.nf_container'),
-      targetOffsetTop = $target.offset().top,
-      windowHeight = $(window).height(),
-      targetHeight =  8000;
+        var $target = $('.nf_container'),
+        targetOffsetTop = $target.offset().top,
+        windowHeight = $(window).height(),
+        targetHeight =  8000;
 
+        //■　■　■　スタート位置の設定
+        var start_point = $('#contents').offset().top + $('#contents').height() + 50;
+        var process = 0;
+        //DRAW_ARR["MAIN_COPY"].length = 61  (61筆）
+        for(j = 0; j < DRAW_ARR["MAIN_COPY"].length; j++){
+            process += DRAW_ARR["MAIN_COPY"][j].length;
 
- // (^o^)< 表示位置を固定
-  $(window).on('scroll', function () {
-    if($(this).scrollTop() > targetOffsetTop) {
-      $('.nf_wrap').css({'position': 'fixed', 'top': 0});
-    } else {
-      $('.nf_wrap').css({'position': 'relative', 'height': windowHeight});
-    }
-  });
-        //■　■　■　スタート位置の設定
-        var start_point = 50;
-    process = 0;
-        //DRAW_ARR["MAIN_COPY"].length = 61  (61筆）
-    for(j = 0; j < DRAW_ARR["MAIN_COPY"].length; j++){
-        process += DRAW_ARR["MAIN_COPY"][j].length;
+        }
+        $(".nf_nine_pieces").css({opacity: 0.0});
+        $(".nf_vision").css({opacity: 0.0});
+        $(window).scroll(function () {
+            var wariai = ($(window).scrollTop()-targetOffsetTop) / targetHeight;
 
-    }
-    $(".nf_nine_pieces").css({opacity: 0.0});
-    $(".nf_vision").css({opacity: 0.0});
-    $(window).scroll(function () {
-        var s = $(this).scrollTop()/10 - start_point ;
-        var wariai = ($(window).scrollTop()+targetOffsetTop) / 8000;
+            if(wariai > 0 && wariai < 1.2) {
+                $(".nf_mp_title").css({'opacity':wariai * 5});
+                $(".nf_nine_pieces").css({opacity: wariai-0.2});
+                $('#nf_main').css({'visibility':'visible'});
+            } else if (wariai >= 1.2){
+                $(".nf_mp_title").css({'opacity':1 - wariai + 0.35});
+                $(".nf_nine_pieces").css({'opacity':1 - wariai + 0.35});
+            } else {
+                $(".nf_mp_title").css({'opacity':0});
+                $('#nf_main').css({'visibility':'hidden'});
+            }
 
-                if(s > 0) {
-                    $(".nf_mp_title").show();
-                } else {
-                    $(".nf_mp_title").hide();
-                }
-        var m = $(".nf_block_content").height();
-        var ctx = $('#nf_canvas')[0].getContext('2d');
-                ctx.lineWidth = 4;
-                ctx.strokeStyle = "rgb(255,255,255)";
+            var ctx = $('#nf_canvas')[0].getContext('2d');
+            ctx.lineWidth = 4;
+            ctx.strokeStyle = "rgb(255,255,255)";
 
-        if (s <= m) {
-                    var end = parseInt(s/m * process*1/6);
+            if (wariai > 0.2) {
+                var end = parseInt((wariai - 0.2) * process*1/6);
 
-                    ctx.clearRect(0, 0, 550, 230);
-                    ctx.beginPath();
-                    var count = 0;
-                    if(count < process) {
-                        for(j = 0; j < DRAW_ARR["MAIN_COPY"].length; j++){
-                            if(count >= end)
-                                    break;
-                            var pos = DRAW_ARR["MAIN_COPY"][j];
-                            //console.log("pos");console.log(pos);
-                            for(i = 0; i < pos.length - 1; i++){
-                                    ctx.moveTo(pos[i][0], pos[i][1]);
-                                    ctx.lineTo(pos[i+1][0], pos[i+1][1]);
-                            }
-                            count++;
-                        }
-                    }
-                    ctx.stroke();
-        }
-        if (s <= m*2) {
-                        $(".nf_nine_pieces").css({opacity: (s - m)/m});
-        }
-
-        if (wariai >= 1) {
-            $('.nf_title').css({'position': 'absolute', 'bottom': 0, 'top': 'auto'});
-            $('.nf_block_content').css({'position': 'absolute', 'bottom': 0, 'top': 'auto'});
-            $('.nf_nine_pieces').css({'position': 'absolute', 'bottom': 0, 'top': 'auto'});
-        }
-    }).scroll();
-});
-
+                ctx.clearRect(0, 0, 550, 230);
+                ctx.beginPath();
+                var count = 0;
+                if(count < process) {
+                    for(j = 0; j < DRAW_ARR["MAIN_COPY"].length; j++){
+                        if(count >= end)
+                            break;
+                        var pos = DRAW_ARR["MAIN_COPY"][j];
+                            //console.log("pos");console.log(pos);
+                            for(i = 0; i < pos.length - 1; i++){
+                                ctx.moveTo(pos[i][0], pos[i][1]);
+                                ctx.lineTo(pos[i+1][0], pos[i+1][1]);
+                            }
+                            count++;
+                        }
+                    }
+                    ctx.stroke();
+                }
+        });
+    });
 
 
 var ka_wp_image = '../img/wp_600x600.png';
@@ -235,7 +221,15 @@ $(".ka_img-responsive").each(function(){
     $(this).addClass('ka_noimage');
 });
 
+$(".all").click(function(){
+        $('.space').css({'height': '1000px'});
+
+})
+
 });
+
+
+
 
 
 $(function() {
@@ -248,7 +242,7 @@ $(function() {
     var mapOptions = {
       zoom: 17,
       center: latlng,
-      mapTypeId: google.maps.MapTypeId.ROADMAP,
+      mapTypeId: google.maps.MapTypeId.ROADfMAP,
       scrollwheel: false,
       mapTypeControl: false
     };
@@ -331,6 +325,9 @@ $(function() {
 
 
   $(window).on('scroll', function () {
+    console.log($(this).scrollTop());
+    console.log(targetOffsetTop);
+    console.log('------');
     if($(this).scrollTop() > targetOffsetTop) {
       $('.nh_wrap').css({'position': 'fixed', 'top': 0});
     } else {
