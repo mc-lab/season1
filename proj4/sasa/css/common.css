@@ -1,0 +1,53 @@
+ul {
+  margin: 0;
+  padding:0;
+}
+
+li {
+  list-style: none;
+  margin: 0;
+  padding:0;
+}
+
+header {
+  text-align: center;
+  position: fixed;
+  top: 0;
+  right: 15%;
+}
+
+header img {
+  width: 250px;
+}
+
+#dummy {
+  height: 33500px;
+}
+
+#contents {
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  top: 200px;
+}
+
+#main {
+  width: 964px;
+  background-color: #fff;
+  position: relative;
+  left: 0;
+  right: 0;
+  margin: auto;
+  overflow: hidden;
+}
+
+.road_images {
+  position: relative;
+  top: 0;
+}
+
+.road_image img{
+  display: block;
+  width: 964px;
+}
+
