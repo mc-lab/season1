@@ -1,0 +1,283 @@
+html {
+    font-family: Verdana,"游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+
+.clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+    height: 0
+}
+
+.ts_space_big {
+  width: 100%;
+  height: 1300px;
+}
+
+.font_sb {
+  font-size: 1.7em;
+}
+
+.font_sm {
+  font-size: 1.3em;
+}
+
+
+.font_ss {
+  font-size: 0.8em;
+}
+
+
+.ts_h2 {
+  width: 100%;
+  text-align: center;
+  font-weight: normal;
+  font-size: 2em;
+  letter-spacing:0.3em;
+  color: #fff;
+  background-color: #008C9E;
+  height: 300px;
+  position: relative;
+}
+
+.ts_h2 span {
+  position: absolute;
+  top: 35px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.ts_h2 span:before {
+  display: inline-block;
+  vertical-align: middle;
+  width: 35px;
+  height: 1px;
+  margin-right: 12px;
+  background: #fff;
+  content: '';
+}
+
+#ts_image_wp {
+  text-align: center;
+  position: relative;
+  margin: -200px 0 180px 0;
+}
+
+.ts_site_wp {
+  position: relative;
+  width: 55%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+.ts_wp_image {
+  width: 100%;
+  box-shadow: 3px 0px 4px 0px rgba(0, 0, 0, 0.2);
+}
+.ts_wp_image ,.ts_site_info_main{
+  transition: all 0.3s linear;
+}
+
+.ts_site_wp:hover .ts_wp_image {
+  transform: scale(1.05);
+}
+
+.ts_site_wp .ts_site_info_main {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0);
+}
+
+.ts_site_wp:hover .ts_site_info_main {
+  background-color: rgba(0,0,0,0.78);
+}
+
+.ts_site_wp .ts_site_info_focus {
+  margin-top: 40px;
+  color: #fff;
+}
+
+.ts_site_wp .ts_divider {
+  width: 0;
+  position: relative;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transition: all 0.5s ease-in;
+}
+.ts_site_wp:hover .ts_divider {
+  width: 60%;
+  border-top: #fff 1px solid;
+}
+
+.ts_site_wp .ts_site_info_focus .ts_hovering_item {
+  margin-top: 4%;
+  visibility: hidden;
+  position: absolute;
+}
+
+.ts_site_wp:hover .ts_hovering_item {
+  visibility: visible;
+  transition: all 0.3s linear;
+  position: static;
+}
+
+#ts_image_wp .st_wp_image {
+  width: 100%;
+}
+
+#ts_image_wp .ts_site_link li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.ts_site_images {
+  width: 100%;
+  height: 30%;
+  overflow: hidden;
+  position: relative;
+  background-color: #323232;
+}
+
+.ts_site_info {
+  width: 40%;
+}
+
+.ts_site_image {
+  width: 60%;
+  overflow: hidden;
+  transition: all 0.2s linear;
+}
+
+.ts_site_image{
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.ts_site_image:hover {
+  background-size: 105%;
+  background-position: -15px -15px;
+}
+
+
+#ts_image_f .ts_site_image {
+  background-image: url(../img/foreign.png);
+}
+
+#ts_image_pt .ts_site_image {
+  background-image: url(../img/photorait.png);
+}
+
+#ts_image_rg .ts_site_image {
+  background-image: url(../img/ringraph.png);
+}
+
+.ts_site_info {
+  height: 400px;
+  position: relative;
+}
+
+.ts_site_info .ts_site_logo {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.ts_site_images.ts_right .ts_site_info {
+  float: left;
+}
+
+.ts_site_images.ts_right .ts_site_image {
+  float: right;
+}
+
+.ts_site_images.ts_right .ts_site_image:before {
+  content: "";
+  display: block;
+  background-image: url(../img/triangle_gl_01.png);
+  background-size: 100px 400px;
+  height: 400px;
+  width: 100px;
+  position: relative;
+  z-index: 100;
+}
+
+.ts_site_image  .ts_site_info_main {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  z-index: 10;
+  color: #fff;
+  padding-top: 40px;
+  background-color: rgba(0,0,0,0);
+}
+
+.ts_site_image:hover .ts_site_info_main {
+  background-color: rgba(0,0,0,0.78);
+}
+
+.ts_site_image .ts_hovering_item {
+  visibility: hidden;
+}
+
+.ts_site_image:hover .ts_hovering_item {
+  visibility: visible;
+  transition: all 0.2s linear;
+}
+
+
+.ts_site_images .ts_divider {
+  width: 0;
+  border-top: #fff 1px solid;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.ts_site_image:hover .ts_divider {
+  width: 60%;
+  transition: all 0.5s ease-in;
+}
+
+.ts_site_images .ts_detail_text {
+  margin-top: 60px;
+}
+
+.ts_site_images.ts_left .ts_site_info {
+  float: right;
+}
+
+.ts_site_images.ts_left .ts_site_image {
+  float: left;
+  position: relative;
+  height: 400px;
+}
+
+.ts_site_images.ts_left .ts_site_image:after {
+  content: "";
+  display: block;
+  background-image: url(../img/triangle_gl_02.png);
+  background-size: 100px 400px;
+  height: 400px;
+  width: 100px;
+  position: absolute;
+  right: 0;
+  z-index: 100;
+}
