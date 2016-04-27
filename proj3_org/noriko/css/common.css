@@ -1,0 +1,70 @@
+@charset "UTF-8";
+.nf_container { 
+    min-height: 15000px;
+}
+
+.nf_block_content { 
+    height: 300px;
+    width: 1124px;
+    position: fixed;
+}
+
+.nf_mp_title {
+    position:fixed;
+    color:#26ABD7;
+    font-size: 2.6em;
+    font-family: 'Bevan', serif;
+    font-weight: bold;
+    padding-left: 20px;
+    width:100%;
+    text-shadow:
+    1px 1px 1px rgba(0, 0, 0, 0.6),
+    -1px -1px 1px rgba(255, 255, 255, 0.5);
+    display: none;
+
+}
+
+.nf_management_philosophy {
+    position: absolute;
+    top: 80px;
+    left: 28%;
+    margin-left: -225px;
+}
+.nf_vision {
+    position: absolute;
+    left: 78%;
+    margin-left: -225px;
+    margin-top: 100px;
+}
+.nf_nine_pieces {
+    float: right;
+    margin-right: -178px;
+    bottom: 0;
+    position: fixed;
+    left: 15%;
+    width: 700px;
+}
+.nf_truth {
+    color:#26ABD7;
+    font-size: 1.6em;
+    background-color : black;
+    text-shadow : rgba(255,255,255,0.5) 0 5px 6px, rgba(255,255,255,0.2) 1px 3px 3px;
+    -webkit-background-clip : text;
+}
+.nf_happiness {
+    font-size: 1.2em;
+    
+}
+.nf_nine_pieces dl {
+    float: left;
+    width: 250px;
+    margin: 0 40px 10px 0;
+}
+.nf_nine_pieces dl dt {
+    padding: 6px 10px 4px 10px;
+    background: #F1577A;
+    color: #FFF;
+    font-size: 1em;
+    line-height: 1.5;
+    font-weight: bold;
+}
