@@ -1,13 +1,62 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+<link rel="stylesheet" type="text/css" href="../css/normalize.css"  />
 <link rel="stylesheet" type="text/css" href="../css/common.css"  />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <meta charset="UTF-8">
-<title>サイトのタイトル</title>
+<title>NISHIJIMA</title>
 </head>
 <body>
-<h1>オリジナルコンテンツ</h1>
+
+<div class="hn_loading">
+  <div class="hn_timer-loader">
+    image
+  </div>
+  <p>Now Loading</p>
+</div>
+
+<section class="hn_main-visual">
+  <div class="hn_container">
+    <h1 class="hn_logo">
+      <svg version="1.1" id="layer01" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+         y="0px" width="1100px" viewBox="0 0 755.2 56.7" style="enable-background:new 0 0 755.2 56.7;" xml:space="preserve">
+      <g>
+        <path class="hn_path" d="M46.5,3.7v49.6H41V15.7l-15.6,31l-15.6-31l0.1,37.6H4.4L4.3,3.7h5.5v0.1l15.6,30.9L40.9,3.8V3.7H46.5z"/>
+        <path class="hn_path" d="M85.1,47.8v5.5H59.8V3.7h25.3v5.5H65.2v14H80v5.5H65.2v19.1H85.1z"/>
+        <path class="hn_path" d="M94.5,53.2V3.7h9.5c13.6,0,24.8,11.1,24.8,24.8c0,13.7-11.2,24.8-24.8,24.8H94.5z M100,47.8h4.1
+          c10.7,0,19.3-8.7,19.3-19.3c0-10.7-8.7-19.3-19.3-19.3H100V47.8z"/>
+        <path class="hn_path" d="M146,53.2h-5.5V3.7h5.5V53.2z"/>
+        <path class="hn_path" d="M204.8,53.2h-5.9L191,36.8h-20.6l-7.9,16.4h-5.9l24.1-49.6L204.8,53.2z M188.5,31.8l-7.8-16l-7.9,16H188.5z"/>
+        <path class="hn_path" d="M270.2,53.2h-6.8c-13.7,0-24.8-11.1-24.8-24.8c0-13.7,11.1-24.8,24.8-24.8h6.8v5.5h-5.5h-1.3
+          c-10.7,0-19.3,8.7-19.3,19.3c0,10.7,8.7,19.3,19.3,19.3h0.7l0.6-0.1h5.5V53.2z"/>
+        <path class="hn_path" d="M304.7,53.2l-12.9-19.7h-6.9l-0.1,19.7h-5.5l0.1-49.6h13.8l0.2,0.1c8.1,0.1,14.7,6.8,14.7,14.9
+          c0,6.6-4.3,12.2-10.3,14.2l13.3,20.4H304.7z M293.3,28.1c5.2,0,9.5-4.2,9.5-9.4c0-5.3-4.3-9.2-9.5-9.5L293,9.1h-0.2h-7.9v19H293.3z
+          "/>
+        <path class="hn_path" d="M346.6,47.8v5.5h-25.3V3.7h25.3v5.5h-19.9v14h14.7v5.5h-14.7v19.1H346.6z"/>
+        <path class="hn_path" d="M404.3,53.2h-5.9l-7.9-16.4h-20.6L362,53.2h-5.9l24.1-49.6L404.3,53.2z M388,31.8l-7.8-16l-7.9,16H388z"/>
+        <path class="hn_path" d="M439,9.1h-13.4v44.1h-5.5V9.1h-13.4V3.7H439V9.1z"/>
+        <path class="hn_path" d="M454,53.2h-5.5V3.7h5.5V53.2z"/>
+        <path class="hn_path" d="M465.9,28.5c0-13.7,11.1-24.8,24.8-24.8s24.8,11.1,24.8,24.8c0,13.7-11.1,24.8-24.8,24.8
+          S465.9,42.1,465.9,28.5z M471.4,28.5c0,10.7,8.7,19.3,19.3,19.3s19.3-8.7,19.3-19.3c0-10.7-8.7-19.3-19.3-19.3
+          S471.4,17.8,471.4,28.5z"/>
+        <path class="hn_path" d="M558.1,53.2l-25.5-40v39.9h-5.5V3.7h5.5l26.7,42.4l-0.1-42.5h5.4l-0.1,49.6H558.1z"/>
+        <path class="hn_path" d="M630.4,53.2h-29.6V3.7h5.5v44.1h24.2V53.2z"/>
+        <path class="hn_path" d="M687.3,53.2h-5.9l-7.9-16.4h-20.6L645,53.2h-5.9l24.1-49.6L687.3,53.2z M671,31.8l-7.8-16l-7.9,16H671z"/>
+        <path class="hn_path" d="M729.9,38.4c0,8.2-6.7,14.9-14.9,14.9h-18.1V3.7h17.7c6.9,0,12.6,5.6,12.6,12.6c0,3.8-1.7,7.2-4.3,9.5
+          C727.1,28.4,729.9,33,729.9,38.4z M702.4,9.1v14.2l12.3,0.2v-0.1c3.9,0,7.1-3.2,7.1-7.2c0-3.9-3.2-7.1-7.1-7.1H702.4z M724.4,38.4
+          c0-5-4-9.4-8.9-9.4l-13.1-0.2v19H715C720.2,47.8,724.4,43.6,724.4,38.4z"/>
+        <rect x="739.5" y="42.3" class="hn_path" width="10.9" height="10.9"/>
+      </g>
+      </svg>
+    </h1>
+    <div class="hn_border-top"></div>
+    <div class="hn_border-btm"></div>
+    <div class="hn_border-right"></div>
+    <div class="hn_border-left"></div>
+  </div>
+</section>
+
 <script src="../js/common.js"></script>
 </body>
 </html>
