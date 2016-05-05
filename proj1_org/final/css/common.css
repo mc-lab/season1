@@ -1,0 +1,1253 @@
+@charset "UTF-8";
+
+
+li {
+    list-style: none
+}
+
+ul {
+    padding: 0;
+}
+
+
+/*笹野担当分*/
+.wrapper {
+    display: none;
+    opacity: 0;
+}
+
+.wrapper.ts_showed {
+    display: block;
+    opacity: 1;
+    animation-name: ts_wrapper_show;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
+
+.header_bar {
+    width: 100%;
+    height: 10px;
+    background-color: #fff;
+    text-align: center;
+    z-index: 10;
+    /*border-bottom: 2px solid #000;*/
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.header_bar .header_logo{
+    margin-left: 20px;
+    width: 90px;
+    position: relative;
+}
+
+.header_bar  .header_content{
+    position: relative;
+    top: 20px;
+    left: 0px;
+}
+
+
+.header_bar .header_logo:before {
+    content: "";
+    width: 255px;
+    height: 4px;
+    background-color: #fff;
+    position: absolute;
+    top: 10px;
+    left: -73px;
+    border-radius: 3px;
+}
+
+
+.header_bar .header_logo:after {
+    width: 500px;
+    height: 500px;
+    border-radius: 200px;
+    top: -470px;
+    left: -310px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+    z-index: -1;
+    /*border: 2px solid #000;*/
+}
+
+.header_bar .header_logo:after {
+    content: "";
+    display: block;
+    overflow: hidden;
+    background-color: #fff;
+    position: relative;
+}
+
+
+
+.ts_cover {
+    background-color: #000;
+    opacity: 1;
+    position: relative;
+    z-index: -5;
+    overflow: hidden;
+}
+
+.ts_main_img {
+    height: 500px;
+    background: url(http://blog-imgs-31-origin.fc2.com/m/i/t/mitinokuoblivion/20110621155954c03.jpg) no-repeat center center;
+    /*background: url(../img/main_img.jpg) no-repeat center center;*/
+    background-size: cover;
+    z-index: -5;
+    position: relative;
+    opacity: 0.5;
+
+    animation-name: main_bg_opacity ;
+    animation-duration: 7s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
+
+
+.ts_main_prologue {
+    width: 100%;
+    color: #eee;
+    font-size: 120%;
+    position: absolute;
+    text-align: center;
+
+
+    animation-name: main_prologue ;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
+
+
+.ts_main_intro{
+    width: 100%;
+    color: #eee;
+    font-size: 150%;
+    position: absolute;
+    text-align: center;
+    margin: 350px 0 0 150px;
+
+    animation-name: main_txt_scr ;
+    animation-duration: 80s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
+
+
+.ts_main_intro p {
+    margin : 50px;
+}
+
+.ts_main_scroll {
+    width: 100%;
+    text-align: center;
+    margin: 30px 0;
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0.7s;
+    transition-timing-function: linear;
+    -webkit-transition-property: opacity;
+    -webkit-transition-duration: 0.7s;
+    -webkit-transition-timing-function: linear;
+}
+
+.ts_stories {
+    visibility: hidden;
+    opacity: 0;
+    text-align: center;
+    position: absolute;
+    top: -99999999px;
+    transition-property: opacity;
+    transition-duration: 0.7s;
+    transition-timing-function: linear;
+    -webkit-transition-property: opacity;
+    -webkit-transition-duration: 0.7s;
+    -webkit-transition-timing-function: linear;
+}
+
+.ts_stories.show_contents {
+    visibility: visible;
+    position: static;
+    top: auto;
+}
+
+
+@keyframes ts_wrapper_show  {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1.0;
+    }
+}
+
+@keyframes ts_indicator_act  {
+    0% {
+        width: 0%;
+        opacity: 1.0;
+    }
+    70% {
+        width: 70%;
+        opacity: 1.0;
+    }
+    85% {
+        width: 100%;
+        opacity: 1.0;
+    }
+    95% {
+        width: 100%;
+        opacity: 1.0;
+    }
+    100% {
+        width: 100%;
+        opacity: 0;
+    }
+}
+@keyframes main_bg_opacity  {
+    0% {
+        opacity: 0.9;
+    }
+    90% {
+        opacity: 0.9;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
+@keyframes main_prologue  {
+    0% {
+        opacity: 0;
+        top: 175px;
+    }
+    30% {
+        opacity: 0;
+        top: 175px;
+    }
+    65% {
+        opacity: 1.0;
+        top: 160px;
+    }
+    90% {
+        opacity: 1.0;
+        top: 160px;
+    }
+    100% {
+        opacity: 0;
+        top: 190px;
+    }
+}
+
+@keyframes main_txt_scr {
+    0% {
+        top :500px;
+    }
+    100% {
+        top :-3000px;
+    }
+}
+
+@keyframes scroll_img {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/*谷渕担当分*/
+
+.mt_site_footer{
+    width:100%;
+    height: 50px;
+    position: fixed;
+    bottom: 0px;
+    padding: 20px;
+    box-shadow:-1px -1px 2px rgba(0, 0, 0, 0.8);
+    background-color: white;
+    z-index: 900;
+}
+
+.mt_footer{
+    /*border: 5px solid #fff;*/
+    height: 80px;
+    margin: auto;
+}
+
+.mt_member{
+    width: 680px;
+    margin:auto;
+    padding:0;
+}
+
+.mt_member li{
+    position: :relative;
+    float:left;
+    list-style-type: none;
+    margin-right:15px;
+    margin-left: 15px;
+  cursor: pointer;
+}
+
+.mt_member li:hover{
+  text-decoration:underline;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.mt_copy{
+  text-align: center;
+  margin-top: 20px;
+  font-size: 10px;
+}
+
+.mt_modal {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    z-index: 1000;
+    text-align: center;
+    display: none;
+}
+
+.mt_modal .mt_prof{
+    width: 400px;
+    height: 400px;
+    background-color: #fff;
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 1100;
+    display: none;
+}
+
+.mt_modal_bg {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+}
+
+
+.kenzan{
+    animation-name: kenzan ;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
+
+.simple-modal {
+  /* Style rewrite */
+
+  width: 600px;
+  left: 20px;
+  top: 20px;
+  /* */
+
+  position: absolute;
+  position: fixed;
+  margin: 0;
+  color: #808080;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 18px;
+  background-color: #FFFFFF;
+  border: 1px solid #EAEEFA;
+  border: 1px solid rgba(234, 238, 250, 0.6);
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.6);
+  z-index: 99999;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+}
+.simple-modal .simple-modal-header {
+  padding: 5px 15px;
+  margin: 0;
+  border-bottom: 1px solid #EEEEEE;
+}
+.simple-modal .simple-modal-header .title {
+  margin: 0;
+  color: #404040;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 36px;
+}
+
+.simple-modal .simple-modal-body {
+  padding: 15px;
+  /* Extra style */
+
+}
+.simple-modal .simple-modal-body div.contents {
+  overflow: hidden;
+}
+.simple-modal .simple-modal-body p {
+  font-size: 13px;
+  font-weight: normal;
+  color: #606060;
+  line-height: 18px;
+}
+.simple-modal .simple-modal-body p img {
+  display: block;
+  margin: 0 auto 10px auto;
+}
+
+.simple-modal-body dt:after{
+    content: ' ';
+    width:60%;
+    display:block;
+    border-bottom: dotted 1px #606060;
+        position: relative;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+
+.simple-modal-body dd{
+    webkit-margin-start:0;
+    margin:10px 10px 30px;
+}
+
+
+.simple-modal img {
+    width: 80px ;
+    height: 80px ;
+    border-radius: 80px ;
+}
+
+.mt_box {
+    position: relative;
+    background: #ccc;
+    height: 20px;
+    width: 50px;
+    margin-bottom: 20px;
+    border-radius: 50px;
+}
+
+.mt_box:after {
+      content: '';
+      position: absolute;
+      height: 30px;
+      width: 30px;
+      border-radius: 15px;
+      z-index: -1;
+      background: #fff;
+      bottom: -20px;
+      left: 45px;
+      margin:auto;
+            }
+
+.mt_box:before {
+                content: '';
+                position: absolute;
+                height: 30px;
+                width: 30px;
+                border-radius: 15px;
+                z-index: -1;
+                background: #ccc;
+                bottom: -15px;
+                left: 35px;
+                margin:auto;
+            }
+
+
+@keyframes kenzan  {
+    0% {
+        opacity: 0;
+        top:10%;
+    }
+    100% {
+        opacity: 1;
+        top: 20%;
+    }
+}
+
+
+
+/*東担当分*/
+
+.ka_animation-item {
+    font-family: ka_dotfont;
+    width: 1040px;
+    min-height: 500px
+    right: 0;
+    left: 0;
+    margin: 100px auto;
+    opacity: 0;
+}
+
+.ka_content {
+    margin-bottom: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 10px 50px;
+    border-style: dashed;
+    border-radius: 25px;
+    background-color: #FFF;
+}
+
+.ka_title {
+    font-size: 250%;
+    line-height: 1.3;
+    text-align: center;
+}
+.ka_date {
+    text-align: right;
+    font-size: 100%;
+    margin-right: 50px;
+}
+.ka_note {
+    font-size: 120%;
+    line-height: 1;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+.ka_performers {
+  display:table;
+  width: 30%;
+  margin-left: auto;
+  margin-bottom: 10px;
+}
+
+.ka_cast {
+  font-size: 110%;
+}
+
+.ka_performers li {
+  font-size: 100%;
+  display:table-cell;
+  margin-right: 5px;
+}
+.clearfix {
+    overflow: hidden;
+    *zoom: 1
+}
+
+.main-visual {
+    position: relative;
+    height: 500px
+}
+.ka_movie_film {
+    position: relative;
+    margin: 0 auto;
+    width: 550px;
+    height: 400px;
+    margin-bottom: 40px;
+    margin-top: 10px;
+    background-image: url(../img/film.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.ka_in_film.ts_not_play:before {
+    content: 'VIEW!!';
+    top:190px;
+    z-index: 15;
+    border-bottom: 2px solid #FFF;
+    padding: 10px 30px;
+    color: #FFF;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 220px;
+    margin: -20px auto 0;
+    cursor: pointer;
+}
+
+.ka_in_film.ts_not_play:after {
+    content: '';
+    width: 500px;
+    height: 375px;
+    background-color: #000;
+    position: relative;
+    top:-375px;
+    z-index: 10;
+    display: block;
+    opacity: 0.7;
+}
+
+.ka_in_film {
+  margin: 0 auto;
+  padding-top: 12.5px;
+  padding-bottom: 12.5px;
+  width: 500px;
+  height: 375px;
+}
+
+.ka_movie1 {
+    width: 500px;
+    height: 375px;
+    animation-duration: 5000ms;
+    animation-timing-function: steps(28);
+    background: url(../img/story/01_maou_28.jpg) no-repeat;
+    animation-name: ka_movie-animation1;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+.ka_movie2 {
+    width: 500px;
+    height: 375px;
+    animation-duration: 3000ms;
+    animation-timing-function: steps(14);
+    background: url(../img/story/02_murabito_14.jpg) no-repeat;
+    animation-name: ka_movie-animation2;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+.ka_movie3 {
+    width: 500px;
+    height: 375px;
+    animation-duration: 4000ms;
+    animation-timing-function: steps(22);
+    background: url(../img/story/03_omiokuri_22.jpg) no-repeat;
+    animation-name: ka_movie-animation3;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+.ka_play:not(.ka_animate) {
+    animation-name: ka_movie-animation;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+.ka_animeL {
+    animation-name: ka_rollInL;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode:forwards;
+    transform-origin: 50% 50%;
+}
+
+
+.ka_animeR {
+    animation-name: ka_rollInR;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode:forwards;
+    transform-origin: 50% 50%;
+}
+
+@keyframes ka_movie-animation1 {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 0 -10500px;
+    }
+}
+@keyframes ka_movie-animation2 {
+    0% {
+        background-position: 0 0
+    }
+    100% {
+        background-position: 0 -5250px;
+    }
+}
+@keyframes ka_movie-animation3 {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 0 -8250px;
+    }
+}
+
+
+@keyframes ka_rollInL {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes ka_rollInR {
+  from {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+
+
+/*西嶋担当分*/
+html.now_loading{
+  height: 100%;
+}
+.now_loading body{
+  position: relative;
+  margin: 0;
+  height: 100%;
+  background: #00AA7F;
+}
+
+
+html.loaded{
+  height: auto;
+}
+.loaded body{
+  position: static;
+  margin:0 0 200px;
+  height: auto;
+  background-color: #f1f1f1;
+}
+
+.hn-cover {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: #00AA7F;
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+    -webkit-transition-property: opacity;
+    -webkit-transition-duration: 0.2s;
+    -webkit-transition-timing-function: linear;
+}
+
+.hn_main-visual{
+  padding: 30px;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+}
+.hn_container{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.hn_container .hn_logo{
+  margin: auto;
+  width: 1100px;
+  height: 83px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.hn_container div{
+  position: absolute;
+  background: #fff;
+  -webkit-transition:all .3s ease-in-out .3s;transition:all .3s ease-in-out .3s;
+}
+.hn_container > .hn_border-top{
+  width: 0;
+}
+.hn_container > .hn_border-btm{
+  width: 0;
+}
+.hn_container > .hn_border-right{
+  height: 0
+}
+.hn_container > .hn_border-left{
+  height: 0
+}
+.hn_container.active > .hn_border-top{
+  width: 100%;
+  height: 2px;
+  top: 0;
+  left: 0;
+}
+.hn_container.active > .hn_border-btm{
+  width: 100%;
+  height: 2px;
+  right: 0;
+  bottom: 0;
+}
+.hn_container.active > .hn_border-right{
+  width: 2px;
+  height: 100%;
+  top: 0;
+  right: 0;
+}
+.hn_container.active > .hn_border-left{
+  width: 2px;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+}
+.hn_path{
+  stroke: #fff;
+  fill: #00AA7F;
+  stroke-width: 1;
+  stroke-dasharray: 3000;
+  stroke-dashoffset: 3000;
+  -moz-animation: kakikaki 1.7s ease-in 6s forwards;
+  -webkit-animation: kakikaki 1.7s ease-in 6s forwards;
+  -o-animation: kakikaki 1.7s ease-in 6s forwards;
+  animation: kakikaki 1.7s ease-in 6s forwards;
+}
+@-webkit-keyframes kakikaki{
+  0%  {stroke-dashoffset:3000;fill:#00AA7F;}
+  95% {stroke-dashoffset:2500;fill:#00AA7F;}
+  96% {stroke-dashoffset:500;fill:#00AA7F;}
+  100%{stroke-dashoffset:0;fill:#fff;}
+}
+@-moz-keyframes kakikaki{
+  0%  {stroke-dashoffset:3000;fill:#00AA7F;}
+  95% {stroke-dashoffset:2500;fill:#00AA7F;}
+  96% {stroke-dashoffset:500;fill:#00AA7F;}
+  100%{stroke-dashoffset:0;fill:#fff;}
+}
+@-ms-keyframes kakikaki{
+  0%  {stroke-dashoffset:3000;fill:#00AA7F;}
+  95% {stroke-dashoffset:2500;fill:#00AA7F;}
+  96% {stroke-dashoffset:500;fill:#00AA7F;}
+  100%{stroke-dashoffset:0;fill:#fff;}
+}
+@keyframes kakikaki{
+  0%  {stroke-dashoffset:3000;fill:#00AA7F;}
+  95% {stroke-dashoffset:2500;fill:#00AA7F;}
+  96% {stroke-dashoffset:500;fill:#00AA7F;}
+  100%{stroke-dashoffset:0;fill:#fff;}
+}
+/* loader */
+.hn_loading {
+  display: block;
+  margin: auto;
+  width: 80px;
+  height: 72px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+}
+.hn_loading p{
+  margin: 0;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+  font-weight: bold;
+  font-size: 9px;
+  text-align: center;
+}
+.hn_timer-loader{
+  display: block;
+  margin: 0 auto;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  font-size: 0;
+  border: 2px solid #fff;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  border-radius: 24px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.hn_timer-loader::before,
+.hn_timer-loader::after {
+  display: block;
+  width: 2px;
+  position: absolute;
+  top: 22px;
+  left: 22px;
+  background: #fff;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  content: '';
+  -webkit-transform-origin: 1px 1px;/*動かす時の原点*/
+  -moz-transform-origin: 1px 1px;
+  -ms-transform-origin: 1px 1px;
+  transform-origin: 1px 1px;
+}
+.hn_timer-loader::before{/*長針*/
+  height: 18px;
+  -webkit-animation: timer-loader 1200ms linear infinite;
+  -moz-animation: timer-loader 1200ms linear infinite;
+  animation: timer-loader 1200ms linear infinite;
+}
+.hn_timer-loader::after{/*短針*/
+  height: 14px;
+  -webkit-animation: timer-loader 15000ms linear infinite;
+  -moz-animation: timer-loader 15000ms linear infinite;
+  animation: timer-loader 15000ms linear infinite;
+}
+@-webkit-keyframes timer-loader {
+  0%  {-webkit-transform: rotate(0deg);transform: rotate(0deg);}
+  100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);}
+}
+@-moz-keyframes timer-loader {
+  0%  {-moz-transform: rotate(0deg);transform: rotate(0deg);}
+  100% {-moz-transform: rotate(360deg);transform: rotate(360deg);}
+}
+@-ms-keyframes timer-loader {
+  0%  {-ms-transform: rotate(0deg);transform: rotate(0deg);}
+  100% {-ms-transform: rotate(360deg);transform: rotate(360deg);}
+}
+@keyframes timer-loader {
+  0% {
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+
+
+/* 福山ここから */
+
+.line_out {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.line {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    width: 0px;
+    height: 5px;
+    background: #EC4E20;
+}
+
+.no1 .line {
+    left:0;
+    right:0;
+    max-width:1050px;
+}
+
+.nf_outside {
+    left:0;
+    right:0;
+    height: 390px;
+    max-width: 1100px;
+    z-index: 2;
+    background-color: white;
+    margin:0 auto;
+    position: absolute;
+}
+.kara {
+    height: 200px;
+    width: 1040px;
+}
+
+.nf_casette {
+    left: -100px;
+    background: #fff;
+    height: 377px;
+    width: 1040px;
+    border-color:#1A5151;
+    border-width:1px;
+    border-style:solid;
+    text-align:right;
+    margin: 30px auto 30px auto;
+    box-shadow: 0 0 50px #add8e6 inset, 5px 5px 0 #cecece;
+    -moz-box-shadow: 0 0 50px #add8e6 inset, 5px 5px 0 #cecece;
+    -webkit-box-shadow: 0 0 50px #add8e6 inset, 5px 5px 0 #cecece;
+    z-index: 1;
+}
+
+.no_dot li {
+    list-style: none;
+}
+
+.nf_casette .title {
+    -webkit-transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+    -o-transform:rotate(-3deg);
+    -ms-transform:rotate(-3deg);
+    background:#000;
+    color:#fff;
+    font-size:24pt;
+    width:45%;
+    border-top:13px dashed #fff;
+    border-bottom:13px dashed #fff;
+    box-shadow: 0 0 3px 8px #000;
+    text-shadow: 0 0 5px;
+    padding:20px;
+    margin-left:10px;
+    margin-bottom:60px;
+    text-align: center;
+}
+
+.nf_casette .actor {
+    color: #616161 ;
+    font-family: 'Bevan', serif;
+    font-size: 30px ;
+    text-align: center;
+}
+
+
+.nf_casette .anm {
+ border: 1px solid #DDDDDD;
+ display: inline-block;
+ height: 375px;
+ overflow: hidden;
+ position: relative;
+ vertical-align: top;
+ width: 500px;
+ float:right;
+}
+
+.anm img {
+ max-width:none;
+}
+
+.nf_type1 img {
+    animation:nf_type1 infinite steps(28,end) 5s;
+}
+
+.nf_type2 img {
+    animation:nf_type2 infinite steps(26,end) 5s;
+}
+
+.nf_type3 img {
+    animation:nf_type3 infinite steps(22,end) 5s;
+}
+
+
+@keyframes nf_type1 {
+    100%{
+        transform: translate3d(0,-10500px,0);
+    }
+}
+
+@keyframes nf_type2 {
+    100%{
+        transform: translate3d(0,-9750px,0);
+    }
+}
+
+@keyframes nf_type3 {
+    100%{
+        transform: translate3d(0,-8250px,0);
+    }
+}
+/* 福山　ここまで */
+
+
+
+
+/* add HIGASHINO */
+.mh_cassette{
+  margin: 50px auto;
+  width: 1040px;
+  position: relative;
+  overflow: hidden;
+  text-align: left;
+}
+.mh_imgMovie01{
+  background: url(../img/story/07_datentakai_24.jpg) no-repeat left top;
+  animation-duration : 6500ms;
+  animation-timing-function: steps(24, end);
+  animation-iteration-count: infinite;
+}
+
+
+.mh_imgMovie02{
+  background: url(../img/story/08_souryonoganbari_16.jpg) no-repeat left top;
+  animation-duration : 5000ms;
+  animation-timing-function: steps(16, end);
+  animation-iteration-count: infinite;
+}
+
+
+.mh_imgMovie03{
+  background: url(../img/story/09_endroll_70.jpg) no-repeat left top;
+  animation-duration : 15000ms;
+  animation-timing-function: steps(70, end);
+  animation-iteration-count: infinite;
+}
+
+.mh_bgOrigin{
+  background-size: 500px;
+  width: 500px;
+  height: 375px;
+  border: 10px solid #fff;
+}
+.mh_bgAuto{
+  background-size: 100%;
+  width: 1040px;
+  height: 400px;
+  position: relative;
+}
+
+.mh_imgMovie01.mh_bgOrigin{
+  animation-name: mh_animation_a1;
+}
+.mh_imgMovie02.mh_bgOrigin{
+  animation-name: mh_animation_a2;
+}
+.mh_imgMovie03.mh_bgOrigin{
+  animation-name: mh_animation_a3;
+}
+
+.mh_imgMovie01.mh_bgAuto.is-active{
+  animation-name: mh_animation_b1;
+}
+
+.mh_imgMovie02.mh_bgAuto.is-active{
+  animation-name: mh_animation_b2;
+}
+
+.mh_imgMovie03.mh_bgAuto.is-active{
+  animation-name: mh_animation_b3;
+}
+
+@keyframes mh_animation_a1 {
+    0% {background-position: 0 0}
+    100% {background-position: 0 -9000px}
+}
+@keyframes mh_animation_b1 {
+    0% {background-position: 0 0}
+    100% {background-position: 0 -18720px}
+}
+
+@keyframes mh_animation_a2 {
+    0% {background-position: 0 0}
+    100% {background-position: 0 -6000px}
+}
+@keyframes mh_animation_b2 {
+    0% {background-position: 0 0}
+    100% {background-position: 0 -12480px}
+}
+
+@keyframes mh_animation_a3 {
+    0% {background-position: 0 0}
+    100% {background-position: 0 -26250px}
+}
+@keyframes mh_animation_b3 {
+    0% {background-position: 0 0}
+    100% {background-position: 0 -54600px}
+}
+
+.mh_bgAuto:after{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgba(0,0,0,.6);
+  content: "";
+  display: block;
+}
+.mh_slide{
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all .25s ease;
+  -moz-transition: all .25s ease;
+  -ms-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  transition: all .25s ease;
+}
+.mh_cassette.is-active .mh_slide{
+  left: 0;
+}
+.mh_cassette.color01 .mh_slide__overlay__path{
+  fill: #8A9DA4;
+}
+.mh_cassette.color02 .mh_slide__overlay__path{
+  fill: #478384;
+}
+.mh_cassette.color03 .mh_slide__overlay__path{
+  fill: #ee827c;
+}
+.mh_cassette.color04 .mh_slide__overlay__path{
+  fill: #95859c;
+}
+.mh_cassette.color05 .mh_slide__overlay__path{
+  fill: #887f7a;
+}
+.mh_slide__contents{
+  color: #fff;
+  position: absolute;
+  top: 30px;
+  left: 10px;
+}
+.mh_slide__contents .mh_slide__title{
+  margin: 0 10px;
+  padding: 0;
+  font-size: 30px;
+}
+.mh_slide__text{
+  margin: 10px 10px 0px;
+  font-size: 14px;
+}
+.mh_slide__member{
+  width: 500px;
+  margin-top: 50px;
+  padding: 0;
+  list-style: none;
+}
+.mh_slide__member li {
+  width: 200px;
+  display: inline-block;
+  margin: 0 10px 20px;
+}
+.mh_slide__member li .small{
+  display: block;
+  font-size: .75em;
+}
+.mh_slide__member li img{
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  float: left;
+  margin-right: 10px;
+}
+.mh_btn-viewMore{
+  border-bottom: 2px solid #fff;
+  padding: 10px 30px;
+  color: #fff;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  right: 50px;
+  margin-top: -20px;
+  cursor: pointer;
+}
+.mh_btn-viewMore:hover{
+  opacity: .8;
+}
+
