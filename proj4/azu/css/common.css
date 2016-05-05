@@ -1,0 +1,33 @@
+@charset "UTF-8";
+.contents{
+	overflow-x:hidden;
+	width:964px;
+	height:720px;
+	position:absolute;
+	top:0px;
+	left:0px;
+	z-index:1;
+}
+.obj{
+	width:964px;
+	height:15600px;
+	overflow-x:hidden;
+	overflow-y:scroll;
+	padding-right: 17px;
+}
+.imgList{
+	position:relative;
+	top:0px;
+	height:720px;
+	width:964px;
+	overflow-y:hidden;
+}
+.img{
+	position:absolute;
+	top:0px;
+	left:0px;
+}
+.img p{
+	line-height:0;
+	margin: 0;
+}
