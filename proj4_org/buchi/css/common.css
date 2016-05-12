@@ -1,0 +1,31 @@
+#dummy{
+  height: 14400px;
+}
+#contents{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+#main{
+  margin: auto;
+  width: 640px;
+  overflow: hidden;
+  position: relative;
+  right: 0;
+  left: 0;
+}
+.images{
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: 0;
+}
+.images li{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.images img{
+  display: block;
+}
