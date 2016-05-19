@@ -1,12 +1,10 @@
 $(function(){
 
-
     setInterval(function(){
         $('.hn_loading').fadeOut();
         $('.hn_main-visual').show();
         $('.hn_container').addClass('active');
     } , '5000');
-
 
     setInterval(function(){
         $('.hn_main-visual').remove();
@@ -15,30 +13,21 @@ $(function(){
         $('.hn-cover').css('opacity','0');
     } , '9000');
 
-
     setInterval(function(){
         $('.wrapper').addClass('show');
     } , '9500');
 
-
-
-
-
-
-$('#grid').mixItUp(
-    {
-        animation: {
-            animateResizeContainer: false,
-        },
-        load: {
-            filter: '.ka_mcl',
-            sort: 'date:asc'
+    $('#grid').mixItUp(
+        {
+            animation: {
+                animateResizeContainer: false,
+            },
+            load: {
+                filter: '.ka_mcl',
+                sort: 'date:asc'
+            }
         }
-    }
-);
-
-
-
+    );
 
 var DRAW_ARR = {
     MAIN_COPY : [
@@ -150,8 +139,8 @@ $(function() {
         //DRAW_ARR["MAIN_COPY"].length = 61  (61筆）
         for(j = 0; j < DRAW_ARR["MAIN_COPY"].length; j++){
             process += DRAW_ARR["MAIN_COPY"][j].length;
-
         }
+
         $(".nf_nine_pieces").css({opacity: 0.0});
         $(".nf_vision").css({opacity: 0.0});
         $(window).scroll(function () {
@@ -266,18 +255,15 @@ $(".all").click(function(){
 
 
 
-
 $(function() {
 
-  // (^o^)< googleMapがロードされたら
-  google.maps.event.addDomListener(window,'load',function(){
 
     // (^o^)< googlemapの指定
     var latlng = new google.maps.LatLng(35.666359, 139.714000);
     var mapOptions = {
       zoom: 17,
       center: latlng,
-      mapTypeId: google.maps.MapTypeId.ROADfMAP,
+      mapTypeId: google.maps.MapTypeId.ROADMAP,
       scrollwheel: false,
       mapTypeControl: false
     };
@@ -295,7 +281,7 @@ $(function() {
       title: '株式会社ウエディングパーク'
     };
     var marker = new google.maps.Marker(markerOptions);
-
+console.log(map);
     // (^o^)< スクロールで地図描画
     $(window).on("scroll", function() {
 
@@ -342,24 +328,25 @@ $(function() {
 
       // (^o^)< 会社までたどり着いたら固定表示をもどす
       if (wariai >= 1) {
-        $('.nh_container').css({'height': windowHeight});
+        $('.nh_container').css({'height': targetHeight});
         $('.nh_wrap').css({'position': 'absolute', 'bottom': 0, 'top': 'auto'});
-        $('.ka_empty').css({'min-height': 0});
       }
-    });
 
   });
 
   // (^o^)< 表示位置を固定
-  var $target = $('.nh_wrap'),
+  var $target = $('#nh_container'),
       targetOffsetTop = $target.offset().top,
       windowHeight = $(window).height(),
       targetHeight = windowHeight + 2000;
 
-
-
-
   $(window).on('scroll', function () {
+      $target = $('#nh_container'),
+      targetOffsetTop = $target.offset().top,
+      windowHeight = $(window).height(),
+      targetHeight = windowHeight + 2000;
+      console.log(targetOffsetTop);
+
     if($(this).scrollTop() > targetOffsetTop) {
       $('.nh_wrap').css({'position': 'fixed', 'top': 0});
     } else {
@@ -368,5 +355,6 @@ $(function() {
   });
 
 });
+
 
 

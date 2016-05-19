@@ -185,13 +185,13 @@
     animation-duration: 0.3s;
 }
 
-
 @charset 'UTF-8';
 
 html,
 body{
   height: 100%;
 }
+
 .nh_container{
   position: relative;
 }
