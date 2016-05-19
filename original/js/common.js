@@ -1,19 +1,33 @@
 $(function(){
 
-$('#grid').mixItUp(
-    {
-        animation: {
-            animateResizeContainer: false,
-        },
-        load: {
-            filter: '.ka_mcl',
-            sort: 'date:asc'
+    setInterval(function(){
+        $('.hn_loading').fadeOut();
+        $('.hn_main-visual').show();
+        $('.hn_container').addClass('active');
+    } , '5000');
+
+    setInterval(function(){
+        $('.hn_main-visual').remove();
+        $('html').removeClass('now_loading');
+        $('html').addClass('loaded');
+        $('.hn-cover').css('opacity','0');
+    } , '9000');
+
+    setInterval(function(){
+        $('.wrapper').addClass('show');
+    } , '9500');
+
+    $('#grid').mixItUp(
+        {
+            animation: {
+                animateResizeContainer: false,
+            },
+            load: {
+                filter: '.ka_mcl',
+                sort: 'date:asc'
+            }
         }
-    }
-);
-
-
-
+    );
 
 var DRAW_ARR = {
     MAIN_COPY : [
@@ -113,6 +127,7 @@ var DRAW_ARR = {
 };
 
 $(function() {
+    if($("div").hasClass("wrapper")){
         var $target = $('.nf_container'),
         targetOffsetTop = $target.offset().top,
         windowHeight = $(window).height(),
@@ -124,30 +139,38 @@ $(function() {
         //DRAW_ARR["MAIN_COPY"].length = 61  (61筆）
         for(j = 0; j < DRAW_ARR["MAIN_COPY"].length; j++){
             process += DRAW_ARR["MAIN_COPY"][j].length;
-
         }
+
         $(".nf_nine_pieces").css({opacity: 0.0});
         $(".nf_vision").css({opacity: 0.0});
         $(window).scroll(function () {
             var wariai = ($(window).scrollTop()-targetOffsetTop) / targetHeight;
 
             if(wariai > 0 && wariai < 1.2) {
-                $(".nf_mp_title").css({'opacity':wariai * 5});
+                //$(".nf_mp_title").css({'opacity':wariai * 5});
                 $(".nf_nine_pieces").css({opacity: wariai-0.2});
                 $('#nf_main').css({'visibility':'visible'});
             } else if (wariai >= 1.2){
                 $(".nf_mp_title").css({'opacity':1 - wariai + 0.35});
                 $(".nf_nine_pieces").css({'opacity':1 - wariai + 0.35});
+                $('#nf_canvas').css({'opacity':1 - wariai + 0.35});
             } else {
                 $(".nf_mp_title").css({'opacity':0});
                 $('#nf_main').css({'visibility':'hidden'});
+                $('#nf_canvas').css({'display':'none'});
             }
 
             var ctx = $('#nf_canvas')[0].getContext('2d');
             ctx.lineWidth = 4;
             ctx.strokeStyle = "rgb(255,255,255)";
 
-            if (wariai > 0.2) {
+            if (wariai > 0.1) {
+                $(".nf_title").css({'position':'fixed'});
+                $(".nf_mp_title").css({'position':'fixed'});
+                if(wariai < 1.2){
+                    $(".nf_mp_title").css({'opacity':1});
+                }
+
                 var end = parseInt((wariai - 0.2) * process*1/6);
 
                 ctx.clearRect(0, 0, 550, 230);
@@ -169,10 +192,11 @@ $(function() {
                     ctx.stroke();
                 }
         });
+        }
     });
 
 
-var ka_wp_image = '../img/wp_600x600.png';
+    var ka_wp_image = '../img/wp_600x600.png';
 
 $(window).scroll(function (event) {
     var ka_event_start_position = $(window).scrollTop();
@@ -231,18 +255,15 @@ $(".all").click(function(){
 
 
 
-
 $(function() {
 
-  // (^o^)< googleMapがロードされたら
-  google.maps.event.addDomListener(window,'load',function(){
 
     // (^o^)< googlemapの指定
     var latlng = new google.maps.LatLng(35.666359, 139.714000);
     var mapOptions = {
       zoom: 17,
       center: latlng,
-      mapTypeId: google.maps.MapTypeId.ROADfMAP,
+      mapTypeId: google.maps.MapTypeId.ROADMAP,
       scrollwheel: false,
       mapTypeControl: false
     };
@@ -260,7 +281,7 @@ $(function() {
       title: '株式会社ウエディングパーク'
     };
     var marker = new google.maps.Marker(markerOptions);
-
+console.log(map);
     // (^o^)< スクロールで地図描画
     $(window).on("scroll", function() {
 
@@ -307,27 +328,25 @@ $(function() {
 
       // (^o^)< 会社までたどり着いたら固定表示をもどす
       if (wariai >= 1) {
-        $('.nh_container').css({'height': windowHeight});
+        $('.nh_container').css({'height': targetHeight});
         $('.nh_wrap').css({'position': 'absolute', 'bottom': 0, 'top': 'auto'});
-        $('.ka_empty').css({'min-height': 0});
       }
-    });
 
   });
 
   // (^o^)< 表示位置を固定
-  var $target = $('.nh_wrap'),
+  var $target = $('#nh_container'),
       targetOffsetTop = $target.offset().top,
       windowHeight = $(window).height(),
       targetHeight = windowHeight + 2000;
 
-
-
-
   $(window).on('scroll', function () {
-    console.log($(this).scrollTop());
-    console.log(targetOffsetTop);
-    console.log('------');
+      $target = $('#nh_container'),
+      targetOffsetTop = $target.offset().top,
+      windowHeight = $(window).height(),
+      targetHeight = windowHeight + 2000;
+      console.log(targetOffsetTop);
+
     if($(this).scrollTop() > targetOffsetTop) {
       $('.nh_wrap').css({'position': 'fixed', 'top': 0});
     } else {
@@ -336,5 +355,6 @@ $(function() {
   });
 
 });
+
 
 
