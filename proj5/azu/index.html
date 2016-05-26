@@ -1,13 +1,44 @@
-<!DOCTYPE html>
-<html lang="ja">
+﻿<!DOCTYPE>
+<html>
 <head>
-<link rel="stylesheet" type="text/css" href="css/common.css"  />
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<meta charset="UTF-8">
-<title>サイトのタイトル</title>
+<meta charset="utf-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+<link rel="stylesheet" href="css/common.css">
+<title>Menu Button模倣</title>
+
 </head>
 <body>
-<h1>オリジナルコンテンツ</h1>
+<section class="contents">
+	<ul class="cassettes column-center">
+		<li class="cassette category_a">item1(A)</li>
+		<li class="cassette category_a">item2(A)</li>
+		<li class="cassette category_b">item3(B)</li>
+		<li class="cassette category_b">item4(B)</li>
+		<li class="cassette category_c">item5(C)</li>
+		<li class="cassette category_d">item6(D)</li>
+	</ul>
+</section>
+<div class="right-menu">
+	<div class="menu icon"><a>bbb</a></div>
+	<ul class="sub-menu" style="display:none">
+		<li class="icon"><a data-category="a"></a>A</li>
+		<li class="icon"><a data-category="b"></a>B</li>
+		<li class="icon"><a data-category="c"></a>C</li>
+		<li class="icon"><a data-category="d"></a>D</li>
+		<li class="icon"><a data-category="ALL"></a>ALL</li>
+	</ul>
+</div>
+<div class="footer-menu">
+	<div class="menu icon"><a>aaa</a></div>
+	<ul class="sub-menu" style="display:none">
+		<li class="icon"><a data-order="1">1</a></li>
+		<li class="icon"><a data-order="2">2</a></li>
+		<li class="icon"><a data-order="3">3</a></li>
+		<li class="icon"><a data-order="4">4</a></li>
+		<li class="icon"><a data-order="5">5</a></li>
+	</ul>
+</div>
 <script src="js/common.js"></script>
 </body>
 </html>
