@@ -1,0 +1,199 @@
+ul { list-style: none; }
+
+.contents {
+	width: 100%;
+	height: 300%;
+	background-color: white;
+}
+
+.cassettes {
+	padding: 50px;
+}
+
+.column-center {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justy-content: center;
+}
+
+.category_a { background-color: tomato; }
+.category_b { background-color: yellow; }
+.category_c { background-color: lightgreen; }
+.category_d { background-color: turquoise; }
+
+
+.cassette {
+	border-radius: 5px;
+	border-color: gray;
+	border-style: solid;
+	width: 80%;
+	height: 60px;
+}
+
+.right-menu {
+	z-index: 100;
+	position: fixed;
+	top: 50%;
+	right: 0px;
+	width: 200px;
+	height: 200px;
+}
+
+.right-menu .menu {
+	z-index: 100;
+	background-color: black;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	width: 50px;
+	height: 50px;
+}
+
+.right-menu .sub-menu {
+	z-index: 99;
+	position: absolute;
+	top: -30px;
+	right: 25px;
+}
+
+.footer-menu {
+	z-index: 100;
+	position: fixed;
+	bottom: 10px;
+	left: 50px;
+	width: 200px;
+	height: 200px;
+}
+
+.footer-menu .menu {
+	z-index: 100;
+	background-color: black;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 40px;
+	height: 40px;
+}
+
+.footer-menu .sub-menu {
+	z-index: 99;
+	position: absolute;
+	bottom: 0;
+	left: -40;
+}
+
+.sub-menu a {
+	position: absolute;
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	text-indent: -99999px;
+	background-color: red;
+}
+
+.spin-expand {
+	animation-duration: 0.5s;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+}
+
+.spin-expand a {
+	animation-name: spin;
+	animation-duration: 0.2s;
+	animation-iteration-count: 3;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+}
+
+.icon .clicked {
+	animation-name: palse;
+	animation-duration: 0.1s;
+	animation-iteration-count: 1;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+}
+
+.spin-expand:nth-child(1) { animation-name: spin-expand_1; }
+.spin-expand:nth-child(2) { animation-name: spin-expand_2; }
+.spin-expand:nth-child(3) { animation-name: spin-expand_3; }
+.spin-expand:nth-child(4) { animation-name: spin-expand_4; }
+.spin-expand:nth-child(5) { animation-name: spin-expand_5; }
+
+@keyframes spin {
+	from {transform: rotate(0deg);}
+	to   {transform: rotate(360deg);}
+}
+
+@keyframes spin-expand_1 {
+	from {transform: translate(  0px,  0px);}
+    to   {transform: translate( -30px, -162px);}
+}
+
+@keyframes spin-expand_2 {
+	from {transform: translate(  0px,  0px);}
+    to   {transform: translate(  30px, -160px);}
+}
+
+@keyframes spin-expand_3 {
+	from {transform: translate(  0px,  0px);}
+    to   {transform: translate( 90px, -135px);}
+}
+
+@keyframes spin-expand_4 {
+	from {transform: translate(  0px,  0px);}
+    to   {transform: translate( 135px, -90px);}
+}
+
+@keyframes spin-expand_5 {
+	from {transform: translate(  0px,  0px);}
+    to   {transform: translate( 150px, -30px);}
+}
+
+@keyframes palse {
+	from { transform: scale(0.9, 0.9);}
+	50%  { transform: scale(1.2, 1.2);}
+	to   { transform: scale(1, 1);}	
+}
+
+.expand {
+	animation-duration: 0.5s;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+}
+.expand:nth-child(1) { animation-name: expand_1; }
+.expand:nth-child(2) { animation-name: expand_2; }
+.expand:nth-child(3) { animation-name: expand_3; }
+.expand:nth-child(4) { animation-name: expand_4; }
+.expand:nth-child(5) { animation-name: expand_5; }
+
+@keyframes expand_1 {
+	from {transform: translate( 0px, 0px);}
+    to   {transform: translate( 0px, -5px);}
+}
+
+@keyframes expand_2 {
+	from {transform: translate(   0px,   0px);}
+    to   {transform: translate( -40px, -20px);}
+}
+
+@keyframes expand_3 {
+	from {transform: translate(   0px, 0px);}
+    to   {transform: translate( -40px, 0px);}
+}
+
+@keyframes expand_4 {
+	from {transform: translate(   0px,  0px);}
+    to   {transform: translate( -40px, 20px);}
+}
+
+@keyframes expand_5 {
+	from {transform: translate( 0px, 0px);}
+    to   {transform: translate( 0px, 5px);}
+}
+
+.right-menu .sub-menu .icon:nth-child(1) a { background-color: tomato; }
+.right-menu .sub-menu .icon:nth-child(2) a { background-color: yellow; }
+.right-menu .sub-menu .icon:nth-child(3) a { background-color: lightgreen; }
+.right-menu .sub-menu .icon:nth-child(4) a { background-color: turquoise; }
+.right-menu .sub-menu .icon:nth-child(5) a { background-color: gray; }
