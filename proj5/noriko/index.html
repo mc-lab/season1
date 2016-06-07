@@ -3,11 +3,88 @@
 <head>
 <link rel="stylesheet" type="text/css" href="css/common.css"  />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<link rel="stylesheet prefetch" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 <meta charset="UTF-8">
-<title>サイトのタイトル</title>
+<title>Filter Menu</title>
 </head>
 <body>
-<h1>オリジナルコンテンツ</h1>
 <script src="js/common.js"></script>
+    <div class="muck-up">
+        <div class="overlay"></div>
+        <div class="top">
+            <div class="nav">
+                <span class="ion-android-menu"></span>
+                <p>Timeline</p>
+                <span class="ion-ios-more-outline"></span>
+            </div>
+            <div class="user-profile">
+                <img src="https://sdl-stickershop.line.naver.jp/products/0/0/4/1021884/android/stickers/949888.png">
+                <div class="user-details">
+                    <h4>Noriko Fukuyama</h4>
+                    <p>Web/Engineer</p>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <? /*  Ioniconsタグ  http://fa2png.io/icons/?font=ionicons&tag=&o=tag   */?>
+        <div class="filter-btn">
+            <a id="one" href="#"><i class="ion-android-checkmark-circle"></i></a>
+            <a id="two" href="#"><i class="ion-android-contacts"></i></a>
+            <a id="three" href="#"><i class="ion-android-desktop"></i></a>
+            <a id="all" href="#"><i class="ion-load-b"></i></a>
+            <span class="toggle-btn ion-android-funnel"></span>
+        </div>
+        <div class="clearfix"></div>
+        <div class="bottom">
+            <div class="title">
+                <h3>My Tasks</h3>
+                <small>June 1, 2016</small>
+            </div>
+            <ul class="tasks">
+                <li class="one red">
+                    <span class="task-title">Check GitLab notification</span>
+                    <span class="task-time">11am</span>
+                    <span class="task-cat">Photorait Staff Blog</span>
+                </li>
+                <li class="three yellow">
+                    <span class="task-title">Coding</span>
+                    <span class="task-time">1pm</span>
+                    <span class="task-cat">MCLab☆</span>
+                </li>
+                <li class="two green hang">
+                    <span class="task-title">Team Meeting</span>
+                    <span class="task-time">2pm</span>
+                    <span class="task-cat">Hangouts</span>
+                    <img src="img/pay.png">
+                    <img src="https://scontent.xx.fbcdn.net/v/t1.0-1/c17.17.208.208/s100x100/250177_106081076150093_3881507_n.jpg?oh=340c4d9c0eba9585f311a129447b590c&oe=57E6EB0C">
+                    <img src="http://vignette3.wikia.nocookie.net/dragonball/images/7/7a/KorinMajinBuuSaga.png/revision/latest?cb=20100508123353&path-prefix=ja">
+                    <img src="https://scontent.xx.fbcdn.net/v/t1.0-9/11016833_528493400624479_6152024942583360493_n.jpg?oh=daf2734ff507e364a9375519d34fc7c4&oe=57CBF099">
+                    <img src="https://scontent.xx.fbcdn.net/v/t1.0-9/11889510_879433858808392_2409562543669978309_n.jpg?oh=b27f756734e4d0c0842e20febf770480&oe=57C3CE63">
+                </li>
+                <li class="three yellow">
+                    <span class="task-title">Create document</span>
+                    <span class="task-time">3pm</span>
+                    <span class="task-cat">Foreign</span>
+                </li>
+                <li class="two green">
+                    <span class="task-title">Meeting with Koyama</span>
+                    <span class="task-time">5pm</span>
+                    <span class="task-cat">Foreign</span>
+                </li>
+            </ul>
+            <div class="testfield">
+            <div class="flyout-wrap">
+                <a class="flyout-btn" href="#" title="Toggle"><span>Flyout Menu Toggle</span></a>
+                <ul class="flyout flyout-init">
+                    <li><a href="#"><span>Item</span></a></li>
+                    <li><a href="#"><span>Item</span></a></li>
+                    <li><a href="#"><span>Item</span></a></li>
+                    <li><a href="#"><span>Item</span></a></li>
+                    <li><a href="#"><span>Item</span></a></li>
+                </ul><!-- .flyout -->
+            </div><!-- .flyout-wrap -->
+        </div>
+        </div>
+    </div>
 </body>
 </html>
