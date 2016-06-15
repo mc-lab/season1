@@ -15,11 +15,14 @@ $(function(){
 
     setInterval(function(){
         $('.wrapper').addClass('show');
+        yomikondayo();
+        chizu();
     } , '9500');
 
     $(".nf_nine_pieces").css({opacity: 0.0});
 
-  $(window).scroll(function (event) {
+
+function yomikondayo(){
 
     var DRAW_ARR = {
         MAIN_COPY : [
@@ -178,7 +181,6 @@ $(function(){
              ctx.stroke();
         }
     });
-  });
 
 
     $('#grid').mixItUp({
@@ -190,43 +192,44 @@ $(function(){
                 sort: 'date:asc'
             }
     });
+    $(window).scroll(function (event) {
+        var ka_event_start_position = $(window).scrollTop();
+        var ka_wh = $(window).height();
 
-    var ka_event_start_position = $(window).scrollTop();
-    var ka_wh = $(window).height();
+        if ($(".ka_container").offset().top - ka_wh / 3 * 2 < ka_event_start_position) {
+            $(".ka_img-responsive").each(function(){
+                var ka_pos = $(this).offset().top;
+                if($(this).parents(".mix").css('display') == 'inline-block') {
+                    if (ka_event_start_position > ka_pos - (ka_wh / 2)) {
+                        if ($(this).hasClass("ka_noimage")) {
+                            $(this).removeClass('ka_noimage');
+                            $(this).addClass('ka_zoomIn');
 
-    if ($(".ka_container").offset().top - ka_wh / 3 * 2 < ka_event_start_position) {
-        $(".ka_img-responsive").each(function(){
-            var ka_pos = $(this).offset().top;
-            if($(this).parents(".mix").css('display') == 'inline-block') {
-                if (ka_event_start_position > ka_pos - (ka_wh / 2)) {
-                    if ($(this).hasClass("ka_noimage")) {
-                        $(this).removeClass('ka_noimage');
-                        $(this).addClass('ka_zoomIn');
+                            if ($(this).attr('data-src') == null) {
+                                $(this).attr('src', null);
+                            } else {
+                                $(this).attr('src', $(this).attr('data-src'));
+                            }
 
-                        if ($(this).attr('data-src') == null) {
-                            $(this).attr('src', null);
-                        } else {
-                            $(this).attr('src', $(this).attr('data-src'));
-                        }
+                            if ($(this).attr('data-class') != null) {
+                                $(this).addClass($(this).attr('data-class'));
+                                $(this).attr('data-class', null);
+                            }
 
-                        if ($(this).attr('data-class') != null) {
-                            $(this).addClass($(this).attr('data-class'));
-                            $(this).attr('data-class', null);
-                        }
-
-                        if ($(this).attr('data-animation') != null) {
-                            var ka_item = $(this);
-                            setTimeout(function(){
-                                ka_item.removeClass('ka_zoomIn')
-                                ka_item.addClass(ka_item.attr('data-animation'));
-                                ka_item.attr('data-animation', null);
-                            }.bind(ka_item), 300);
+                            if ($(this).attr('data-animation') != null) {
+                                var ka_item = $(this);
+                                setTimeout(function(){
+                                    ka_item.removeClass('ka_zoomIn')
+                                    ka_item.addClass(ka_item.attr('data-animation'));
+                                    ka_item.attr('data-animation', null);
+                                }.bind(ka_item), 300);
+                            }
                         }
                     }
                 }
-            }
-        });
-    }
+            });
+        }
+    });
 
 
     var ka_wp_image = '../img/wp_600x600.png';
@@ -241,9 +244,11 @@ $(function(){
     $(".all").click(function(){
         $('.space').css({'height': '1000px'});
     });
+}
 
 
-    google.maps.event.addDomListener(window,'load',function(){
+
+    function chizu(){
         // (^o^)< googlemapの指定
         var latlng = new google.maps.LatLng(35.666359, 139.714000);
         var mapOptions = {
@@ -254,9 +259,7 @@ $(function(){
           mapTypeControl: false
         };
 
-        setInterval(function(){
-            var map = new google.maps.Map(document.getElementById('nh_map'), mapOptions);
-        } , '9500');
+        var map = new google.maps.Map(document.getElementById('nh_map'), mapOptions);
 
 
         // (^o^)< ピンを変える
@@ -322,7 +325,9 @@ $(function(){
                 $('.nh_wrap').css({'position': 'absolute', 'bottom': 0, 'top': 'auto'});
             }
         });
-    });
+    }
+
+
 
     // (^o^)< 表示位置を固定
     var $target = $('#nh_container'),
