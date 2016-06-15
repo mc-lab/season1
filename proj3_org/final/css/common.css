@@ -194,7 +194,8 @@
 
 .ka_zoomIn {
   animation-name: ka_zoomIn;
-    animation-duration: 0.3s;
+  animation-iteration-count:1;
+  animation-duration: 0.3s;
 }
 
 @charset 'UTF-8';
@@ -480,7 +481,7 @@ sub {
 /* Embedded content
    ========================================================================== */
 
-/**
+/**r
  * Remove border when inside `a` element in IE 8/9/10.
  */
 
@@ -903,6 +904,7 @@ body {
 
 #ts_main{
   margin-bottom:200px;
+  text-align:center;
 }
 
 
@@ -938,6 +940,7 @@ body {
   overflow: hidden;
   margin-bottom: 40px;
 }
+
 
 .ts_wp_image {
   width: 100%;
@@ -1000,7 +1003,13 @@ body {
 #ts_image_wp .ts_site_link li {
   display: inline-block;
   margin: 0 15px;
+  z-index: 10;
+  position: relative;
 }
+#ts_image_wp {
+  margin-bottom:50px;
+}
+
 
 .ts_site_images {
   width: 100%;
@@ -1024,12 +1033,13 @@ body {
   background-size: 100% auto;
   background-repeat: no-repeat;
   position: relative;
+  transition: all 0.2s linear;
 }
 
 .ts_site_image:hover {
-  background-size: 105%;
-  background-position: -15px -15px;
+  transform: scale(1.05);
 }
+
 
 
 #ts_image_f .ts_site_image {
@@ -1084,7 +1094,7 @@ body {
   text-align: center;
   z-index: 10;
   color: #fff;
-  padding-top: 40px;
+  padding-top: 90px;
   background-color: rgba(0,0,0,0);
 }
 
@@ -1110,6 +1120,7 @@ body {
   right: 0;
   margin: auto;
 }
+
 
 .ts_site_image:hover .ts_divider {
   width: 60%;
@@ -1352,6 +1363,11 @@ html.loaded{
   -moz-animation: timer-loader 15000ms linear infinite;
   animation: timer-loader 15000ms linear infinite;
 }
+
+.copyright{
+  text-align:center;
+}
+
 @-webkit-keyframes timer-loader {
   0%  {-webkit-transform: rotate(0deg);transform: rotate(0deg);}
   100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);}
@@ -1378,3 +1394,4 @@ html.loaded{
     transform: rotate(360deg);
   }
 }
+
