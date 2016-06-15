@@ -19,7 +19,7 @@ $(function(){
 
     $(".nf_nine_pieces").css({opacity: 0.0});
 
-$(window).scroll(function (event) {
+  $(window).scroll(function (event) {
 
     var DRAW_ARR = {
         MAIN_COPY : [
@@ -178,6 +178,7 @@ $(window).scroll(function (event) {
              ctx.stroke();
         }
     });
+  });
 
 
     $('#grid').mixItUp({
@@ -226,9 +227,6 @@ $(window).scroll(function (event) {
             }
         });
     }
-});
-
-
 
 
     var ka_wp_image = '../img/wp_600x600.png';
@@ -245,7 +243,6 @@ $(window).scroll(function (event) {
     });
 
 
-
     google.maps.event.addDomListener(window,'load',function(){
         // (^o^)< googlemapの指定
         var latlng = new google.maps.LatLng(35.666359, 139.714000);
@@ -257,7 +254,9 @@ $(window).scroll(function (event) {
           mapTypeControl: false
         };
 
-        var map = new google.maps.Map(document.getElementById('nh_map'), mapOptions);
+        setInterval(function(){
+            var map = new google.maps.Map(document.getElementById('nh_map'), mapOptions);
+        } , '9500');
 
 
         // (^o^)< ピンを変える
