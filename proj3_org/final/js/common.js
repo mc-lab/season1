@@ -1,19 +1,19 @@
 $(function(){
 
-    setInterval(function(){
+    setTimeout(function(){
         $('.hn_loading').fadeOut();
         $('.hn_main-visual').show();
         $('.hn_container').addClass('active');
     } , '5000');
 
-    setInterval(function(){
+    setTimeout(function(){
         $('.hn_main-visual').remove();
         $('html').removeClass('now_loading');
         $('html').addClass('loaded');
         $('.hn-cover').css('opacity','0');
     } , '9000');
 
-    setInterval(function(){
+    setTimeout(function(){
         $('.wrapper').addClass('show');
         yomikondayo();
         chizu();
@@ -23,7 +23,7 @@ $(function(){
 
 
 function yomikondayo(){
-
+console.log('buchi');
     var DRAW_ARR = {
         MAIN_COPY : [
             // 結 （糸）
@@ -208,6 +208,7 @@ function yomikondayo(){
                             if ($(this).attr('data-src') == null) {
                                 $(this).attr('src', null);
                             } else {
+                                console.log($(this).attr('data-src'));
                                 $(this).attr('src', $(this).attr('data-src'));
                             }
 
@@ -231,13 +232,12 @@ function yomikondayo(){
         }
     });
 
-
-    var ka_wp_image = '../img/wp_600x600.png';
     $(".ka_img-responsive").each(function(){
+        console.log('sasa');
         if ($(this).attr('src') != null) {
             $(this).attr('data-src', $(this).attr('src'));
         }
-        $(this).attr('src', ka_wp_image);
+        $(this).attr('src', '../img/wp_600x600.png');
         $(this).addClass('ka_noimage');
     });
 
@@ -325,7 +325,7 @@ function yomikondayo(){
                 $('.nh_wrap').css({'position': 'absolute', 'bottom': 0, 'top': 'auto'});
             }
         });
-    }
+}
 
 
 
