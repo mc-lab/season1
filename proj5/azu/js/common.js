@@ -24,9 +24,8 @@ $(".footer-menu .menu").click(function () {
 
 $(".footer-menu .sub-menu li").click(function () {
   $("a", this).addClass("clicked");
-  $("a", this).delay(1000).queue(
+  $("a", this).delay(500).queue(
     function(){
-      $(this).removeClass("clicked");
-
+      $(".footer-menu .menu").click();
     });
 });
