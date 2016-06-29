@@ -1,0 +1,234 @@
+/*いけてるインジゲーター*/
+html.now_loading{
+  height: 100%;
+}
+
+.now_loading body{
+  position: relative;
+  margin: 0;
+  height: 100%;
+  background: #00AA7F;
+}
+
+.loaded body{
+  position: static;
+  margin:0 0 200px;
+  height: auto;
+  background-color: #f1f1f1;
+}
+
+.hn-cover {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: #00AA7F;
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+    -webkit-transition-property: opacity;
+    -webkit-transition-duration: 0.2s;
+    -webkit-transition-timing-function: linear;
+}
+
+.hn_main-visual{
+  padding: 30px;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+}
+.hn_container{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.hn_container .hn_logo{
+  margin: auto;
+  width: 1100px;
+  height: 83px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.hn_container div{
+  position: absolute;
+  background: #fff;
+  -webkit-transition:all .3s ease-in-out .3s;transition:all .3s ease-in-out .3s;
+}
+.hn_container > .hn_border-top{
+  width: 0;
+}
+.hn_container > .hn_border-btm{
+  width: 0;
+}
+.hn_container > .hn_border-right{
+  height: 0
+}
+.hn_container > .hn_border-left{
+  height: 0
+}
+.hn_container.active > .hn_border-top{
+  width: 100%;
+  height: 2px;
+  top: 0;
+  left: 0;
+}
+.hn_container.active > .hn_border-btm{
+  width: 100%;
+  height: 2px;
+  right: 0;
+  bottom: 0;
+}
+.hn_container.active > .hn_border-right{
+  width: 2px;
+  height: 100%;
+  top: 0;
+  right: 0;
+}
+.hn_container.active > .hn_border-left{
+  width: 2px;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+}
+.hn_path{
+  stroke: #fff;
+  fill: #00AA7F;
+  stroke-width: 1;
+  stroke-dasharray: 3000;
+  stroke-dashoffset: 3000;
+  -moz-animation: kakikaki 1.7s ease-in 6s forwards;
+  -webkit-animation: kakikaki 1.7s ease-in 6s forwards;
+  -o-animation: kakikaki 1.7s ease-in 6s forwards;
+  animation: kakikaki 1.7s ease-in 6s forwards;
+}
+@-webkit-keyframes kakikaki{
+  0%  {stroke-dashoffset:3000;fill:#00AA7F;}
+  95% {stroke-dashoffset:2500;fill:#00AA7F;}
+  96% {stroke-dashoffset:500;fill:#00AA7F;}
+  100%{stroke-dashoffset:0;fill:#fff;}
+}
+@-moz-keyframes kakikaki{
+  0%  {stroke-dashoffset:3000;fill:#00AA7F;}
+  95% {stroke-dashoffset:2500;fill:#00AA7F;}
+  96% {stroke-dashoffset:500;fill:#00AA7F;}
+  100%{stroke-dashoffset:0;fill:#fff;}
+}
+@-ms-keyframes kakikaki{
+  0%  {stroke-dashoffset:3000;fill:#00AA7F;}
+  95% {stroke-dashoffset:2500;fill:#00AA7F;}
+  96% {stroke-dashoffset:500;fill:#00AA7F;}
+  100%{stroke-dashoffset:0;fill:#fff;}
+}
+@keyframes kakikaki{
+  0%  {stroke-dashoffset:3000;fill:#00AA7F;}
+  95% {stroke-dashoffset:2500;fill:#00AA7F;}
+  96% {stroke-dashoffset:500;fill:#00AA7F;}
+  100%{stroke-dashoffset:0;fill:#fff;}
+}
+/* loader */
+.hn_loading {
+  display: block;
+  margin: auto;
+  width: 80px;
+  height: 72px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+}
+.hn_loading p{
+  margin: 0;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+  font-weight: bold;
+  font-size: 9px;
+  text-align: center;
+}
+.hn_timer-loader{
+  display: block;
+  margin: 0 auto;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  font-size: 0;
+  border: 2px solid #fff;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  border-radius: 24px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.hn_timer-loader::before,
+.hn_timer-loader::after {
+  display: block;
+  width: 2px;
+  position: absolute;
+  top: 22px;
+  left: 22px;
+  background: #fff;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  content: '';
+  -webkit-transform-origin: 1px 1px;/*動かす時の原点*/
+  -moz-transform-origin: 1px 1px;
+  -ms-transform-origin: 1px 1px;
+  transform-origin: 1px 1px;
+}
+.hn_timer-loader::before{/*長針*/
+  height: 18px;
+  -webkit-animation: timer-loader 1200ms linear infinite;
+  -moz-animation: timer-loader 1200ms linear infinite;
+  animation: timer-loader 1200ms linear infinite;
+}
+.hn_timer-loader::after{/*短針*/
+  height: 14px;
+  -webkit-animation: timer-loader 15000ms linear infinite;
+  -moz-animation: timer-loader 15000ms linear infinite;
+  animation: timer-loader 15000ms linear infinite;
+}
+
+.copyright{
+  text-align:center;
+}
+
+@-webkit-keyframes timer-loader {
+  0%  {-webkit-transform: rotate(0deg);transform: rotate(0deg);}
+  100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);}
+}
+@-moz-keyframes timer-loader {
+  0%  {-moz-transform: rotate(0deg);transform: rotate(0deg);}
+  100% {-moz-transform: rotate(360deg);transform: rotate(360deg);}
+}
+@-ms-keyframes timer-loader {
+  0%  {-ms-transform: rotate(0deg);transform: rotate(0deg);}
+  100% {-ms-transform: rotate(360deg);transform: rotate(360deg);}
+}
+@keyframes timer-loader {
+  0% {
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.wrapper{
+  display:none;
+}

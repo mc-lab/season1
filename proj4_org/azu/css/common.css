@@ -10,14 +10,14 @@ body{
 	font-family: 'Lato';
 }
 
-h1{
+.wrapper h2{
 	text-align: center;
 	margin-top: 50px;
 	font-size: 300%;
 	color: yellow;
 }
 
-div{
+.wrapper div{
 	font-size: 25px;
 	color: yellow;
 }
@@ -102,6 +102,7 @@ div{
 	width: 640px;
 	overflow-y: hidden;
 	position: absolute;
+	background-color: black;
 	top: 50%;
 	left: 50%;
 	margin: -180px 0px 0px -320px; 
